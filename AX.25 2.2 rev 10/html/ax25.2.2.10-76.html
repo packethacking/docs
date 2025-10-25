@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 76</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:24px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft02{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft03{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft04{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft05{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft06{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft07{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page76-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10076.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">76&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:165px;left:228px;white-space:nowrap" class="ft01">Appendix C3 - Link Multiplexer State Machine&#160;</p>
+<p style="position:absolute;top:195px;left:80px;white-space:nowrap" class="ft02">C3.1 Interaction with the Data-Link State Machine&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:219px;left:107px;white-space:nowrap" class="ft03">The&#160;Data-link&#160;State&#160;Machine&#160;directs&#160;the&#160;operation&#160;of&#160;the&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;through&#160;the&#160;</p>
+<p style="position:absolute;top:239px;left:80px;white-space:nowrap" class="ft03">link&#160;multiplexer (LM) primitives described below.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:260px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:260px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:260px;left:134px;white-space:nowrap" class="ft05"><b>LM-SEIZE&#160;Request</b></p>
+<p style="position:absolute;top:260px;left:289px;white-space:nowrap" class="ft03">.&#160;This&#160;primitive&#160;requests&#160;the&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;to&#160;arrange&#160;for&#160;</p>
+<p style="position:absolute;top:280px;left:134px;white-space:nowrap" class="ft06">transmission&#160;at&#160;the&#160;next&#160;available&#160;opportunity.&#160;&#160;&#160;&#160;The&#160;Data-link&#160;State&#160;Machine&#160;uses&#160;this&#160;primitive&#160;<br/>when&#160;an&#160;acknowledgment&#160;must&#160;be&#160;made,&#160;but&#160;the&#160;exact&#160;frame&#160;in&#160;which&#160;the&#160;acknowledgment&#160;will&#160;<br/>be&#160;sent&#160;will&#160;be&#160;chosen&#160;when&#160;the&#160;actual&#160;time&#160;for&#160;transmission&#160;arrives.&#160;The&#160;Link&#160;Multiplexer&#160;State&#160;<br/>Machine&#160;uses&#160;the&#160;LMSEIZE&#160;Confirm&#160;primitive&#160;to&#160;indicate&#160;that&#160;the&#160;transmission&#160;opportunity&#160;has&#160;<br/>arrived.&#160;After&#160;the&#160;Data-link&#160;State&#160;Machine&#160;has&#160;provided&#160;the&#160;acknowledgment,&#160;the&#160;Data-link&#160;State&#160;<br/>Machine gives permission to stop transmission&#160;with the&#160;LM&#160;Release Request primitive.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:400px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:400px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:400px;left:134px;white-space:nowrap" class="ft05"><b>LM-DATA&#160;Request</b></p>
+<p style="position:absolute;top:400px;left:285px;white-space:nowrap" class="ft03">.&#160;This&#160;primitive&#160;from&#160;the&#160;Data-link&#160;State&#160;Machine&#160;provides&#160;an&#160;AX.25&#160;frame&#160;of&#160;</p>
+<p style="position:absolute;top:420px;left:134px;white-space:nowrap" class="ft06">any&#160;type&#160;(UI,&#160;SABM,&#160;I,&#160;etc.)&#160;that&#160;is&#160;to&#160;be&#160;transmitted.&#160;An&#160;unlimited&#160;number&#160;of&#160;frames&#160;may&#160;be&#160;<br/>provided.&#160;The&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;accumulates&#160;the&#160;frames&#160;in&#160;a&#160;first-in,&#160;first-out&#160;queue&#160;<br/>until&#160;it is time to transmit them.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:480px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:481px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:481px;left:134px;white-space:nowrap" class="ft05"><b>LM-DATA&#160;Indication</b></p>
+<p style="position:absolute;top:481px;left:299px;white-space:nowrap" class="ft03">. This&#160;primitive&#160;from&#160;the&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;provides&#160;an&#160;AX.25&#160;</p>
+<p style="position:absolute;top:501px;left:134px;white-space:nowrap" class="ft06">frame&#160;of&#160;any&#160;type&#160;(UI,&#160;SABM,&#160;I,&#160;etc.)&#160;that&#160;has&#160;been&#160;received.&#160;An&#160;unlimited&#160;number&#160;of&#160;frames&#160;may&#160;<br/>be provided.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:540px;left:80px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:563px;left:80px;white-space:nowrap" class="ft02">C3.2 Interaction with the Physical Layer State Machine&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:587px;left:107px;white-space:nowrap" class="ft03">The&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;works&#160;with&#160;the&#160;physical&#160;layer&#160;state&#160;machine.&#160;It&#160;is&#160;important&#160;to&#160;</p>
+<p style="position:absolute;top:607px;left:80px;white-space:nowrap" class="ft07">note&#160;&#160;that&#160;&#160;variations&#160;&#160;in&#160;&#160;the&#160;&#160;operating&#160;&#160;characteristics&#160;&#160;of&#160;&#160;radio&#160;&#160;channels&#160;&#160;are&#160;&#160;kept&#160;&#160;hidden&#160;&#160;from&#160;&#160;the&#160;&#160;Link&#160;<br/>Multiplexer&#160;&#160;State&#160;&#160;Machine.&#160;&#160;The&#160;&#160;Link&#160;&#160;Multiplexer&#160;&#160;State&#160;&#160;Machine&#160;&#160;uses&#160;&#160;the&#160;&#160;same&#160;&#160;primitives&#160;&#160;to&#160;<br/>communicate with the&#160;physical layer state machine, regardless of the latter’s type.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:669px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:670px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:670px;left:134px;white-space:nowrap" class="ft05"><b>PH-SEIZE&#160;Request</b></p>
+<p style="position:absolute;top:670px;left:288px;white-space:nowrap" class="ft03">.&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;before&#160;each&#160;</p>
+<p style="position:absolute;top:689px;left:134px;white-space:nowrap" class="ft03">transmission&#160;to request&#160;access to the radio channel.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:710px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:710px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:710px;left:134px;white-space:nowrap" class="ft05"><b>PH-SEIZE Confirm</b></p>
+<p style="position:absolute;top:710px;left:284px;white-space:nowrap" class="ft03">.&#160;This&#160;primitive&#160;notifies&#160;the&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;when&#160;access&#160;has&#160;</p>
+<p style="position:absolute;top:730px;left:134px;white-space:nowrap" class="ft06">been&#160;obtained&#160;(i.e.,&#160;the&#160;transmitter&#160;is&#160;operating,&#160;any&#160;intervening&#160;repeater&#160;has&#160;had&#160;an&#160;opportunity&#160;<br/>to&#160;be&#160;activated,&#160;the&#160;remote&#160;station’s&#160;receiver&#160;has&#160;had&#160;an&#160;opportunity&#160;to&#160;become&#160;synchronized,&#160;<br/>and the channel is considered ready to send traffic).&#160;&#160;&#160;</p>
+<p style="position:absolute;top:790px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:791px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:791px;left:134px;white-space:nowrap" class="ft05"><b>PH-DATA&#160;Request</b></p>
+<p style="position:absolute;top:791px;left:284px;white-space:nowrap" class="ft03">.&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;to&#160;deliver&#160;each&#160;</p>
+<p style="position:absolute;top:811px;left:134px;white-space:nowrap" class="ft03">frame to the&#160;physical layer state machine.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:831px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:832px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:832px;left:134px;white-space:nowrap" class="ft05"><b>PH-RELEASE&#160;&#160;Request</b></p>
+<p style="position:absolute;top:832px;left:323px;white-space:nowrap" class="ft03">.&#160;&#160;This&#160;&#160;primitive&#160;&#160;is&#160;&#160;used&#160;&#160;when&#160;&#160;all&#160;&#160;frames&#160;&#160;that&#160;&#160;have&#160;&#160;been&#160;&#160;awaiting&#160;</p>
+<p style="position:absolute;top:852px;left:134px;white-space:nowrap" class="ft06">transmission&#160;for&#160;a&#160;given&#160;link&#160;have&#160;been&#160;submitted&#160;for&#160;transmission.&#160;The&#160;intention&#160;here&#160;is&#160;that&#160;a&#160;<br/>single&#160;transmission&#160;will&#160;contain&#160;frames&#160;for&#160;only&#160;one&#160;remote&#160;station.&#160;The&#160;PH-RELEASE&#160;Request&#160;<br/>primitive&#160;permits&#160;the&#160;physical&#160;layer&#160;state&#160;machine&#160;to&#160;release&#160;the&#160;channel&#160;for&#160;use&#160;by&#160;others,&#160;for&#160;<br/>digipeating,&#160;and&#160;for&#160;receipt&#160;of&#160;acknowledgments&#160;in&#160;a&#160;contention&#160;environment&#160;(such&#160;as&#160;shared&#160;<br/>simplex&#160;channels).&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:951px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:952px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:952px;left:134px;white-space:nowrap" class="ft05"><b>PH-DATA&#160;&#160;Indication</b></p>
+<p style="position:absolute;top:952px;left:301px;white-space:nowrap" class="ft03">.&#160;&#160;This&#160;&#160;primitive&#160;&#160;is&#160;&#160;used&#160;&#160;by&#160;&#160;the&#160;&#160;physical&#160;&#160;layer&#160;&#160;state&#160;&#160;machine&#160;&#160;to&#160;&#160;provide&#160;</p>
+<p style="position:absolute;top:972px;left:134px;white-space:nowrap" class="ft06">incoming&#160;&#160;frames&#160;&#160;to&#160;&#160;the&#160;&#160;Link&#160;&#160;Multiplexer&#160;&#160;State&#160;&#160;Machine.&#160;&#160;The&#160;&#160;Link&#160;&#160;Multiplexer&#160;&#160;State&#160;&#160;Machine&#160;<br/>checks&#160;each&#160;incoming&#160;frame&#160;for&#160;FCS&#160;errors.&#160;Correctly-received&#160;frames&#160;are&#160;checked&#160;to&#160;see&#160;if&#160;<br/>digipeating&#160;&#160;by&#160;&#160;the&#160;&#160;station&#160;&#160;has&#160;&#160;been&#160;&#160;requested&#160;&#160;and&#160;&#160;if&#160;&#160;the&#160;&#160;digipeat&#160;&#160;function&#160;&#160;is&#160;&#160;enabled&#160;&#160;(a&#160;&#160;user&#160;<br/>specified&#160;&#160;parameter);&#160;&#160;if&#160;&#160;so,&#160;&#160;the&#160;&#160;frame&#160;&#160;is&#160;&#160;resubmitted&#160;&#160;to&#160;&#160;the&#160;&#160;physical&#160;&#160;layer&#160;&#160;state&#160;&#160;machine&#160;&#160;in&#160;&#160;a&#160;</p>
+</div>
+</body>
+</html>

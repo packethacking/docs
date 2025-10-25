@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 115</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft02{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft03{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft04{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft05{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page115-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10115.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:459px;white-space:nowrap" class="ft00">115&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:147px;left:107px;white-space:nowrap" class="ft01">•</p>
+<p style="position:absolute;top:148px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;Z&#160;— reassembly&#160;error.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:179px;left:80px;white-space:nowrap" class="ft02">Variables:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:199px;left:107px;white-space:nowrap" class="ft01">•</p>
+<p style="position:absolute;top:200px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;N&#160;— number of segments remaining&#160;to be reassembled.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:220px;left:80px;white-space:nowrap" class="ft04">&#160;<br/>Timers:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:260px;left:107px;white-space:nowrap" class="ft01">•</p>
+<p style="position:absolute;top:261px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;TR210 — time limit for&#160;receipt of next segment.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:281px;left:80px;white-space:nowrap" class="ft02">&#160;</p>
+<p style="position:absolute;top:303px;left:80px;white-space:nowrap" class="ft03">C6.3.1 Internal Operation of the Segmenter State Machine&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:325px;left:107px;white-space:nowrap" class="ft02">The&#160;&#160;segmenter&#160;&#160;state&#160;&#160;machine&#160;&#160;operation&#160;&#160;is&#160;&#160;quite&#160;&#160;straightforward.&#160;&#160;Only&#160;&#160;one&#160;&#160;state&#160;&#160;exists&#160;&#160;for&#160;&#160;this&#160;</p>
+<p style="position:absolute;top:346px;left:80px;white-space:nowrap" class="ft02">machine.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:386px;left:80px;white-space:nowrap" class="ft03">C6.3.2 Internal Operation of the&#160;Reassembler State Machine&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:408px;left:107px;white-space:nowrap" class="ft02">The&#160;reassembler&#160;state&#160;machine&#160;resides&#160;in&#160;the&#160;Null&#160;state&#160;until&#160;the&#160;start&#160;of&#160;a&#160;segmented&#160;data&#160;stream&#160;</p>
+<p style="position:absolute;top:429px;left:80px;white-space:nowrap" class="ft05">is&#160;detected.&#160;At&#160;this&#160;point,&#160;a&#160;check&#160;is&#160;made&#160;to&#160;ensure&#160;that&#160;the&#160;first&#160;segment&#160;received&#160;is,&#160;in&#160;fact,&#160;the&#160;first&#160;<br/>segment&#160;of&#160;the&#160;message.&#160;This&#160;check&#160;is&#160;performed&#160;by&#160;examining&#160;octet&#160;2,&#160;bit&#160;8&#160;of&#160;the&#160;segment&#160;header&#160;<br/>(see&#160;Figure&#160;6.X).&#160;If&#160;this&#160;is&#160;not&#160;the&#160;first&#160;segment,&#160;then&#160;the&#160;reassembler&#160;state&#160;machine&#160;assumes&#160;that&#160;the&#160;<br/>actual&#160;first&#160;segment&#160;was&#160;lost&#160;somewhere,&#160;and&#160;signals&#160;an&#160;error.&#160;All&#160;segments&#160;will&#160;be&#160;discarded&#160;as&#160;they&#160;<br/>are received.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:532px;left:107px;white-space:nowrap" class="ft02">Assume&#160;now&#160;that&#160;the&#160;first&#160;segment&#160;was&#160;received&#160;correctly.&#160;&#160;&#160;&#160;The&#160;reassembler&#160;state&#160;machine&#160;then&#160;</p>
+<p style="position:absolute;top:553px;left:80px;white-space:nowrap" class="ft05">allocates&#160;&#160;sufficient&#160;&#160;storage&#160;&#160;to&#160;&#160;receive&#160;&#160;all&#160;&#160;the&#160;&#160;remaining&#160;&#160;segments;&#160;&#160;this&#160;&#160;prevents&#160;&#160;deadly&#160;&#160;embrace&#160;<br/>(resource&#160;&#160;deadlock)&#160;&#160;conditions.&#160;&#160;The&#160;&#160;reassembler&#160;&#160;state&#160;&#160;machine&#160;enters&#160;&#160;either&#160;&#160;the&#160;&#160;reassembling&#160;&#160;data&#160;<br/>state&#160;(if&#160;segments&#160;are&#160;arriving&#160;in&#160;I&#160;frames)&#160;or&#160;the&#160;reassembling&#160;unit&#160;data&#160;state&#160;(if&#160;segments&#160;are&#160;arriving&#160;<br/>in&#160;UI&#160;frames).&#160;A&#160;lengthy&#160;timer&#160;supervises&#160;both&#160;of&#160;these&#160;states;&#160;its&#160;purpose&#160;is&#160;to&#160;protect&#160;the&#160;reassembly&#160;<br/>process&#160;from&#160;hanging&#160;if&#160;a&#160;very&#160;long&#160;delay&#160;happens&#160;to&#160;occur&#160;(e.g.,&#160;the&#160;remote&#160;station&#160;breaks&#160;down&#160;and&#160;<br/>never&#160;completes&#160;transmission).&#160;This&#160;timer&#160;is&#160;TR210:&#160;“R”&#160;for&#160;reassembler;&#160;“2”&#160;for&#160;level&#160;2,&#160;the&#160;data&#160;link&#160;<br/>level&#160;of&#160;the&#160;OSI&#160;interconnect&#160;model;&#160;and&#160;“10”&#160;simply&#160;to&#160;avoid&#160;confusion&#160;with&#160;any&#160;other&#160;timers&#160;in&#160;this&#160;<br/>family of state machines.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:718px;left:107px;white-space:nowrap" class="ft02">Each&#160;incoming&#160;segment&#160;is&#160;examined&#160;to&#160;ensure&#160;that&#160;it&#160;is&#160;indeed&#160;the&#160;next&#160;expected&#160;segment.&#160;If&#160;the&#160;</p>
+<p style="position:absolute;top:739px;left:80px;white-space:nowrap" class="ft05">loss&#160;of&#160;a&#160;segment&#160;is&#160;detected,&#160;the&#160;entire&#160;accumulation&#160;of&#160;data&#160;is&#160;discarded&#160;and&#160;an&#160;error&#160;notification&#160;is&#160;<br/>provide&#160;to&#160;the&#160;AX.25&#160;user.&#160;&#160;&#160;&#160;No&#160;attempt&#160;is&#160;made&#160;by&#160;the&#160;segmenter&#160;and&#160;reassembler&#160;state&#160;machines&#160;to&#160;<br/>recover&#160;segmented&#160;data&#160;units;&#160;this&#160;is&#160;left&#160;to&#160;the&#160;higher&#160;level&#160;AX.25&#160;user.&#160;Rather,&#160;the&#160;reassembler&#160;state&#160;<br/>machine&#160;works&#160;to&#160;ensure&#160;that large&#160;data&#160;units&#160;are&#160;completely&#160;received&#160;and&#160;correctly&#160;reassembled over&#160;<br/>the&#160;&#160;data&#160;&#160;link.&#160;&#160;In&#160;&#160;other&#160;&#160;words,&#160;&#160;segmentation&#160;&#160;error&#160;&#160;detection&#160;&#160;is&#160;&#160;provided,&#160;&#160;but&#160;&#160;no&#160;&#160;segmentation&#160;&#160;error&#160;<br/>correction&#160;&#160;is&#160;&#160;provided.&#160;&#160;The&#160;&#160;reassembler&#160;&#160;state&#160;&#160;machine&#160;&#160;also&#160;&#160;insists&#160;&#160;that,&#160;&#160;once&#160;&#160;the&#160;&#160;transmission&#160;&#160;of&#160;&#160;a&#160;<br/>segmented&#160;large&#160;data&#160;unit&#160;is&#160;begun,&#160;all&#160;segments&#160;will&#160;be&#160;transmitted&#160;until&#160;the&#160;complete&#160;large&#160;data&#160;unit&#160;<br/>has&#160;been&#160;transferred.&#160;No&#160;other&#160;event&#160;is&#160;permitted&#160;to&#160;occur&#160;over&#160;the&#160;data&#160;link.&#160;This&#160;constraint&#160;is&#160;imposed&#160;<br/>for two reasons:&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:925px;left:107px;white-space:nowrap" class="ft01">•</p>
+<p style="position:absolute;top:926px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;To ensure that stations&#160;with multiple data links&#160;minimize the&#160;amount of buffer capacity tied up in&#160;</p>
+<p style="position:absolute;top:945px;left:134px;white-space:nowrap" class="ft02">partially&#160;received&#160;or&#160;transmitted&#160;large&#160;data&#160;units&#160;(which&#160;in&#160;turn&#160;reduces&#160;connectionless&#160;links);&#160;and&#160;&#160;&#160;</p>
+<p style="position:absolute;top:966px;left:107px;white-space:nowrap" class="ft01">•</p>
+<p style="position:absolute;top:966px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;To&#160;minimize&#160;the&#160;delay&#160;in&#160;transmission&#160;of&#160;large&#160;data&#160;units,&#160;once&#160;the&#160;large&#160;data&#160;unit&#160;has&#160;reached&#160;</p>
+<p style="position:absolute;top:986px;left:134px;white-space:nowrap" class="ft02">the top of the queue.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1006px;left:80px;white-space:nowrap" class="ft02">&#160;</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 42</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:17px;font-family:KEEOEO+Arial;color:#ff0000;}
+	.ft03{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft04{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page42-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10042.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">42&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:107px;white-space:nowrap" class="ft01">This&#160;version&#160;of&#160;AX.25&#160;implements&#160;the&#160;negotiation&#160;or&#160;notification&#160;of&#160;six&#160;AX.25&#160;parameters.&#160;Notification&#160;</p>
+<p style="position:absolute;top:168px;left:80px;white-space:nowrap" class="ft04">simply&#160;tells&#160;the&#160;distant&#160;TNC&#160;some&#160;limit&#160;that&#160;cannot&#160;be&#160;exceeded.&#160;The&#160;distant&#160;TNC&#160;can&#160;choose&#160;to&#160;use&#160;<br/>the&#160;limit&#160;or some&#160;other value&#160;that&#160;is&#160;within&#160;the limits.&#160;Notification&#160;is&#160;used&#160;with&#160;the Window&#160;Size&#160;Receive&#160;<br/>(k) and Information Field Length&#160;Receive (N1)&#160;parameters. Negotiation involves both TNCs choosing&#160;a&#160;<br/>value&#160;that&#160;is&#160;mutually&#160;acceptable.&#160;The&#160;XID&#160;command&#160;frame&#160;contains&#160;a&#160;set&#160;of&#160;values&#160;acceptable&#160;to&#160;the&#160;<br/>originating&#160;TNC.&#160;The&#160;distant&#160;TNC&#160;chooses&#160;to&#160;accept&#160;the&#160;values&#160;offered,&#160;or&#160;other&#160;acceptable&#160;values,&#160;and&#160;<br/>places&#160;&#160;these&#160;&#160;values&#160;&#160;in&#160;&#160;the&#160;&#160;XID&#160;&#160;response.&#160;&#160;Both&#160;&#160;TNCs&#160;&#160;set&#160;&#160;up&#160;&#160;based&#160;&#160;on&#160;&#160;the&#160;&#160;values&#160;&#160;used&#160;&#160;in&#160;&#160;the&#160;&#160;XID&#160;<br/>response.&#160;&#160;&#160;&#160;Negotiation&#160;&#160;is&#160;&#160;used&#160;&#160;by&#160;&#160;Classes&#160;&#160;of&#160;&#160;Procedures,&#160;&#160;HDLC&#160;&#160;Optional&#160;&#160;Functions,&#160;&#160;Acknowledge&#160;<br/>Timer and&#160;Retries.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:334px;left:107px;white-space:nowrap" class="ft01">The&#160;&#160;Classes&#160;&#160;of&#160;&#160;Procedure&#160;&#160;parameter&#160;&#160;field&#160;&#160;(PI=2)&#160;&#160;negotiates&#160;&#160;half-&#160;&#160;or&#160;&#160;full-duplex&#160;&#160;operation.&#160;&#160;This&#160;</p>
+<p style="position:absolute;top:355px;left:80px;white-space:nowrap" class="ft04">reverts&#160;to&#160;half-duplex&#160;if&#160;either&#160;TNC&#160;cannot&#160;support&#160;full-duplex&#160;(i.e.,&#160;if&#160;the&#160;XID&#160;command&#160;requests&#160;full-<br/>duplex&#160;and&#160;the&#160;receiving&#160;TNC&#160;can&#160;only&#160;support&#160;half-duplex,&#160;it&#160;sets&#160;the&#160;value&#160;to&#160;half-duplex&#160;in&#160;the&#160;XID&#160;<br/>response. If this parameter field is&#160;not present,&#160;the default half-duplex&#160;operation is&#160;selected.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:417px;left:107px;white-space:nowrap" class="ft01">The&#160;HDLC&#160;Optional&#160;Functions&#160;parameter&#160;field&#160;(PI=3)&#160;allows&#160;the&#160;negotiation&#160;of&#160;implicit&#160;reject&#160;(REJ),&#160;</p>
+<p style="position:absolute;top:438px;left:80px;white-space:nowrap" class="ft01">or selective&#160;reject (SREJ&#160;</p>
+<p style="position:absolute;top:438px;left:274px;white-space:nowrap" class="ft02">and&#160;</p>
+<p style="position:absolute;top:438px;left:307px;white-space:nowrap" class="ft01">modulo&#160;</p>
+<p style="position:absolute;top:438px;left:369px;white-space:nowrap" class="ft02">8 or&#160;</p>
+<p style="position:absolute;top:438px;left:403px;white-space:nowrap" class="ft01">128. Function reverts to the lesser of the selection offered in&#160;</p>
+<p style="position:absolute;top:458px;left:80px;white-space:nowrap" class="ft04">the&#160;XID&#160;command&#160;and&#160;XID&#160;response&#160;frames.&#160;Ordering&#160;is&#160;(highest&#160;to&#160;lowest):&#160;selective&#160;reject&#160;and&#160;implicit&#160;<br/>reject:&#160;Modulo&#160;128&#160;</p>
+<p style="position:absolute;top:479px;left:229px;white-space:nowrap" class="ft02">and&#160;modulo&#160;8</p>
+<p style="position:absolute;top:479px;left:335px;white-space:nowrap" class="ft01">.&#160;If&#160;this&#160;parameter&#160;field&#160;is&#160;absent,&#160;the&#160;default&#160;selective&#160;reject&#160;function&#160;</p>
+<p style="position:absolute;top:500px;left:80px;white-space:nowrap" class="ft01">and&#160;</p>
+<p style="position:absolute;top:500px;left:113px;white-space:nowrap" class="ft02">modulo&#160;128</p>
+<p style="position:absolute;top:500px;left:204px;white-space:nowrap" class="ft01">&#160;are&#160;selected.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:520px;left:107px;white-space:nowrap" class="ft01">The&#160;I&#160;Field&#160;Length&#160;Receive&#160;parameter&#160;field&#160;(PI=6)&#160;allows&#160;the&#160;sending&#160;TNC&#160;to&#160;notify&#160;the&#160;receiving&#160;</p>
+<p style="position:absolute;top:541px;left:80px;white-space:nowrap" class="ft04">TNC&#160;of&#160;the&#160;maximum&#160;size&#160;of&#160;an&#160;Information&#160;field&#160;(N1)&#160;it&#160;will&#160;handle&#160;without&#160;error.&#160;A&#160;transmitting&#160;TNC&#160;<br/>may not exceed this size, but may&#160;send smaller frames.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:582px;left:107px;white-space:nowrap" class="ft01">The&#160;Window&#160;Size&#160;Receive&#160;parameter&#160;field&#160;(PI=8)&#160;allows&#160;the&#160;sending&#160;TNC&#160;to&#160;notify&#160;the&#160;receiving&#160;TNC&#160;</p>
+<p style="position:absolute;top:603px;left:80px;white-space:nowrap" class="ft04">of&#160;the&#160;maximum&#160;size&#160;of&#160;the&#160;window&#160;(k)&#160;it&#160;will&#160;handle&#160;without&#160;error.&#160;&#160;&#160;&#160;If&#160;the&#160;TNCs&#160;are&#160;using&#160;modulo&#160;128,&#160;<br/>this&#160;allows&#160;the&#160;negotiation&#160;of&#160;a&#160;window&#160;size&#160;less&#160;than&#160;127&#160;to&#160;conserve&#160;memory.&#160;If&#160;the&#160;TNCs&#160;are&#160;using&#160;<br/>selective reject the receiving&#160;TNC is required to buffer k frames at any time.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:665px;left:107px;white-space:nowrap" class="ft01">The&#160;&#160;Acknowledge&#160;&#160;Timer&#160;&#160;parameter&#160;&#160;field&#160;&#160;(PI=9)&#160;&#160;allows&#160;&#160;the&#160;&#160;negotiation&#160;&#160;of&#160;&#160;the&#160;&#160;“Wait&#160;&#160;for&#160;</p>
+<p style="position:absolute;top:686px;left:80px;white-space:nowrap" class="ft04">Acknowledgement”&#160;timer&#160;(T1).&#160;Function&#160;reverts&#160;to&#160;the&#160;greater&#160;of&#160;the&#160;values&#160;offered&#160;in&#160;the&#160;XID&#160;command&#160;<br/>and XID response frames.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:727px;left:107px;white-space:nowrap" class="ft01">The&#160;Retries&#160;parameter&#160;field&#160;(PI=10)&#160;allows&#160;the&#160;negotiation&#160;of&#160;the&#160;retry&#160;count&#160;(N1).&#160;Function&#160;reverts&#160;</p>
+<p style="position:absolute;top:748px;left:80px;white-space:nowrap" class="ft01">to the greater of the values offered&#160;in the XID command and&#160;XID&#160;response frames.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:769px;left:107px;white-space:nowrap" class="ft01">Defaults for&#160;the negotiated parameters for use with version&#160;2.0&#160;or lower of AX.25 are:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:789px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:790px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Set Half&#160;Duplex&#160;&#160;&#160;</p>
+<p style="position:absolute;top:810px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:811px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Set Implicit&#160;Reject&#160;&#160;&#160;</p>
+<p style="position:absolute;top:831px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:832px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Modulo = 8&#160;&#160;&#160;</p>
+<p style="position:absolute;top:852px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:853px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;I Field Length Receive&#160;= 2048&#160;bits&#160;(256&#160;octets)&#160;&#160;&#160;</p>
+<p style="position:absolute;top:873px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:874px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Window Size Receive = 7&#160;&#160;&#160;</p>
+<p style="position:absolute;top:894px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:895px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Acknowledge Timer = 3000 msec&#160;&#160;&#160;</p>
+<p style="position:absolute;top:915px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:916px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Retries = 10&#160;&#160;&#160;</p>
+<p style="position:absolute;top:947px;left:107px;white-space:nowrap" class="ft01">Defaults for&#160;the negotiated parameters for use with version&#160;2.2&#160;of AX.25&#160;are:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:967px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:968px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Set Half&#160;Duplex&#160;&#160;&#160;</p>
+<p style="position:absolute;top:988px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:989px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Set Selective Reject&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1009px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:1010px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Modulo = 128&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1030px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:1031px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;I Field Length Receive&#160;= 2048&#160;bits&#160;(256&#160;octets)&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

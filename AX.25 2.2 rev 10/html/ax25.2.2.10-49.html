@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 49</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft03{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page49-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10049.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">49&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:80px;white-space:nowrap" class="ft01">frames. The&#160;k parameter&#160;is defined&#160;in Section 6.8.2.3.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:191px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.3 Inactive Link Timer T3&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:208px;left:107px;white-space:nowrap" class="ft01">T3,&#160;the&#160;Inactive&#160;Link&#160;Timer,&#160;maintains&#160;link&#160;integrity&#160;whenever&#160;T1&#160;is not running.&#160;&#160;&#160;&#160;It is&#160;recommended&#160;</p>
+<p style="position:absolute;top:229px;left:80px;white-space:nowrap" class="ft03">that&#160;&#160;whenever&#160;&#160;there&#160;&#160;are&#160;&#160;no&#160;&#160;outstanding&#160;&#160;unacknowledged&#160;&#160;I&#160;&#160;frames&#160;&#160;or&#160;&#160;P-bit&#160;&#160;frames&#160;&#160;(during&#160;&#160;the&#160;<br/>information-transfer&#160;state),&#160;an&#160;RR&#160;or&#160;RNR&#160;frame&#160;with&#160;the&#160;P&#160;bit&#160;set&#160;to&#160;“1”&#160;be&#160;sent&#160;every&#160;T3&#160;time&#160;units&#160;to&#160;<br/>query&#160;the&#160;status&#160;of&#160;the&#160;other&#160;TNC.&#160;The&#160;period&#160;of&#160;T3&#160;is&#160;locally&#160;defined,&#160;and&#160;depends&#160;greatly&#160;on&#160;Layer&#160;1&#160;<br/>operation.&#160;&#160;&#160;&#160;T3 should be greater than T1; it may&#160;be very large&#160;on&#160;channels&#160;of high&#160;integrity.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:334px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.4 Repeater Hang Timer T100&#160;(AXHANG)&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:351px;left:107px;white-space:nowrap" class="ft01">T100,&#160;the&#160;Repeater&#160;Hang&#160;Timer,&#160;tracks&#160;the&#160;amount&#160;of&#160;time&#160;an&#160;audio&#160;repeater&#160;will&#160;keep&#160;its&#160;transmitter&#160;</p>
+<p style="position:absolute;top:372px;left:80px;white-space:nowrap" class="ft03">keyed&#160;after&#160;it&#160;stops&#160;receiving.&#160;This&#160;timer&#160;can&#160;increase&#160;channel&#160;efficiency&#160;when&#160;an&#160;audio&#160;repeater&#160;is&#160;used.&#160;&#160;&#160;<br/>If&#160;the&#160;repeater’s&#160;transmitter&#160;remains&#160;keyed,&#160;it&#160;is&#160;not&#160;necessary&#160;to&#160;add AXDELAY&#160;to&#160;the&#160;transmitter&#160;key-<br/>up time.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:457px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.5 Priority Window&#160;Timer T101&#160;(PRIACK)&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:474px;left:107px;white-space:nowrap" class="ft01">T101,&#160;the&#160;Priority&#160;Window&#160;Timer,&#160;prevents&#160;stations&#160;from&#160;transmitting&#160;non-priority&#160;frames&#160;during&#160;the&#160;</p>
+<p style="position:absolute;top:494px;left:80px;white-space:nowrap" class="ft03">first&#160;&#160;available&#160;&#160;transmission&#160;&#160;time&#160;&#160;slot.&#160;&#160;The&#160;&#160;first&#160;&#160;transmission&#160;&#160;time&#160;&#160;slot&#160;&#160;is&#160;&#160;reserved&#160;&#160;for&#160;&#160;priority&#160;&#160;frames&#160;<br/>(acknowledgments and digipeat frames).&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:559px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.6 Slot&#160;Time&#160;Timer&#160;T102 (p-persistence)&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:575px;left:107px;white-space:nowrap" class="ft01">T102,&#160;the&#160;Slot&#160;Time&#160;Timer,&#160;randomly&#160;delays&#160;stations&#160;before&#160;they&#160;begin&#160;transmitting&#160;immediately&#160;after&#160;</p>
+<p style="position:absolute;top:596px;left:80px;white-space:nowrap" class="ft03">the&#160;channel&#160;becomes clear.&#160;This helps prevent&#160;several&#160;stations&#160;from beginning&#160;to&#160;transmit&#160;at&#160;the&#160;same&#160;<br/>time and causing collisions.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:660px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.7 Transmitter Startup Timer T103 (TXDELAY)&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:677px;left:107px;white-space:nowrap" class="ft01">T103,&#160;the&#160;Transmitter&#160;Startup&#160;Timer,&#160;allows&#160;time&#160;to&#160;be&#160;reasonably&#160;certain&#160;that&#160;the&#160;transmitter&#160;has&#160;</p>
+<p style="position:absolute;top:698px;left:80px;white-space:nowrap" class="ft01">properly ramped up and&#160;is ready to&#160;transmit after being&#160;keyed,&#160;before any frames are sent.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:741px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.8 Repeater Startup Timer T104 (AXDELAY)&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:758px;left:107px;white-space:nowrap" class="ft01">T104,&#160;the&#160;Repeater&#160;Startup&#160;Timer,&#160;allows&#160;time&#160;to&#160;be&#160;reasonably&#160;certain&#160;that&#160;audio&#160;repeaters&#160;have&#160;</p>
+<p style="position:absolute;top:779px;left:80px;white-space:nowrap" class="ft01">had time to&#160;start their transmitters&#160;before frames are sent.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:822px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.9 Remote Receiver&#160;Sync Timer T105&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:839px;left:107px;white-space:nowrap" class="ft01">T105,&#160;the&#160;Remote&#160;Receiver&#160;Sync&#160;Timer,&#160;introduces&#160;additional&#160;delay&#160;time&#160;after&#160;TXDELAY,&#160;if&#160;needed,&#160;</p>
+<p style="position:absolute;top:860px;left:80px;white-space:nowrap" class="ft01">to allow a remote receiver to sync up before transmitting frames.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:903px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.10 Ten Minute Transmission Limit Timer&#160;T106&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:920px;left:107px;white-space:nowrap" class="ft01">T106,&#160;the&#160;Ten&#160;Minute&#160;Transmission&#160;Limit&#160;Timer,&#160;ensures&#160;that&#160;the&#160;transmitter&#160;is&#160;not&#160;keyed&#160;for&#160;more&#160;</p>
+<p style="position:absolute;top:941px;left:80px;white-space:nowrap" class="ft01">than ten minutes.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:984px;left:80px;white-space:nowrap" class="ft02"><i>6.7.1.11 Anti-Hogging Limit Timer T107&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:1001px;left:107px;white-space:nowrap" class="ft01">T107, the Anti-Hogging&#160;Limit Timer, prevents a&#160;station from&#160;monopolizing the channel.&#160;&#160;&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

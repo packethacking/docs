@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 48</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft03{font-size:18px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft04{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft05{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft06{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft07{font-size:15px;font-family:KEFOHA+Courier;color:#000000;}
+	.ft08{font-size:15px;font-family:KEFOIB+Courier;color:#000000;}
+	.ft09{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page48-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10048.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">48&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:80px;white-space:nowrap" class="ft09">of&#160;256&#160;bytes.&#160;It&#160;also&#160;adds&#160;the&#160;ability&#160;to&#160;send&#160;large&#160;Level&#160;3&#160;data&#160;entities&#160;such&#160;as&#160;IP&#160;datagrams&#160;as&#160;single&#160;<br/>entities over AX.25.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:189px;left:107px;white-space:nowrap" class="ft01">The&#160;&#160;segmenter&#160;&#160;is&#160;&#160;a&#160;&#160;simple&#160;&#160;process&#160;&#160;that&#160;&#160;divides&#160;&#160;long&#160;&#160;data&#160;&#160;units&#160;&#160;into&#160;&#160;smaller&#160;&#160;segments&#160;&#160;for&#160;</p>
+<p style="position:absolute;top:210px;left:80px;white-space:nowrap" class="ft09">transmission,&#160;&#160;attaching&#160;&#160;a&#160;&#160;two-octet&#160;&#160;header&#160;&#160;to&#160;&#160;each&#160;&#160;segment.&#160;&#160;At&#160;&#160;the&#160;&#160;receiving&#160;&#160;end,&#160;&#160;segments&#160;&#160;are&#160;<br/>reassembled&#160;into&#160;the&#160;original&#160;data&#160;unit.&#160;Overhead&#160;is&#160;kept&#160;to&#160;a&#160;minimum&#160;throughout;&#160;steps&#160;are&#160;taken&#160;to&#160;<br/>prevent&#160;deadlock&#160;situations&#160;from&#160;arising&#160;in&#160;the&#160;buffer&#160;management&#160;of&#160;both&#160;stations&#160;on&#160;the&#160;link.&#160;&#160;&#160;&#160;The&#160;<br/>header is illustrated&#160;in&#160;Figure 6.2.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:293px;left:107px;white-space:nowrap" class="ft01">&#160;&#160;&#160;</p>
+<p style="position:absolute;top:452px;left:326px;white-space:nowrap" class="ft02"><b>Figure 6.2 Segment Header&#160;Format.&#160;</b></p>
+<p style="position:absolute;top:472px;left:471px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:494px;left:107px;white-space:nowrap" class="ft01">The&#160;reassembler&#160;can&#160;tell&#160;when&#160;a&#160;segmented&#160;frame&#160;is&#160;received&#160;by&#160;the&#160;PID.&#160;If&#160;the&#160;first&#160;segment&#160;flag&#160;</p>
+<p style="position:absolute;top:514px;left:80px;white-space:nowrap" class="ft09">is&#160;set,&#160;then&#160;the&#160;amount&#160;of&#160;buffer&#160;space&#160;required&#160;for&#160;the&#160;entire&#160;frame&#160;can&#160;be&#160;calculated&#160;and&#160;allocated.&#160;&#160;&#160;&#160;If&#160;<br/>using&#160;the&#160;segmenter&#160;over&#160;connectionless&#160;service&#160;and&#160;a&#160;segment&#160;is&#160;lost,&#160;error&#160;recovery&#160;is&#160;not&#160;done&#160;by&#160;<br/>the reassembler.&#160;&#160;&#160;&#160;An error&#160;is&#160;passed to Layer 3; it is up to Layer 3 to&#160;recover.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:596px;left:80px;white-space:nowrap" class="ft04">6.7 List of System Defined Parameters&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:621px;left:80px;white-space:nowrap" class="ft05">6.7.1 Timers&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:643px;left:107px;white-space:nowrap" class="ft01">Thirteen&#160;&#160;timers&#160;&#160;maintain&#160;&#160;the&#160;&#160;integrity&#160;&#160;of&#160;&#160;the&#160;&#160;AX.25&#160;&#160;Layer&#160;&#160;2&#160;&#160;connection&#160;&#160;and&#160;&#160;are&#160;&#160;discussed&#160;&#160;in&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:664px;left:80px;white-space:nowrap" class="ft01">following subsections.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:707px;left:80px;white-space:nowrap" class="ft06"><i>6.7.1.1 Acknowledgment&#160;Timer T1&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:724px;left:107px;white-space:nowrap" class="ft01">T1,&#160;the&#160;Acknowledgement&#160;Timer,&#160;ensures&#160;that&#160;a&#160;TNC&#160;does&#160;not&#160;wait&#160;indefinitely&#160;for&#160;a&#160;response&#160;to&#160;a&#160;</p>
+<p style="position:absolute;top:745px;left:80px;white-space:nowrap" class="ft09">frame&#160;it&#160;sends.&#160;This&#160;timer&#160;cannot&#160;be&#160;expressed&#160;in&#160;absolute&#160;time;&#160;the&#160;time&#160;required&#160;to&#160;send&#160;frames&#160;varies&#160;<br/>greatly&#160;with&#160;the&#160;signaling&#160;rate&#160;used&#160;at&#160;Layer&#160;1.&#160;T1&#160;should&#160;take&#160;at&#160;least&#160;twice&#160;the&#160;amount&#160;of&#160;time&#160;it&#160;would&#160;<br/>take&#160;to&#160;send&#160;maximum&#160;length&#160;frame&#160;to&#160;the&#160;distant&#160;TNC&#160;and&#160;get&#160;the&#160;proper&#160;response&#160;frame&#160;back&#160;from&#160;<br/>the distant TNC.&#160;&#160;&#160;&#160;This&#160;allows time for the distant TNC to&#160;do some&#160;processing before responding.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:828px;left:107px;white-space:nowrap" class="ft01">If&#160;&#160;Layer&#160;&#160;2&#160;&#160;repeaters&#160;&#160;are&#160;&#160;used,&#160;&#160;the&#160;&#160;value&#160;&#160;of&#160;&#160;T1&#160;&#160;should&#160;&#160;be&#160;&#160;adjusted&#160;&#160;according&#160;&#160;to&#160;&#160;the&#160;&#160;number&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:848px;left:80px;white-space:nowrap" class="ft01">repeaters through which the frame is being transferred.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:892px;left:80px;white-space:nowrap" class="ft06"><i>6.7.1.2 Response Delay Timer T2&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:909px;left:107px;white-space:nowrap" class="ft01">T2,&#160;the&#160;Response&#160;Delay&#160;Timer,&#160;may&#160;optionally&#160;be&#160;implemented&#160;by&#160;the&#160;TNC&#160;to&#160;specify&#160;a&#160;maximum&#160;</p>
+<p style="position:absolute;top:929px;left:80px;white-space:nowrap" class="ft09">amount&#160;of&#160;delay&#160;to&#160;be&#160;introduced&#160;between&#160;the&#160;time&#160;an&#160;I&#160;frame&#160;is&#160;received&#160;and&#160;the&#160;time&#160;the&#160;resulting&#160;<br/>response&#160;frame&#160;is&#160;sent.&#160;This&#160;delay&#160;is&#160;introduced&#160;to&#160;allow&#160;a&#160;receiving&#160;TNC&#160;to&#160;wait&#160;a&#160;short&#160;period&#160;of&#160;time&#160;<br/>to&#160;&#160;determine&#160;&#160;if&#160;&#160;more&#160;&#160;than&#160;&#160;one&#160;&#160;frame&#160;&#160;is&#160;&#160;being&#160;&#160;sent&#160;&#160;to&#160;&#160;it.&#160;&#160;If&#160;&#160;more&#160;&#160;frames&#160;&#160;are&#160;&#160;received,&#160;&#160;the&#160;&#160;TNC&#160;&#160;can&#160;<br/>acknowledge&#160;them at once (up&#160;to&#160;seven), rather than acknowledging&#160;each individual frame. The use of&#160;<br/>timer T2 is not required; it is simply recommended to improve channel&#160;efficiency.&#160;&#160;&#160;&#160;Note that to achieve&#160;<br/>maximum&#160;&#160;throughput&#160;&#160;on&#160;&#160;full-duplex&#160;&#160;channels,&#160;&#160;acknowledgments&#160;&#160;should&#160;&#160;not&#160;&#160;be&#160;&#160;delayed&#160;&#160;beyond&#160;&#160;k/2&#160;</p>
+<p style="position:absolute;top:328px;left:205px;white-space:nowrap" class="ft07"><b>Bit Position&#160;</b></p>
+<p style="position:absolute;top:328px;left:322px;white-space:nowrap" class="ft08">&#160;</p>
+<p style="position:absolute;top:328px;left:367px;white-space:nowrap" class="ft07"><b>Hex</b></p>
+<p style="position:absolute;top:328px;left:394px;white-space:nowrap" class="ft08">&#160;</p>
+<p style="position:absolute;top:328px;left:527px;white-space:nowrap" class="ft07"><b>Description</b></p>
+<p style="position:absolute;top:328px;left:626px;white-space:nowrap" class="ft08">&#160;</p>
+<p style="position:absolute;top:348px;left:187px;white-space:nowrap" class="ft07"><b>7&#160;&#160;6 5 4 3 2 1 0&#160;</b></p>
+<p style="position:absolute;top:345px;left:348px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:345px;left:576px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:371px;left:187px;white-space:nowrap" class="ft07"><b>0&#160;&#160;0 0 0 1 0 0 0&#160;</b></p>
+<p style="position:absolute;top:371px;left:337px;white-space:nowrap" class="ft08">&#160;</p>
+<p style="position:absolute;top:371px;left:362px;white-space:nowrap" class="ft07"><b>0x08&#160;</b></p>
+<p style="position:absolute;top:371px;left:407px;white-space:nowrap" class="ft08">&#160;</p>
+<p style="position:absolute;top:371px;left:473px;white-space:nowrap" class="ft07"><b>PID for segmented frame&#160;</b></p>
+<p style="position:absolute;top:371px;left:689px;white-space:nowrap" class="ft08">&#160;</p>
+<p style="position:absolute;top:407px;left:187px;white-space:nowrap" class="ft07"><b>F&#160;&#160;X X X X X X X&#160;</b></p>
+<p style="position:absolute;top:407px;left:337px;white-space:nowrap" class="ft08">&#160;</p>
+<p style="position:absolute;top:407px;left:349px;white-space:nowrap" class="ft07"><b>F*128+X&#160;</b></p>
+<p style="position:absolute;top:390px;left:446px;white-space:nowrap" class="ft07"><b>F=1 if first segmented frame,&#160;</b></p>
+<p style="position:absolute;top:407px;left:464px;white-space:nowrap" class="ft07"><b>F=0 for all other frames;&#160;</b></p>
+<p style="position:absolute;top:424px;left:441px;white-space:nowrap" class="ft07"><b>X=number of segments remaining&#160;</b></p>
+<p style="position:absolute;top:424px;left:720px;white-space:nowrap" class="ft08">&#160;</p>
+</div>
+</body>
+</html>

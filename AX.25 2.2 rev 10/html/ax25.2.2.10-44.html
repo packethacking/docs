@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 44</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft02{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft03{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft04{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft05{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft06{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page44-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10044.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">44&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:150px;left:80px;white-space:nowrap" class="ft01"><i>6.3.6.3 Collision of a DM&#160;with a SABM(E) or&#160;DISC&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:167px;left:107px;white-space:nowrap" class="ft02">When&#160;an&#160;unsolicited&#160;DM&#160;response&#160;frame&#160;is&#160;sent,&#160;a&#160;collision&#160;between&#160;it&#160;and&#160;a&#160;SABM(E)&#160;or&#160;DISC&#160;may&#160;</p>
+<p style="position:absolute;top:187px;left:80px;white-space:nowrap" class="ft06">occur.&#160;In&#160;order&#160;to&#160;prevent&#160;this&#160;DM&#160;from&#160;being&#160;misinterpreted,&#160;all&#160;unsolicited&#160;DM&#160;frames&#160;are&#160;transmitted&#160;<br/>with&#160;the&#160;F&#160;bit&#160;set&#160;to&#160;“0”.&#160;All&#160;SABM(E)&#160;and&#160;DISC&#160;frames&#160;are&#160;sent&#160;with&#160;the&#160;P&#160;bit&#160;set&#160;to&#160;“1”.&#160;This&#160;prevents&#160;<br/>confusion when a&#160;DM frame is received.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:269px;left:80px;white-space:nowrap" class="ft03">6.3.7 Connectionless&#160;Operation&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:291px;left:107px;white-space:nowrap" class="ft02">An&#160;additional&#160;type&#160;of&#160;operation&#160;exists&#160;in&#160;amateur&#160;radio&#160;that&#160;is&#160;not&#160;feasible&#160;using&#160;Layer&#160;2&#160;connections.&#160;</p>
+<p style="position:absolute;top:312px;left:80px;white-space:nowrap" class="ft06">This&#160;is&#160;the&#160;“round-table”&#160;operation,&#160;in&#160;which&#160;several&#160;amateurs&#160;may&#160;be&#160;engaged&#160;in&#160;one&#160;conversation.&#160;<br/>This type&#160;of operation cannot be accommodated&#160;by current&#160;AX.25&#160;link-layer connections.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:353px;left:107px;white-space:nowrap" class="ft02">The&#160;way&#160;round-table&#160;activity&#160;is&#160;implemented&#160;is&#160;technically&#160;outside&#160;the&#160;AX.25&#160;connection,&#160;although&#160;it&#160;</p>
+<p style="position:absolute;top:374px;left:80px;white-space:nowrap" class="ft02">still uses the AX.25 frame structure.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:394px;left:107px;white-space:nowrap" class="ft02">AX.25&#160;uses&#160;a&#160;special&#160;frame&#160;for&#160;this&#160;operation,&#160;the&#160;Unnumbered&#160;Information&#160;(UI)&#160;frame.&#160;In&#160;this&#160;type&#160;</p>
+<p style="position:absolute;top:415px;left:80px;white-space:nowrap" class="ft06">of&#160;operation,&#160;the&#160;destination&#160;address&#160;has&#160;a&#160;code&#160;word&#160;installed&#160;in&#160;it&#160;that&#160;prevents&#160;users&#160;of&#160;that&#160;specific&#160;<br/>round-table&#160;from&#160;seeing&#160;all&#160;frames&#160;going&#160;through&#160;the&#160;shared&#160;RF&#160;medium.&#160;For&#160;example,&#160;if&#160;a&#160;group&#160;of&#160;<br/>amateurs&#160;are&#160;engaged&#160;in&#160;a&#160;round-table&#160;discussion&#160;about packet&#160;radio,&#160;they&#160;could&#160;put&#160;“PACKET”&#160;in&#160;the&#160;<br/>destination&#160;&#160;address;&#160;&#160;they&#160;&#160;will&#160;&#160;receive&#160;&#160;frames&#160;&#160;only&#160;&#160;from&#160;&#160;others&#160;&#160;in&#160;&#160;the&#160;&#160;same&#160;&#160;discussion.&#160;&#160;An&#160;&#160;added&#160;<br/>advantage&#160;of&#160;the&#160;use&#160;of&#160;AX.25&#160;in&#160;this&#160;manner&#160;is&#160;that&#160;the&#160;source&#160;of&#160;each&#160;frame&#160;is in&#160;the&#160;source&#160;address&#160;<br/>subfield; software could&#160;be written to automatically&#160;display&#160;who&#160;is making what comments.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:539px;left:107px;white-space:nowrap" class="ft02">Since&#160;this&#160;mode&#160;is&#160;connectionless,&#160;there&#160;are&#160;no&#160;requests&#160;for&#160;retransmissions&#160;of&#160;bad&#160;frames.&#160;Without&#160;</p>
+<p style="position:absolute;top:560px;left:80px;white-space:nowrap" class="ft06">the&#160;handshaking&#160;activity&#160;of&#160;a&#160;point-to-point&#160;connection,&#160;collisions&#160;may&#160;also&#160;occur,&#160;with&#160;the&#160;potential&#160;of&#160;<br/>losing the frames that collided.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:621px;left:80px;white-space:nowrap" class="ft04">6.4 Procedures for Information Transfer&#160;&#160;&#160;</p>
+<p style="position:absolute;top:644px;left:107px;white-space:nowrap" class="ft02">Once&#160;a&#160;connection&#160;has&#160;been&#160;established&#160;as&#160;outlined&#160;above,&#160;both&#160;TNCs&#160;can&#160;accept&#160;I,&#160;S&#160;and&#160;U&#160;frames.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:685px;left:80px;white-space:nowrap" class="ft03">6.4.1 Sending I Frames&#160;&#160;&#160;</p>
+<p style="position:absolute;top:706px;left:107px;white-space:nowrap" class="ft02">Whenever&#160;a&#160;TNC&#160;has&#160;an&#160;I&#160;frame&#160;to&#160;transmit,&#160;it&#160;sends&#160;the&#160;I&#160;frame&#160;with&#160;the&#160;N(S)&#160;of&#160;the&#160;control&#160;field&#160;</p>
+<p style="position:absolute;top:727px;left:80px;white-space:nowrap" class="ft06">equal&#160;&#160;to&#160;&#160;its&#160;&#160;current&#160;&#160;send&#160;&#160;state&#160;&#160;variable&#160;&#160;V(S).&#160;&#160;&#160;&#160;After&#160;&#160;the&#160;&#160;I&#160;&#160;frame&#160;&#160;is&#160;&#160;sent,&#160;&#160;the&#160;&#160;send&#160;&#160;state&#160;&#160;variable&#160;&#160;is&#160;<br/>incremented&#160;by&#160;one.&#160;If&#160;timer&#160;T1&#160;is&#160;not&#160;running,&#160;it&#160;is&#160;started.&#160;If&#160;timer&#160;T1&#160;is&#160;running,&#160;it&#160;is&#160;restarted.&#160;The&#160;TNC&#160;<br/>does&#160;not&#160;transmit&#160;any&#160;more&#160;I&#160;frames&#160;if&#160;its&#160;send&#160;state&#160;variable&#160;equals&#160;the&#160;last&#160;received&#160;N(R)&#160;from&#160;the&#160;<br/>other side of the link plus k. If&#160;the TNC sent more I frames, the flow control window&#160;would be exceeded&#160;<br/>and errors could result.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:830px;left:107px;white-space:nowrap" class="ft02">If&#160;a&#160;TNC&#160;is&#160;in&#160;a&#160;busy&#160;condition,&#160;it&#160;may&#160;still&#160;send&#160;I&#160;frames&#160;as&#160;long&#160;as&#160;the&#160;distant&#160;TNC&#160;is&#160;not&#160;also&#160;busy.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:871px;left:80px;white-space:nowrap" class="ft03">6.4.2 Receiving I Frames&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:893px;left:107px;white-space:nowrap" class="ft02">The reception of I frames that contain zero-length information&#160;fields is reported to the next layer; no&#160;</p>
+<p style="position:absolute;top:913px;left:80px;white-space:nowrap" class="ft02">information&#160;field&#160;will be&#160;transferred.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:957px;left:80px;white-space:nowrap" class="ft01"><i>6.4.2.1 Not Busy&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:974px;left:107px;white-space:nowrap" class="ft02">If&#160;a&#160;TNC&#160;receives&#160;a&#160;valid&#160;I&#160;frame&#160;(one&#160;with&#160;a&#160;correct&#160;FCS&#160;and&#160;whose&#160;send&#160;sequence&#160;number&#160;equals&#160;</p>
+<p style="position:absolute;top:994px;left:80px;white-space:nowrap" class="ft06">the&#160;receiver’s&#160;receive&#160;state&#160;variable)&#160;and&#160;is&#160;not&#160;in&#160;the&#160;busy&#160;condition,&#160;it&#160;accepts&#160;the&#160;received&#160;I&#160;frame,&#160;<br/>increments its receive state variable, and acts&#160;in one of the following&#160;manners:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1035px;left:134px;white-space:nowrap" class="ft05">•</p>
+<p style="position:absolute;top:1036px;left:142px;white-space:nowrap" class="ft02">&#160;&#160;If it has an I frame to send, that I frame may&#160;be&#160;sent with the transmitted N(R) equal to its&#160;</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 45</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft03{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft04{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft05{font-size:18px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft06{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft07{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page45-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10045.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">45&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:147px;left:161px;white-space:nowrap" class="ft06">receive state variable V(R) (thus acknowledging the received frame). Alternately,&#160;the TNC&#160;<br/>may send an&#160;RR frame&#160;with N(R) equal to V(R), and then send the&#160;I frame.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:187px;left:134px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:188px;left:142px;white-space:nowrap" class="ft01">&#160;&#160;If there are&#160;no outstanding I frames, the receiving TNC sends&#160;an RR frame&#160;with N(R) equal&#160;</p>
+<p style="position:absolute;top:207px;left:161px;white-space:nowrap" class="ft06">to V(R). The receiving&#160;TNC may&#160;wait a small period of time before&#160;sending the&#160;RR frame to&#160;<br/>be sure additional I frames are not&#160;being transmitted.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:247px;left:80px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:273px;left:80px;white-space:nowrap" class="ft03"><i>6.4.2.2 Busy&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:290px;left:107px;white-space:nowrap" class="ft01">If&#160;the&#160;TNC&#160;is&#160;in&#160;a&#160;busy&#160;condition,&#160;it&#160;ignores&#160;any&#160;received&#160;I&#160;frames&#160;without&#160;reporting&#160;this&#160;condition,&#160;</p>
+<p style="position:absolute;top:311px;left:80px;white-space:nowrap" class="ft01">other than&#160;repeating the indication&#160;of the busy&#160;condition.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:331px;left:107px;white-space:nowrap" class="ft01">If&#160;a&#160;busy&#160;condition&#160;exists,&#160;the&#160;TNC&#160;receiving&#160;the&#160;busy&#160;condition&#160;indication&#160;polls&#160;the&#160;sending&#160;TNC&#160;</p>
+<p style="position:absolute;top:352px;left:80px;white-space:nowrap" class="ft01">periodically&#160;until the busy condition&#160;disappears.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:373px;left:107px;white-space:nowrap" class="ft01">A TNC may&#160;poll the busy TNC periodically with RR or&#160;RNR&#160;frames&#160;with the P bit set to “1”.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:413px;left:80px;white-space:nowrap" class="ft04">6.4.3 Priority Acknowledge&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:435px;left:107px;white-space:nowrap" class="ft01">This&#160;version&#160;of&#160;AX.25&#160;implements&#160;the&#160;priority&#160;acknowledgement&#160;procedure.&#160;&#160;&#160;&#160;This&#160;feature&#160;precludes&#160;</p>
+<p style="position:absolute;top:455px;left:80px;white-space:nowrap" class="ft07">a&#160;non-priority frame from being&#160;transmitted during slot 0, the&#160;time&#160;when the TNC receiving the previous&#160;<br/>frame would be expected to send&#160;an acknowledgement.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:516px;left:80px;white-space:nowrap" class="ft04">6.4.4 Reception of Out-of-Sequence Frames&#160;&#160;&#160;</p>
+<p style="position:absolute;top:543px;left:80px;white-space:nowrap" class="ft03"><i>6.4.4.1 Implicit Reject (REJ)&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:560px;left:107px;white-space:nowrap" class="ft01">When&#160;an&#160;I&#160;frame&#160;is&#160;received&#160;with&#160;a&#160;correct&#160;FCS&#160;but&#160;its&#160;send&#160;sequence&#160;number&#160;N(S)&#160;does&#160;not&#160;match&#160;</p>
+<p style="position:absolute;top:581px;left:80px;white-space:nowrap" class="ft07">the&#160;current&#160;receiver’s&#160;receive&#160;state&#160;variable,&#160;the&#160;frame&#160;is&#160;discarded.&#160;&#160;&#160;&#160;A&#160;REJ&#160;frame&#160;is&#160;sent&#160;with&#160;a&#160;receive&#160;<br/>sequence&#160;&#160;number&#160;&#160;equal&#160;&#160;to&#160;&#160;one&#160;&#160;higher&#160;&#160;than&#160;&#160;the&#160;&#160;last&#160;&#160;correctly&#160;&#160;received&#160;&#160;I&#160;&#160;frame&#160;&#160;if&#160;&#160;an&#160;&#160;uncleared&#160;&#160;N(S)&#160;<br/>sequence&#160;error&#160;condition&#160;has&#160;not&#160;been&#160;previously&#160;established.&#160;The&#160;received&#160;state&#160;variable&#160;and&#160;poll&#160;bit&#160;<br/>of&#160;the&#160;discarded&#160;frame is&#160;checked and&#160;acted&#160;upon,&#160;if&#160;necessary.&#160;This mode&#160;requires&#160;no&#160;frame&#160;queuing&#160;<br/>and&#160;frame&#160;resequencing&#160;at&#160;the&#160;receiver.&#160;However,&#160;because&#160;the&#160;mode&#160;requires&#160;transmission&#160;of&#160;frames&#160;<br/>that&#160;may&#160;not&#160;be&#160;in&#160;error,&#160;its&#160;throughput&#160;is&#160;not&#160;as&#160;high&#160;as&#160;selective&#160;reject.&#160;&#160;&#160;&#160;This&#160;mode&#160;is&#160;ineffective&#160;on&#160;<br/>systems&#160;with long round-trip delays&#160;and high data rates.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:725px;left:80px;white-space:nowrap" class="ft05">&#160;</p>
+<p style="position:absolute;top:752px;left:80px;white-space:nowrap" class="ft03"><i>6.4.4.2 Selective Reject&#160;(SREJ)&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:768px;left:107px;white-space:nowrap" class="ft01">When&#160;an&#160;I&#160;frame&#160;is&#160;received&#160;with&#160;a&#160;correct&#160;FCS&#160;but&#160;its&#160;send&#160;sequence&#160;number&#160;N(S)&#160;does&#160;not&#160;match&#160;</p>
+<p style="position:absolute;top:789px;left:80px;white-space:nowrap" class="ft07">the&#160;current&#160;receiver’s&#160;receive&#160;state&#160;variable,&#160;the&#160;frame&#160;is&#160;retained.&#160;&#160;&#160;&#160;SREJ&#160;frames&#160;are&#160;sent&#160;with&#160;a&#160;receive&#160;<br/>sequence&#160;number&#160;equal&#160;to&#160;the&#160;value&#160;N(R)&#160;of&#160;the&#160;missing&#160;frame,&#160;and&#160;P=1&#160;if&#160;an&#160;uncleared&#160;SREJ&#160;condition&#160;<br/>has&#160;not&#160;been&#160;previously&#160;established.&#160;If&#160;an&#160;SREJ&#160;condition&#160;is&#160;already&#160;pending,&#160;an&#160;SREJ&#160;will&#160;be&#160;sent&#160;with&#160;<br/>P=0.&#160;&#160;The&#160;&#160;received&#160;&#160;state&#160;&#160;variable&#160;&#160;and&#160;&#160;poll&#160;&#160;bit&#160;&#160;of&#160;&#160;the&#160;&#160;received&#160;&#160;frame&#160;&#160;are&#160;&#160;checked&#160;&#160;and&#160;&#160;acted&#160;&#160;upon,&#160;&#160;if&#160;<br/>necessary.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:893px;left:107px;white-space:nowrap" class="ft01">This mode requires frame queuing&#160;and frame resequencing at the&#160;receiver.&#160;&#160;&#160;&#160;The holding of&#160;frames&#160;</p>
+<p style="position:absolute;top:913px;left:80px;white-space:nowrap" class="ft07">can&#160;&#160;consume&#160;&#160;precious&#160;&#160;buffer&#160;&#160;space,&#160;&#160;especially&#160;&#160;if&#160;&#160;the&#160;&#160;user&#160;&#160;device&#160;&#160;has&#160;&#160;limited&#160;&#160;memory&#160;&#160;available&#160;&#160;and&#160;<br/>several active&#160;links are operational.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:974px;left:80px;white-space:nowrap" class="ft04">6.4.5 Reception of Incorrect Frames&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:996px;left:107px;white-space:nowrap" class="ft01">When a TNC receives a frame with an incorrect FCS, an invalid frame, or a frame with an improper&#160;</p>
+<p style="position:absolute;top:1017px;left:80px;white-space:nowrap" class="ft01">address, that frame is&#160;discarded.&#160;&#160;&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

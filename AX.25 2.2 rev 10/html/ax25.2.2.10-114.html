@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 114</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft03{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft04{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft05{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft06{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page114-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10114.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:459px;white-space:nowrap" class="ft00">114&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:147px;left:134px;white-space:nowrap" class="ft05">Error&#160;&#160;Indication&#160;&#160;is&#160;&#160;delivered&#160;&#160;and&#160;&#160;the&#160;&#160;state&#160;&#160;machine&#160;&#160;returns&#160;&#160;to&#160;&#160;state&#160;&#160;0.&#160;&#160;The&#160;&#160;larger&#160;&#160;data&#160;&#160;unit&#160;&#160;is&#160;<br/>delivered&#160;with one DL Unit Data Indication&#160;primitive.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:187px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:188px;left:115px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:188px;left:134px;white-space:nowrap" class="ft03"><b>Timer TR210 Expiry</b></p>
+<p style="position:absolute;top:188px;left:295px;white-space:nowrap" class="ft01">. This primitive&#160;occurs&#160;when a segment is not received before timer TR210&#160;</p>
+<p style="position:absolute;top:207px;left:134px;white-space:nowrap" class="ft05">times&#160;out.&#160;When&#160;this&#160;primitive&#160;is&#160;received,&#160;the&#160;accumulated&#160;packets&#160;are&#160;discarded,&#160;buffers&#160;are&#160;<br/>freed&#160;and&#160;the&#160;state&#160;machine&#160;returns&#160;to&#160;state&#160;0.&#160;A&#160;DL&#160;Error&#160;Indication&#160;is&#160;passed&#160;to&#160;the&#160;higher&#160;level.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:248px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:248px;left:115px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:248px;left:134px;white-space:nowrap" class="ft03"><b>All&#160;&#160;Other&#160;&#160;DL&#160;&#160;Primitives</b></p>
+<p style="position:absolute;top:248px;left:331px;white-space:nowrap" class="ft01">.&#160;&#160;All&#160;&#160;other&#160;&#160;DL&#160;&#160;primitives&#160;&#160;are&#160;&#160;passed&#160;&#160;through&#160;&#160;the&#160;&#160;reassembler&#160;&#160;state&#160;</p>
+<p style="position:absolute;top:268px;left:134px;white-space:nowrap" class="ft05">machine&#160;unchanged.&#160;If&#160;the&#160;state&#160;machine&#160;is&#160;in&#160;states&#160;1&#160;or&#160;2&#160;when&#160;another&#160;DL&#160;primitive&#160;is&#160;received,&#160;<br/>the&#160;accumulated&#160;packets&#160;are&#160;discarded,&#160;buffers&#160;are&#160;freed&#160;and&#160;the&#160;state&#160;machine&#160;returns&#160;to&#160;state&#160;<br/>0.&#160;&#160;&#160;&#160;A&#160;DL Error Indication&#160;is passed&#160;to the higher&#160;level.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:328px;left:80px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:351px;left:80px;white-space:nowrap" class="ft04">C6.3 Internal Operation of the Machine&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:374px;left:107px;white-space:nowrap" class="ft01">Below&#160;&#160;is&#160;&#160;a&#160;&#160;summary&#160;&#160;of&#160;&#160;primitives,&#160;&#160;states,&#160;&#160;queues,&#160;&#160;flags,&#160;&#160;errors,&#160;&#160;and&#160;&#160;timers&#160;&#160;used&#160;&#160;in&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:394px;left:80px;white-space:nowrap" class="ft01">segmenter/reassembler&#160;link state&#160;machines:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:433px;left:80px;white-space:nowrap" class="ft01">DL Primitives (Received from DLSAP}&#160;&#160;&#160;</p>
+<p style="position:absolute;top:453px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:454px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-DATA Request&#160;&#160;&#160;</p>
+<p style="position:absolute;top:474px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:475px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-UNIT-DATA Request&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:495px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:496px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;NOTE: all&#160;other primitives are passed transparently.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:531px;left:80px;white-space:nowrap" class="ft01">DL Primitives (Sent to&#160;DLSAP)&#160;&#160;&#160;</p>
+<p style="position:absolute;top:551px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:552px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-DATA Indication&#160;&#160;&#160;</p>
+<p style="position:absolute;top:572px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:573px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-UNIT-DATA Indication&#160;&#160;&#160;</p>
+<p style="position:absolute;top:593px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:594px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-ERROR Indication&#160;&#160;&#160;</p>
+<p style="position:absolute;top:614px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:615px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;NOTE: all&#160;other primitives are passed transparently.&#160;</p>
+<p style="position:absolute;top:635px;left:80px;white-space:nowrap" class="ft05">&#160;<br/>DL Primitives (Received from the&#160;Data Link State Machine)&#160;&#160;&#160;</p>
+<p style="position:absolute;top:675px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:675px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-DATA Indication&#160;&#160;&#160;</p>
+<p style="position:absolute;top:696px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:696px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-UNIT-DATA Indication&#160;&#160;&#160;</p>
+<p style="position:absolute;top:717px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:717px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;NOTE: all&#160;other primitives are passed transparently.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:737px;left:80px;white-space:nowrap" class="ft05">&#160;<br/>DL Primitives (Sent to&#160;the Data&#160;Link State Machine)&#160;&#160;&#160;</p>
+<p style="position:absolute;top:777px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:778px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-DATA Request&#160;&#160;&#160;</p>
+<p style="position:absolute;top:798px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:799px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;DL-UNIT-DATA Request&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:819px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:820px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;NOTE: all&#160;other primitives are passed transparently.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:840px;left:80px;white-space:nowrap" class="ft06">&#160;<br/>Segmenter&#160;States:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:881px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:882px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;0&#160;— Null&#160;&#160;&#160;</p>
+<p style="position:absolute;top:902px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:903px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;1&#160;— Reassembling Data&#160;&#160;&#160;</p>
+<p style="position:absolute;top:923px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:924px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;2&#160;— Reassembling Unit Data&#160;</p>
+<p style="position:absolute;top:943px;left:80px;white-space:nowrap" class="ft05">&#160;<br/>Queues:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:983px;left:116px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:984px;left:124px;white-space:nowrap" class="ft01">&#160;&#160;None.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1019px;left:80px;white-space:nowrap" class="ft01">Error Codes:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1039px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:1040px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Y&#160;— data too long to segment&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

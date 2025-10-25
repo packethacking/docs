@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 121</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:24px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft02{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft03{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft04{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft05{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft06{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft07{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page121-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10121.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:459px;white-space:nowrap" class="ft00">121&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:165px;left:153px;white-space:nowrap" class="ft01">Appendix D - Data Link Service Access Point and Primitives&#160;</p>
+<p style="position:absolute;top:195px;left:80px;white-space:nowrap" class="ft02">D.1 Model&#160;of a Data-Link Connection&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:219px;left:107px;white-space:nowrap" class="ft03">A&#160;Data&#160;Link&#160;Service&#160;Access&#160;Point&#160;(DLSAP)&#160;is&#160;the&#160;point&#160;at&#160;which&#160;the&#160;data-link&#160;layer&#160;provides&#160;services&#160;</p>
+<p style="position:absolute;top:239px;left:80px;white-space:nowrap" class="ft06">to Layer 3. It provides a uniform&#160;programming&#160;interface&#160;to&#160;access&#160;the&#160;data-link services. This&#160;Appendix&#160;<br/>specifies&#160;this&#160;interface&#160;but&#160;does&#160;not&#160;specify&#160;the&#160;upper&#160;layer&#160;entities.&#160;In&#160;a&#160;basic&#160;user&#160;TNC,&#160;the&#160;upper&#160;layer&#160;<br/>entity may consist only&#160;of a Layer&#160;7&#160;user application&#160;with Layers 3-6 being null.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:302px;left:107px;white-space:nowrap" class="ft03">The following primitives&#160;are used to&#160;pass commands&#160;and receive&#160;responses from the DLSAP:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:322px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:322px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:322px;left:134px;white-space:nowrap" class="ft05"><b>DL-CONNECT&#160;Request.</b></p>
+<p style="position:absolute;top:322px;left:325px;white-space:nowrap" class="ft03">&#160;(Called&#160;Call&#160;sign).&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Layer&#160;3&#160;entity&#160;to&#160;request&#160;</p>
+<p style="position:absolute;top:342px;left:134px;white-space:nowrap" class="ft03">the establishment of an&#160;AX.25 connection.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:363px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:363px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:363px;left:134px;white-space:nowrap" class="ft05"><b>DL-CONNECT&#160;&#160;Indication.</b></p>
+<p style="position:absolute;top:363px;left:342px;white-space:nowrap" class="ft03">&#160;&#160;(Calling&#160;&#160;Call&#160;&#160;sign).&#160;&#160;This&#160;&#160;primitive&#160;&#160;is&#160;&#160;used&#160;&#160;by&#160;&#160;the&#160;&#160;Data-link&#160;&#160;State&#160;</p>
+<p style="position:absolute;top:383px;left:134px;white-space:nowrap" class="ft03">Machine to indicate&#160;an&#160;AX.25 connection&#160;has&#160;been requested.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:403px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:404px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:404px;left:134px;white-space:nowrap" class="ft05"><b>DL-CONNECT&#160;Confirm.</b></p>
+<p style="position:absolute;top:404px;left:322px;white-space:nowrap" class="ft03">&#160;(VOID).&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Data-link&#160;State&#160;Machine&#160;to&#160;indicate&#160;</p>
+<p style="position:absolute;top:424px;left:134px;white-space:nowrap" class="ft03">an AX.25 connection&#160;has been made.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:444px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:445px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:445px;left:134px;white-space:nowrap" class="ft05"><b>DL-DISCONNECT&#160;Request.</b></p>
+<p style="position:absolute;top:445px;left:355px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Layer&#160;3&#160;entity&#160;to&#160;request&#160;the&#160;release&#160;</p>
+<p style="position:absolute;top:465px;left:134px;white-space:nowrap" class="ft03">of an AX.25 connection.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:485px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:486px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:486px;left:134px;white-space:nowrap" class="ft05"><b>DL-DISCONNECT&#160;Indication.</b></p>
+<p style="position:absolute;top:486px;left:368px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Data-link&#160;State&#160;Machine&#160;to&#160;indicate&#160;</p>
+<p style="position:absolute;top:506px;left:134px;white-space:nowrap" class="ft03">an AX.25 connection&#160;has been released.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:526px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:527px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:527px;left:134px;white-space:nowrap" class="ft05"><b>DL-DISCONNECT&#160;Confirm.</b></p>
+<p style="position:absolute;top:527px;left:352px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Data-link&#160;State&#160;Machine&#160;to&#160;indicate&#160;an&#160;</p>
+<p style="position:absolute;top:546px;left:134px;white-space:nowrap" class="ft03">AX.25 connection&#160;has&#160;been&#160;released and confirmed.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:567px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:567px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:567px;left:134px;white-space:nowrap" class="ft05"><b>DL-DATA&#160;Request.</b></p>
+<p style="position:absolute;top:567px;left:289px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Layer&#160;3&#160;entity&#160;to&#160;request&#160;the&#160;transmission&#160;of&#160;</p>
+<p style="position:absolute;top:587px;left:134px;white-space:nowrap" class="ft07">data&#160;&#160;using&#160;&#160;connection-oriented&#160;&#160;protocol.&#160;&#160;This&#160;&#160;frame&#160;&#160;is&#160;&#160;examined&#160;&#160;and&#160;&#160;acted&#160;&#160;upon&#160;&#160;by&#160;&#160;the&#160;<br/>segmenter,&#160;if necessary.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:627px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:628px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:628px;left:134px;white-space:nowrap" class="ft05"><b>DL-DATA&#160;Indication.</b></p>
+<p style="position:absolute;top:628px;left:302px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;reassembler&#160;to&#160;indicate&#160;reception&#160;of&#160;Layer&#160;3&#160;</p>
+<p style="position:absolute;top:648px;left:134px;white-space:nowrap" class="ft03">data using connection-oriented&#160;protocol.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:668px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:669px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:669px;left:134px;white-space:nowrap" class="ft05"><b>DL-UNIT-DATA&#160;Request.</b></p>
+<p style="position:absolute;top:669px;left:333px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Layer&#160;3&#160;entity&#160;to&#160;request&#160;the&#160;transmission&#160;</p>
+<p style="position:absolute;top:689px;left:134px;white-space:nowrap" class="ft07">of&#160;data&#160;using&#160;connectionless&#160;protocol.&#160;This&#160;frame&#160;is&#160;examined&#160;and&#160;acted&#160;upon&#160;by&#160;the&#160;segmenter,&#160;<br/>if necessary.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:729px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:730px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:730px;left:134px;white-space:nowrap" class="ft05"><b>DL-UNIT-DATA&#160;Indication.</b></p>
+<p style="position:absolute;top:730px;left:349px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;reassembler&#160;to&#160;indicate&#160;reception&#160;of&#160;</p>
+<p style="position:absolute;top:749px;left:134px;white-space:nowrap" class="ft03">Layer&#160;3 data using connectionless&#160;protocol.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:770px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:770px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:770px;left:134px;white-space:nowrap" class="ft05"><b>DL-ERROR&#160;Indication.</b></p>
+<p style="position:absolute;top:770px;left:317px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Data-link&#160;State&#160;Machine&#160;to&#160;indicate&#160;when&#160;</p>
+<p style="position:absolute;top:790px;left:134px;white-space:nowrap" class="ft07">frames have been received that are&#160;inconsistent with this protocol definition. This&#160;includes short&#160;<br/>frames,&#160;frames&#160;with&#160;inconsistent&#160;parameter&#160;values,&#160;etc.&#160;The&#160;error&#160;indications&#160;are&#160;discussed&#160;in&#160;<br/>the SDL&#160;appendices.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:850px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:851px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:851px;left:134px;white-space:nowrap" class="ft05"><b>DL-FLOW-OFF&#160;Request.</b></p>
+<p style="position:absolute;top:851px;left:331px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Layer&#160;3&#160;entity&#160;to&#160;temporarily&#160;suspend&#160;the&#160;</p>
+<p style="position:absolute;top:871px;left:134px;white-space:nowrap" class="ft03">flow of incoming information.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:891px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:892px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:892px;left:134px;white-space:nowrap" class="ft05"><b>DL-FLOW-ON&#160;&#160;Request.</b></p>
+<p style="position:absolute;top:892px;left:326px;white-space:nowrap" class="ft03">&#160;&#160;This&#160;&#160;primitive&#160;&#160;is&#160;&#160;used&#160;&#160;by&#160;&#160;the&#160;&#160;Layer&#160;&#160;3&#160;&#160;entity&#160;&#160;to&#160;&#160;resume&#160;&#160;the&#160;&#160;flow&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:912px;left:134px;white-space:nowrap" class="ft03">incoming information.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:932px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:933px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:933px;left:134px;white-space:nowrap" class="ft05"><b>MDL-NEGOTIATE&#160;Request.</b></p>
+<p style="position:absolute;top:933px;left:355px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Layer&#160;3&#160;entity&#160;to&#160;request&#160;the&#160;Data-link&#160;</p>
+<p style="position:absolute;top:952px;left:134px;white-space:nowrap" class="ft03">State Machine to notify/negotiate.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:973px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:974px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:974px;left:134px;white-space:nowrap" class="ft05"><b>MDL-NEGOTIATE&#160;Confirm.</b></p>
+<p style="position:absolute;top:974px;left:353px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Management&#160;Data-link&#160;State&#160;Machine&#160;</p>
+<p style="position:absolute;top:993px;left:134px;white-space:nowrap" class="ft03">to notify the&#160;Layer 3&#160;entity that notification/negotiation is complete.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1014px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:1014px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:1014px;left:134px;white-space:nowrap" class="ft05"><b>MDL-ERROR&#160;Indicate.</b></p>
+<p style="position:absolute;top:1014px;left:315px;white-space:nowrap" class="ft03">&#160;This&#160;primitive&#160;is&#160;used&#160;by&#160;the&#160;Management&#160;Data-link&#160;State&#160;Machine&#160;to&#160;</p>
+<p style="position:absolute;top:1034px;left:134px;white-space:nowrap" class="ft03">notify the Layer 3 entity&#160;that&#160;notification/negotiation&#160;has failed.&#160;&#160;&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

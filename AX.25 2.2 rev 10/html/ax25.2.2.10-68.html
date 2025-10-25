@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 68</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:24px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft02{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft03{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft04{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft05{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft06{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page68-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10068.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">68&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:165px;left:180px;white-space:nowrap" class="ft01">Appendix C2b - Duplex Physical Layer State Machines&#160;</p>
+<p style="position:absolute;top:195px;left:80px;white-space:nowrap" class="ft02">C2b.1 Interaction with&#160;the Link&#160;Multiplexer&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:219px;left:107px;white-space:nowrap" class="ft03">The&#160;&#160;Link&#160;&#160;Multiplexer&#160;&#160;State&#160;&#160;Machine&#160;&#160;directs&#160;&#160;the&#160;&#160;operation&#160;&#160;of&#160;&#160;the&#160;&#160;duplex&#160;&#160;Physical&#160;&#160;State&#160;&#160;Machine&#160;</p>
+<p style="position:absolute;top:239px;left:80px;white-space:nowrap" class="ft03">through the&#160;physical (PH) primitives described&#160;below.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:260px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:260px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:260px;left:134px;white-space:nowrap" class="ft05"><b>PH-SEIZE&#160;&#160;Request</b></p>
+<p style="position:absolute;top:260px;left:289px;white-space:nowrap" class="ft03">.&#160;&#160;This&#160;&#160;primitive&#160;&#160;requests&#160;&#160;the&#160;&#160;duplex&#160;&#160;state&#160;&#160;machine&#160;&#160;to&#160;&#160;begin&#160;&#160;transmitting.&#160;</p>
+<p style="position:absolute;top:280px;left:134px;white-space:nowrap" class="ft06">When&#160;that&#160;opportunity&#160;has&#160;been&#160;identified,&#160;the&#160;transmitter&#160;is&#160;started&#160;and&#160;a parameterized&#160;time&#160;is&#160;<br/>allowed&#160;for&#160;the&#160;synchronization&#160;of&#160;the&#160;remote&#160;station’s&#160;receiver&#160;(known&#160;as&#160;TXDELAY&#160;in&#160;most&#160;<br/>implementations), then&#160;a&#160;PH-SEIZE&#160;Confirm primitive is returned&#160;to the link multiplexer.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:340px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:341px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:341px;left:134px;white-space:nowrap" class="ft05"><b>PH-DATA&#160;Request</b></p>
+<p style="position:absolute;top:341px;left:286px;white-space:nowrap" class="ft03">.&#160;This&#160;primitive&#160;from&#160;the&#160;&#160;Link&#160;Multiplexer&#160;State&#160;&#160;Machine&#160;provides&#160;a&#160;AX.25&#160;</p>
+<p style="position:absolute;top:361px;left:134px;white-space:nowrap" class="ft06">frame&#160;of&#160;any&#160;type&#160;(UI,&#160;SABM,&#160;I,&#160;etc.)&#160;that&#160;is&#160;to&#160;be&#160;transmitted.&#160;An&#160;unlimited&#160;number&#160;of&#160;frames&#160;<br/>may&#160;be&#160;provided.&#160;If&#160;the&#160;transmission&#160;exceeds&#160;the&#160;10minute&#160;limit&#160;or&#160;the&#160;anti-hogging&#160;time&#160;limit,&#160;<br/>the duplex&#160;Physical State Machine shuts down the transmitter.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:421px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:421px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:421px;left:134px;white-space:nowrap" class="ft05"><b>PH-RELEASE&#160;Request</b></p>
+<p style="position:absolute;top:421px;left:320px;white-space:nowrap" class="ft03">.&#160;The&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;provides&#160;this&#160;primitive&#160;when&#160;the&#160;</p>
+<p style="position:absolute;top:441px;left:134px;white-space:nowrap" class="ft06">submission&#160;of&#160;a&#160;sequence&#160;of&#160;frames&#160;to&#160;be&#160;transmitted&#160;on&#160;behalf&#160;of&#160;a&#160;particular&#160;AX.25&#160;connection&#160;<br/>has been completed.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:481px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:482px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:482px;left:134px;white-space:nowrap" class="ft05"><b>PH-EXPEDITED-DATA&#160;&#160;Request</b></p>
+<p style="position:absolute;top:482px;left:394px;white-space:nowrap" class="ft03">.&#160;&#160;This&#160;&#160;primitive&#160;&#160;from&#160;&#160;the&#160;&#160;Link&#160;&#160;Multiplexer&#160;&#160;State&#160;&#160;Machine&#160;</p>
+<p style="position:absolute;top:502px;left:134px;white-space:nowrap" class="ft06">provides&#160;&#160;the&#160;&#160;AX.25&#160;&#160;frame&#160;&#160;that&#160;&#160;is&#160;&#160;to&#160;&#160;be&#160;&#160;transmitted&#160;&#160;immediately.&#160;&#160;The&#160;&#160;duplex&#160;&#160;Physical&#160;&#160;State&#160;<br/>Machine&#160;gives&#160;preference&#160;to&#160;priority&#160;frames&#160;over&#160;normal&#160;frames.&#160;Priority&#160;frames&#160;can&#160;be&#160;provided&#160;<br/>by the link&#160;multiplexer at any time.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:562px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:563px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:563px;left:134px;white-space:nowrap" class="ft05"><b>PH-DATA&#160;Indication</b></p>
+<p style="position:absolute;top:563px;left:297px;white-space:nowrap" class="ft03">.&#160;During&#160;reception,&#160;the&#160;duplex&#160;Physical&#160;State&#160;Machine&#160;provides&#160;each&#160;AX.25&#160;</p>
+<p style="position:absolute;top:582px;left:134px;white-space:nowrap" class="ft06">frame&#160;to&#160;the&#160;link&#160;multiplexer&#160;in&#160;a&#160;Frame&#160;primitive.&#160;No&#160;analysis&#160;is&#160;done&#160;on&#160;the&#160;frame&#160;by&#160;the&#160;duplex&#160;<br/>Physical&#160;State&#160;Machine;&#160;it&#160;does&#160;not&#160;examine&#160;lengths,&#160;the&#160;frame&#160;check&#160;sequence,&#160;or&#160;any&#160;other&#160;<br/>content of the frame; these responsibilities are&#160;carried out&#160;by&#160;the higher level state&#160;machines.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:642px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:643px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:643px;left:134px;white-space:nowrap" class="ft05"><b>PH-BUSY&#160;Indication</b></p>
+<p style="position:absolute;top:643px;left:298px;white-space:nowrap" class="ft03">.&#160;The&#160;duplex&#160;Physical&#160;State&#160;Machine&#160;provides&#160;this&#160;primitive&#160;whenever&#160;the&#160;</p>
+<p style="position:absolute;top:663px;left:134px;white-space:nowrap" class="ft06">channel&#160;&#160;becomes&#160;&#160;busy.&#160;&#160;&#160;&#160;“Busy”&#160;&#160;here&#160;&#160;means&#160;&#160;the&#160;&#160;detection&#160;&#160;of&#160;&#160;a&#160;&#160;valid&#160;&#160;modem&#160;synchronization&#160;<br/>sequence,&#160;HDLC&#160;Flags&#160;or&#160;HDLC&#160;frames&#160;—&#160;not&#160;the&#160;detection&#160;of&#160;an&#160;FM&#160;carrier&#160;on&#160;a&#160;two-meter&#160;<br/>radio. An indication of busy is&#160;provided to the&#160;higher layer&#160;state machines so that various timers&#160;<br/>which&#160;&#160;are&#160;&#160;supervise&#160;&#160;the&#160;&#160;AX.25&#160;&#160;connection&#160;&#160;can&#160;&#160;be&#160;&#160;suspended.&#160;&#160;&#160;&#160;This&#160;&#160;avoids&#160;&#160;the&#160;&#160;undesirable&#160;<br/>situation&#160;on&#160;a&#160;busy&#160;channel&#160;where&#160;AX.25,&#160;having&#160;sent&#160;data&#160;and&#160;expecting&#160;an&#160;acknowledgment,&#160;<br/>times&#160;&#160;out&#160;&#160;and&#160;&#160;attempts&#160;&#160;retransmissions&#160;&#160;—&#160;&#160;and&#160;&#160;the&#160;&#160;only&#160;&#160;reason&#160;&#160;an&#160;&#160;acknowledgment&#160;&#160;was&#160;&#160;not&#160;<br/>received was because the remote station did not yet have a chance to make a transmission.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:802px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:803px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:803px;left:134px;white-space:nowrap" class="ft05"><b>PH-QUIET Indication</b></p>
+<p style="position:absolute;top:803px;left:303px;white-space:nowrap" class="ft03">.&#160;The&#160;duplex&#160;Physical&#160;State&#160;Machine&#160;provides&#160;this&#160;primitive&#160;whenever&#160;the&#160;</p>
+<p style="position:absolute;top:823px;left:134px;white-space:nowrap" class="ft03">channel becomes quiet.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:843px;left:80px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:865px;left:80px;white-space:nowrap" class="ft02">C2b.2 Interface to&#160;the Hardware&#160;&#160;&#160;</p>
+<p style="position:absolute;top:889px;left:107px;white-space:nowrap" class="ft03">As&#160;&#160;the&#160;&#160;lowest&#160;&#160;layer&#160;&#160;state&#160;&#160;machine&#160;&#160;in&#160;&#160;the&#160;&#160;standard,&#160;&#160;this&#160;&#160;machine&#160;&#160;manipulates&#160;&#160;a&#160;&#160;typical&#160;&#160;radio&#160;</p>
+<p style="position:absolute;top:909px;left:80px;white-space:nowrap" class="ft03">transceiver. The following primitives are used:&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:930px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:930px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:930px;left:134px;white-space:nowrap" class="ft05"><b>HW-TON&#160;Request</b></p>
+<p style="position:absolute;top:930px;left:278px;white-space:nowrap" class="ft03">. This primitive keys the transceiver’s PTT line.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:951px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:951px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:951px;left:134px;white-space:nowrap" class="ft05"><b>HW-TOFF Request</b></p>
+<p style="position:absolute;top:951px;left:286px;white-space:nowrap" class="ft03">. This primitive unkeys the&#160;transceiver’s PTT line.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:972px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:972px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:972px;left:134px;white-space:nowrap" class="ft05"><b>HW-DATA&#160;&#160;Request</b></p>
+<p style="position:absolute;top:972px;left:292px;white-space:nowrap" class="ft03">.&#160;&#160;This&#160;&#160;primitive&#160;&#160;passes&#160;&#160;data&#160;&#160;for&#160;&#160;actual&#160;&#160;transmission&#160;&#160;of&#160;&#160;a&#160;&#160;frame&#160;&#160;from&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:992px;left:134px;white-space:nowrap" class="ft06">physical&#160;&#160;layer&#160;&#160;to&#160;&#160;the&#160;&#160;hardware.&#160;&#160;Although&#160;&#160;SDL&#160;&#160;representation&#160;&#160;of&#160;&#160;bit-by-bit&#160;&#160;transmission&#160;&#160;of&#160;&#160;the&#160;<br/>contents&#160;of&#160;a&#160;frame&#160;is&#160;possible,&#160;it&#160;is&#160;not&#160;used&#160;here&#160;because&#160;the&#160;additional&#160;complexity&#160;was&#160;not&#160;<br/>required.&#160;&#160;The&#160;&#160;Frame&#160;&#160;primitive,&#160;&#160;however,&#160;&#160;differs&#160;&#160;from&#160;&#160;all&#160;&#160;other&#160;&#160;primitives&#160;&#160;used&#160;&#160;in&#160;&#160;the&#160;&#160;state&#160;</p>
+</div>
+</body>
+</html>

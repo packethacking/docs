@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 14</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft03{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft04{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft05{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft06{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page14-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10014.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">14&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:80px;white-space:nowrap" class="ft01">occurs via service primitives.) Primitives are discussed in greater detail in Section&#160;5.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:168px;left:107px;white-space:nowrap" class="ft01">The&#160;&#160;primitives&#160;&#160;that&#160;&#160;are&#160;&#160;exchanged&#160;&#160;between&#160;&#160;the&#160;&#160;data-link&#160;&#160;layer&#160;&#160;and&#160;&#160;adjacent&#160;&#160;layers&#160;&#160;are&#160;&#160;of&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:189px;left:80px;white-space:nowrap" class="ft01">following four types:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:209px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:210px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;REQUEST primitive type: used by&#160;a higher&#160;layer to request a service from the next lower layer.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:230px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:231px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;INDICATION&#160;primitive&#160;type:&#160;used&#160;by&#160;the&#160;next&#160;lower&#160;layer&#160;to&#160;provide&#160;a&#160;service&#160;to&#160;notify&#160;the&#160;next&#160;</p>
+<p style="position:absolute;top:251px;left:134px;white-space:nowrap" class="ft05">higher&#160;layer&#160;of&#160;any&#160;specific&#160;activity&#160;that&#160;is&#160;service&#160;related.&#160;The&#160;INDICATION&#160;primitive&#160;may&#160;be&#160;the&#160;<br/>result of an&#160;activity of the lower layer related to the primitive&#160;type REQUEST at the peer&#160;entity.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:291px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:292px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;RESPONSE&#160;primitive&#160;type:&#160;used&#160;by&#160;a&#160;layer&#160;to&#160;acknowledge&#160;receipt&#160;from&#160;a&#160;lower&#160;layer&#160;of&#160;the&#160;</p>
+<p style="position:absolute;top:312px;left:134px;white-space:nowrap" class="ft05">primitive&#160;type&#160;INDICATION.&#160;&#160;&#160;&#160;AX.25&#160;does&#160;not&#160;use&#160;the&#160;RESPONSE&#160;primitive.&#160;&#160;&#160;&#160;Actual&#160;frames&#160;will&#160;<br/>be sent as shown in the example below&#160;with the UA frame.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:352px;left:107px;white-space:nowrap" class="ft02">•</p>
+<p style="position:absolute;top:352px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;CONFIRM&#160;primitive&#160;type:&#160;used&#160;by&#160;the&#160;upper&#160;layer&#160;to&#160;provide&#160;the&#160;requested&#160;service&#160;to&#160;confirm&#160;</p>
+<p style="position:absolute;top:372px;left:134px;white-space:nowrap" class="ft01">that the activity has been completed by the lower layer.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:392px;left:80px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:413px;left:107px;white-space:nowrap" class="ft01">Figure 2.4 illustrates the use of the four primitive types in&#160;conjunction&#160;with the&#160;Connect primitive.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:784px;left:267px;white-space:nowrap" class="ft03"><b>Figure 2.4 Example Use Of AX.25&#160;Primitive&#160;Types.&#160;</b></p>
+<p style="position:absolute;top:784px;left:683px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:825px;left:80px;white-space:nowrap" class="ft04">2.4 Segmenter/Reassembler&#160;&#160;&#160;</p>
+<p style="position:absolute;top:848px;left:107px;white-space:nowrap" class="ft01">The&#160;Segmenter&#160;State&#160;Machine&#160;accepts&#160;input&#160;from&#160;the&#160;higher&#160;layer&#160;through&#160;the&#160;DLSAP.&#160;If the&#160;unit&#160;of&#160;</p>
+<p style="position:absolute;top:869px;left:80px;white-space:nowrap" class="ft06">data&#160;to&#160;be&#160;sent&#160;exceeds&#160;the&#160;limits&#160;of&#160;an&#160;AX.25&#160;Information&#160;(I)&#160;frame&#160;(see&#160;Section&#160;4.3.1)&#160;or&#160;Unnumbered&#160;<br/>Information&#160;(UI)&#160;frame&#160;(see&#160;Section&#160;4.3.3.6),&#160;the&#160;segmenter&#160;breaks&#160;the&#160;unit&#160;down&#160;into&#160;smaller&#160;segments&#160;<br/>for&#160;&#160;transmission.&#160;&#160;Incoming&#160;&#160;segments&#160;&#160;are&#160;&#160;reassembled&#160;&#160;for&#160;&#160;delivery&#160;&#160;to&#160;&#160;the&#160;&#160;higher&#160;&#160;layer&#160;&#160;and&#160;&#160;passed&#160;<br/>through the&#160;DLSAP.&#160;&#160;&#160;&#160;The segmenter&#160;passes all other signals unchanged.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:951px;left:107px;white-space:nowrap" class="ft01">One&#160;segmenter&#160;exists&#160;per&#160;data&#160;link.&#160;Because&#160;a&#160;single&#160;piece&#160;of&#160;equipment&#160;may&#160;have&#160;multiple&#160;data&#160;</p>
+<p style="position:absolute;top:972px;left:80px;white-space:nowrap" class="ft06">links&#160;&#160;in&#160;&#160;operation&#160;&#160;simultaneously&#160;&#160;(e.g.,&#160;&#160;to&#160;&#160;support&#160;&#160;multiple&#160;&#160;higher-layer&#160;&#160;applications),&#160;&#160;there&#160;&#160;can&#160;&#160;be&#160;<br/>multiple, independently&#160;operating&#160;segmenters&#160;within the equipment.&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

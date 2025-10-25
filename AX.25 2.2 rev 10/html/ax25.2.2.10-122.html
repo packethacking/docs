@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 122</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft03{font-size:15px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft04{font-size:15px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft05{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page122-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10122.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:459px;white-space:nowrap" class="ft00">122&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:147px;left:80px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:170px;left:80px;white-space:nowrap" class="ft02">D.2 Queue Model&#160;Concepts&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:193px;left:107px;white-space:nowrap" class="ft01">The&#160;queue&#160;model&#160;represents&#160;the&#160;operation&#160;of&#160;the&#160;Data-Link&#160;Connection&#160;(DLC)&#160;in&#160;the&#160;abstract&#160;by&#160;a&#160;</p>
+<p style="position:absolute;top:214px;left:80px;white-space:nowrap" class="ft05">pair&#160;of&#160;queues&#160;linking&#160;the&#160;two&#160;DLSAPs.&#160;There&#160;is&#160;one&#160;queue&#160;for&#160;each&#160;direction&#160;of&#160;information&#160;flow&#160;(see&#160;<br/>Figure D.1).&#160;&#160;&#160;</p>
+<p style="position:absolute;top:272px;left:80px;white-space:nowrap" class="ft03"><b>DLSAP&#160;</b></p>
+<p style="position:absolute;top:272px;left:138px;white-space:nowrap" class="ft04">&#160;</p>
+<p style="position:absolute;top:308px;left:107px;white-space:nowrap" class="ft01">The&#160;pair&#160;of&#160;queues&#160;is&#160;considered&#160;to&#160;be&#160;available&#160;for&#160;each&#160;Data-Link&#160;Service&#160;(DLS)&#160;user.&#160;Each&#160;queue&#160;</p>
+<p style="position:absolute;top:328px;left:80px;white-space:nowrap" class="ft05">represents&#160;a&#160;DLS&#160;flow&#160;control&#160;function&#160;in&#160;one&#160;direction&#160;of&#160;transfer.&#160;&#160;&#160;&#160;The&#160;ability&#160;of&#160;a&#160;user&#160;to&#160;add&#160;objects&#160;<br/>to&#160;a&#160;queue&#160;will&#160;be&#160;determined&#160;by&#160;the&#160;behavior&#160;of&#160;the&#160;other&#160;DLS&#160;user&#160;in&#160;removing&#160;objects&#160;from&#160;the&#160;queue&#160;<br/>and&#160;by&#160;the&#160;state&#160;of&#160;the&#160;queue.&#160;Objects&#160;are&#160;entered&#160;or&#160;removed&#160;from&#160;the&#160;queue&#160;as&#160;a&#160;result&#160;of&#160;interactions&#160;<br/>at the two DLSAPs.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:411px;left:107px;white-space:nowrap" class="ft05">The following objects may be placed&#160;in a queue&#160;by a DLS&#160;user:&#160;&#160;&#160;<br/>A connect object, representing a&#160;DL-CONNECT primitive and its parameters.&#160;&#160;&#160;&#160;&#160;<br/>A data object, representing a DL-DATA primitive and its parameters.&#160;&#160;&#160;&#160;&#160;<br/>A disconnect object, representing&#160;a DL-DISCONNECT primitive and&#160;its parameters.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:511px;left:107px;white-space:nowrap" class="ft05">The following object may&#160;be placed in a queue by the DLS&#160;provider:&#160;&#160;&#160;&#160;&#160;<br/>A disconnect object, representing&#160;a DL-DISCONNECT primitive and&#160;its parameters.&#160;&#160;&#160;&#160;&#160;<br/>The queues&#160;are defined&#160;to have the following general properties:&#160;&#160;&#160;&#160;&#160;<br/>A&#160;queue&#160;is&#160;empty&#160;before&#160;a&#160;connect&#160;object&#160;has&#160;been&#160;entered&#160;and&#160;can&#160;be&#160;returned&#160;to&#160;this&#160;state,&#160;with&#160;</p>
+<p style="position:absolute;top:594px;left:80px;white-space:nowrap" class="ft01">loss of its contents, by&#160;the DLS&#160;provider.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:615px;left:107px;white-space:nowrap" class="ft01">Objects&#160;are&#160;entered&#160;into&#160;a&#160;queue&#160;by&#160;the&#160;sending&#160;DLS&#160;user,&#160;subject&#160;to&#160;control&#160;by&#160;the&#160;DLS&#160;provider.&#160;</p>
+<p style="position:absolute;top:636px;left:80px;white-space:nowrap" class="ft01">Objects may also be entered by the DLS provider.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:656px;left:107px;white-space:nowrap" class="ft05">Objects are&#160;removed from the queue, under the control of&#160;the receiving DLS user.&#160;&#160;&#160;&#160;&#160;<br/>Objects are&#160;normally removed in the same&#160;order that they&#160;were entered.&#160;&#160;&#160;<br/>A queue has&#160;a limited capacity, but&#160;this capacity is not necessarily&#160;either fixed or determinable.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:738px;left:80px;white-space:nowrap" class="ft02">D.3 DLC&#160;Establishment&#160;&#160;&#160;</p>
+<p style="position:absolute;top:762px;left:107px;white-space:nowrap" class="ft01">A pair of queues is associated with a DLC between two DLSAPs when&#160;the DLS provider receives a&#160;</p>
+<p style="position:absolute;top:782px;left:80px;white-space:nowrap" class="ft05">DLCONNECT&#160;request&#160;primitive&#160;at&#160;one&#160;of&#160;the&#160;DLSAPs,&#160;and&#160;a&#160;connect&#160;object&#160;is&#160;entered&#160;into&#160;one&#160;of&#160;the&#160;<br/>queues. From the standpoint of the&#160;DLS&#160;users&#160;of the&#160;DLC,&#160;the queues&#160;remain&#160;associated&#160;with&#160;the DLC&#160;<br/>until&#160;a&#160;disconnect&#160;object&#160;representing&#160;a&#160;DL-DISCONNECT&#160;primitive&#160;is&#160;either&#160;entered&#160;or&#160;removed&#160;from&#160;<br/>the queue.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:865px;left:107px;white-space:nowrap" class="ft01">DLS&#160;&#160;user&#160;&#160;A,&#160;&#160;who&#160;&#160;initiates&#160;&#160;a&#160;&#160;DLC&#160;&#160;establishment&#160;&#160;by&#160;&#160;entering&#160;&#160;a&#160;&#160;connect&#160;&#160;object&#160;&#160;representing&#160;&#160;a&#160;&#160;DL-</p>
+<p style="position:absolute;top:886px;left:80px;white-space:nowrap" class="ft05">CONNECT&#160;request&#160;primitive&#160;into&#160;the&#160;queue&#160;from&#160;DLS&#160;user&#160;A&#160;to&#160;DLS&#160;user&#160;B,&#160;is&#160;not&#160;allowed&#160;to&#160;enter&#160;any&#160;<br/>other&#160;object,&#160;other&#160;than&#160;a&#160;disconnect&#160;object,&#160;into&#160;the&#160;queue&#160;until&#160;after&#160;the&#160;connect&#160;object&#160;representing&#160;<br/>the&#160;DL-CONNECT&#160;confirm primitive&#160;has&#160;been&#160;removed&#160;from&#160;the&#160;DLS&#160;user B&#160;to DLS user A&#160;queue.&#160;&#160;&#160;&#160;In&#160;<br/>the&#160;queue&#160;from&#160;DLS&#160;user&#160;B&#160;to&#160;DLS&#160;user&#160;A,&#160;objects&#160;can&#160;be&#160;entered&#160;only&#160;after&#160;DLS&#160;user&#160;B&#160;has&#160;entered&#160;a&#160;<br/>connect object representing&#160;a DL-CONNECT&#160;response primitive.&#160;&#160;&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

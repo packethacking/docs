@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 36</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft03{font-size:18px;font-family:KEEOEO+Arial;color:#ff0000;}
+	.ft04{font-size:17px;font-family:KEEOEO+Arial;color:#ff0000;}
+	.ft05{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft06{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft07{font-size:18px;line-height:23px;font-family:KEEOEO+Arial;color:#1f4d78;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page36-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10036.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">36&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:80px;white-space:nowrap" class="ft01">updated P&#160;bit and&#160;N(R).&#160;&#160;&#160;</p>
+<p style="position:absolute;top:188px;left:80px;white-space:nowrap" class="ft02">4.4.3&#160;</p>
+<p style="position:absolute;top:188px;left:125px;white-space:nowrap" class="ft03">Implicit</p>
+<p style="position:absolute;top:188px;left:181px;white-space:nowrap" class="ft02">&#160;Reject (REJ) Recovery&#160;&#160;&#160;</p>
+<p style="position:absolute;top:210px;left:107px;white-space:nowrap" class="ft01">The&#160;REJ&#160;frame&#160;requests&#160;a&#160;retransmission&#160;of&#160;I&#160;frames&#160;following&#160;the&#160;detection&#160;of&#160;an&#160;N(S)&#160;sequence&#160;</p>
+<p style="position:absolute;top:230px;left:80px;white-space:nowrap" class="ft06">error.&#160;Only&#160;one&#160;outstanding&#160;“sent&#160;REJ”&#160;condition&#160;is&#160;allowed&#160;at&#160;a&#160;time.&#160;This&#160;condition&#160;is&#160;cleared&#160;when&#160;the&#160;<br/>requested I frame has been received.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:272px;left:107px;white-space:nowrap" class="ft01">A&#160;TNC&#160;receiving&#160;the&#160;REJ&#160;command&#160;clears&#160;the&#160;condition&#160;by&#160;resending&#160;all&#160;outstanding&#160;I&#160;frames&#160;(up&#160;to&#160;</p>
+<p style="position:absolute;top:293px;left:80px;white-space:nowrap" class="ft01">the window&#160;size), starting with the&#160;frame indicated in N(R) of&#160;the REJ&#160;frame.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:315px;left:80px;white-space:nowrap" class="ft07">&#160;<br/>4.4.4 Selective Reject&#160;(SREJ) Recovery&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:361px;left:107px;white-space:nowrap" class="ft01">The&#160;&#160;SREJ&#160;</p>
+<p style="position:absolute;top:361px;left:212px;white-space:nowrap" class="ft04">command/</p>
+<p style="position:absolute;top:361px;left:293px;white-space:nowrap" class="ft01">response&#160;&#160;initiates&#160;&#160;more-efficient&#160;&#160;error&#160;&#160;recovery&#160;&#160;by&#160;&#160;requesting&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:381px;left:80px;white-space:nowrap" class="ft06">retransmission&#160;of&#160;a&#160;single&#160;I&#160;frame&#160;following&#160;the&#160;detection&#160;of&#160;a&#160;sequence&#160;error.&#160;&#160;&#160;&#160;This&#160;is&#160;an&#160;advance&#160;over&#160;<br/>the&#160;earlier&#160;versions&#160;in&#160;which&#160;the&#160;requested&#160;I&#160;frame&#160;was&#160;retransmitted&#160;together&#160;with&#160;all&#160;additional&#160;I&#160;frames&#160;<br/>subsequently transmitted and successfully received.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:443px;left:107px;white-space:nowrap" class="ft01">When&#160;a&#160;TNC&#160;sends&#160;one&#160;or&#160;more&#160;SREJ&#160;commands,&#160;each&#160;with&#160;the&#160;P&#160;bit&#160;set&#160;to&#160;“0”&#160;or&#160;“1”,&#160;or&#160;one&#160;or&#160;</p>
+<p style="position:absolute;top:464px;left:80px;white-space:nowrap" class="ft06">more&#160;SREJ&#160;responses,&#160;each&#160;with&#160;the&#160;F&#160;bit&#160;set&#160;to&#160;“0”,&#160;and&#160;the&#160;“sent&#160;SREJ”&#160;conditions&#160;are&#160;not&#160;cleared&#160;<br/>when&#160;the&#160;TNC&#160;is&#160;ready&#160;to&#160;issue&#160;the&#160;next&#160;response&#160;frame&#160;with&#160;the&#160;F&#160;bit&#160;set&#160;to&#160;“1”,&#160;the&#160;TNC&#160;sends&#160;a&#160;SREJ&#160;<br/>response with the F bit set to “1”, with the same N(R) as the oldest unresolved SREJ frame.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:526px;left:107px;white-space:nowrap" class="ft01">Because&#160;an&#160;I&#160;or&#160;S&#160;format&#160;frame&#160;with&#160;the&#160;F&#160;bit&#160;set&#160;to&#160;“1”&#160;can&#160;cause&#160;checkpoint&#160;retransmission,&#160;a&#160;TNC&#160;</p>
+<p style="position:absolute;top:547px;left:80px;white-space:nowrap" class="ft06">does&#160;not&#160;send&#160;SREJ&#160;frames&#160;until&#160;it&#160;receives&#160;at&#160;least&#160;one&#160;in-sequence&#160;I&#160;frame,&#160;or&#160;it&#160;perceives&#160;by&#160;timeout&#160;<br/>that the checkpoint retransmission&#160;will not be initiated at the&#160;remote&#160;TNC.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:588px;left:107px;white-space:nowrap" class="ft01">With&#160;respect&#160;to&#160;each&#160;direction&#160;of&#160;transmission&#160;on&#160;the&#160;data&#160;link,&#160;one&#160;or&#160;more&#160;“sent&#160;SREJ”&#160;exception&#160;</p>
+<p style="position:absolute;top:609px;left:80px;white-space:nowrap" class="ft06">conditions&#160;from&#160;a&#160;TNC&#160;to&#160;another&#160;TNC&#160;may&#160;be&#160;established&#160;at&#160;a&#160;time.&#160;&#160;&#160;&#160;A&#160;“sent&#160;SREJ”&#160;exception&#160;condition&#160;<br/>is cleared when the requested I frame is received.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:650px;left:107px;white-space:nowrap" class="ft01">The&#160;SREJ&#160;frame&#160;may&#160;be&#160;repeated&#160;when&#160;a&#160;TNC&#160;perceives&#160;by&#160;timeout&#160;that&#160;a&#160;requested&#160;I&#160;frame&#160;will&#160;</p>
+<p style="position:absolute;top:671px;left:80px;white-space:nowrap" class="ft01">not be received, because either&#160;the requested I frame or the SREJ&#160;frame&#160;was in error&#160;or lost.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:692px;left:107px;white-space:nowrap" class="ft01">When&#160;&#160;appropriate,&#160;&#160;a&#160;&#160;TNC&#160;&#160;receiving&#160;&#160;one&#160;&#160;or&#160;&#160;more&#160;&#160;SREJ&#160;&#160;frames&#160;&#160;initiates&#160;&#160;retransmission&#160;&#160;of&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:713px;left:80px;white-space:nowrap" class="ft06">individual&#160;I&#160;frames&#160;indicated&#160;by&#160;the&#160;N(R)&#160;contained&#160;in&#160;each&#160;SREJ&#160;frame.&#160;After&#160;having&#160;retransmitted&#160;the&#160;<br/>above frames, new I frames are transmitted later if they&#160;become&#160;available.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:754px;left:107px;white-space:nowrap" class="ft01">When&#160;a&#160;TNC&#160;receives&#160;and&#160;acts&#160;on&#160;one&#160;or&#160;more&#160;SREJ&#160;commands,&#160;each&#160;with&#160;the&#160;P&#160;bit&#160;set&#160;to&#160;“0”,&#160;or&#160;</p>
+<p style="position:absolute;top:775px;left:80px;white-space:nowrap" class="ft06">an&#160;SREJ&#160;command&#160;with&#160;the&#160;P&#160;bit&#160;set&#160;to&#160;“1”,&#160;or&#160;one&#160;or&#160;more&#160;SREJ&#160;responses&#160;each&#160;with&#160;the&#160;F&#160;bit&#160;set&#160;to&#160;<br/>“0”,&#160;it&#160;disables&#160;any&#160;action&#160;on&#160;the&#160;next&#160;SREJ&#160;response&#160;frame&#160;if&#160;that&#160;SREJ&#160;frame&#160;has&#160;the&#160;F&#160;bit&#160;set&#160;to&#160;“1”&#160;<br/>and&#160;has&#160;the&#160;same&#160;N(R)&#160;(i.e.,&#160;the&#160;same&#160;value&#160;and&#160;the&#160;same&#160;numbering&#160;cycle)&#160;as&#160;a&#160;previously&#160;actioned&#160;<br/>SREJ frame, and if the&#160;resultant&#160;retransmission&#160;was made following the transmission of the P bit set to&#160;<br/>a “1”.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:878px;left:107px;white-space:nowrap" class="ft01">When&#160;the&#160;SREJ&#160;mechanism&#160;is&#160;used,&#160;the&#160;receiving&#160;station&#160;retains&#160;correctly&#160;received&#160;I&#160;frames&#160;and&#160;</p>
+<p style="position:absolute;top:899px;left:80px;white-space:nowrap" class="ft01">delivers them&#160;to the higher layer in&#160;sequence number order.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:939px;left:80px;white-space:nowrap" class="ft02">4.4.5 Timeout Error Recovery&#160;&#160;&#160;</p>
+<p style="position:absolute;top:966px;left:80px;white-space:nowrap" class="ft05"><i>4.4.5.1 T1 Timer&#160;Recovery&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:983px;left:107px;white-space:nowrap" class="ft01">If&#160;a&#160;transmission&#160;error&#160;causes&#160;a&#160;TNC&#160;to&#160;fail&#160;to&#160;receive&#160;(or&#160;to&#160;receive&#160;and&#160;discard)&#160;a&#160;single&#160;I&#160;frame,&#160;or&#160;</p>
+<p style="position:absolute;top:1004px;left:80px;white-space:nowrap" class="ft06">the&#160;last&#160;I&#160;frame&#160;in&#160;a&#160;sequence&#160;of&#160;I&#160;frames,&#160;then&#160;the&#160;TNC&#160;does&#160;not&#160;detect&#160;a&#160;send-sequence-number&#160;error&#160;<br/>and&#160;consequently&#160;does&#160;not&#160;transmit&#160;an&#160;REJ/SREJ.&#160;The&#160;TNC&#160;that&#160;transmitted&#160;the&#160;unacknowledged&#160;I&#160;<br/>frame(s)&#160;following&#160;the&#160;completion&#160;of&#160;timeout&#160;period&#160;T1,&#160;takes&#160;appropriate&#160;recovery&#160;action&#160;to&#160;determine&#160;</p>
+</div>
+</body>
+</html>

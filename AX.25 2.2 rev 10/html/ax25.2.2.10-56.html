@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 56</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:24px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft02{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft03{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft04{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft05{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft06{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page56-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10056.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">56&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:147px;left:175px;white-space:nowrap" class="ft01">Appendix C2a - Simplex Physical Layer State Machines&#160;</p>
+<p style="position:absolute;top:177px;left:80px;white-space:nowrap" class="ft02">C2a.1 Interaction with&#160;the Link&#160;Multiplexer&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:201px;left:107px;white-space:nowrap" class="ft03">The&#160;&#160;Link&#160;&#160;Multiplexer&#160;&#160;State&#160;&#160;Machine&#160;&#160;directs&#160;&#160;the&#160;&#160;operation&#160;&#160;of&#160;&#160;the&#160;&#160;simplex&#160;&#160;Physical&#160;&#160;State&#160;&#160;Machine&#160;</p>
+<p style="position:absolute;top:221px;left:80px;white-space:nowrap" class="ft03">through the&#160;following physical (PH) primitives:&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:242px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:242px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:242px;left:134px;white-space:nowrap" class="ft05"><b>PH-SEIZE&#160;Request</b></p>
+<p style="position:absolute;top:242px;left:287px;white-space:nowrap" class="ft03">.&#160;This&#160;primitive&#160;requests&#160;the&#160;simplex&#160;state&#160;machine&#160;to&#160;begin&#160;transmitting&#160;at&#160;</p>
+<p style="position:absolute;top:262px;left:134px;white-space:nowrap" class="ft06">the&#160;&#160;next&#160;&#160;available&#160;&#160;opportunity.&#160;&#160;&#160;&#160;When&#160;&#160;that&#160;&#160;opportunity&#160;&#160;has&#160;&#160;been&#160;&#160;identified&#160;&#160;(according&#160;&#160;to&#160;&#160;the&#160;<br/>CSMA/p-persistence&#160;algorithm&#160;included&#160;within),&#160;the&#160;transmitter&#160;started,&#160;a&#160;parameterized&#160;window&#160;<br/>provided&#160;for&#160;the&#160;startup&#160;of&#160;a&#160;conventional&#160;repeater&#160;(if&#160;required),&#160;and&#160;a&#160;parameterized&#160;time&#160;allowed&#160;<br/>for&#160;&#160;the&#160;&#160;synchronization&#160;&#160;of&#160;&#160;the&#160;&#160;remote&#160;&#160;station’s&#160;&#160;receiver&#160;&#160;(known&#160;&#160;as&#160;&#160;TXDELAY&#160;&#160;in&#160;&#160;most&#160;<br/>implementations), then&#160;a&#160;PH-SEIZE&#160;Confirm primitive is returned&#160;to the link multiplexer.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:362px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:363px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:363px;left:134px;white-space:nowrap" class="ft05"><b>PH-DATA&#160;Request</b></p>
+<p style="position:absolute;top:363px;left:285px;white-space:nowrap" class="ft03">.&#160;This&#160;primitive&#160;from&#160;the&#160;Link&#160;Multiplexer&#160;State&#160;Machine&#160;provides&#160;an&#160;AX.25&#160;</p>
+<p style="position:absolute;top:382px;left:134px;white-space:nowrap" class="ft06">frame&#160;of&#160;any&#160;type&#160;(UI,&#160;SABM,&#160;I,&#160;etc.)&#160;that&#160;is&#160;to&#160;be&#160;transmitted.&#160;An&#160;unlimited&#160;number&#160;of&#160;frames&#160;<br/>may&#160;be&#160;provided.&#160;If&#160;the&#160;transmission&#160;exceeds&#160;the&#160;10&#160;minute&#160;limit&#160;or&#160;the&#160;anti-hogging&#160;time&#160;limit,&#160;<br/>the&#160;&#160;half-duplex&#160;&#160;Physical&#160;&#160;State&#160;&#160;Machine&#160;&#160;automatically&#160;&#160;relinquishes&#160;&#160;the&#160;&#160;channel&#160;&#160;for&#160;&#160;use&#160;&#160;by&#160;&#160;the&#160;<br/>other&#160;stations.&#160;The&#160;transmission&#160;is&#160;automatically&#160;resumed&#160;at&#160;the&#160;next&#160;transmission&#160;opportunity&#160;<br/>indicated by&#160;the CSMA/p-persistence contention algorithm.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:482px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:483px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:483px;left:134px;white-space:nowrap" class="ft05"><b>PH-RELEASE&#160;&#160;Request</b></p>
+<p style="position:absolute;top:483px;left:321px;white-space:nowrap" class="ft03">.&#160;&#160;The&#160;&#160;Link&#160;&#160;Multiplexer&#160;&#160;State&#160;&#160;Machine&#160;&#160;provides&#160;&#160;this&#160;&#160;primitive&#160;&#160;when&#160;&#160;a&#160;</p>
+<p style="position:absolute;top:503px;left:134px;white-space:nowrap" class="ft06">submitted&#160;sequence&#160;of&#160;frames&#160;to&#160;be&#160;transmitted&#160;on&#160;behalf&#160;of&#160;a&#160;particular&#160;AX.25&#160;connection&#160;has&#160;<br/>been&#160;&#160;completed.&#160;&#160;&#160;&#160;The&#160;&#160;simplex&#160;&#160;Physical&#160;&#160;State&#160;&#160;Machine&#160;&#160;will&#160;&#160;piggyback&#160;&#160;any&#160;&#160;straggling&#160;&#160;digipeat&#160;<br/>frames (if time permits) and then relinquish the&#160;channel.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:562px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:563px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:563px;left:134px;white-space:nowrap" class="ft05"><b>PH-EXPEDITED-DATA&#160;&#160;Request</b></p>
+<p style="position:absolute;top:563px;left:394px;white-space:nowrap" class="ft03">.&#160;&#160;This&#160;&#160;primitive&#160;&#160;from&#160;&#160;the&#160;&#160;Link&#160;&#160;Multiplexer&#160;&#160;State&#160;&#160;Machine&#160;</p>
+<p style="position:absolute;top:583px;left:134px;white-space:nowrap" class="ft06">provides&#160;&#160;the&#160;&#160;AX.25&#160;&#160;frame&#160;&#160;that&#160;&#160;is&#160;&#160;to&#160;&#160;be&#160;&#160;transmitted&#160;&#160;immediately.&#160;&#160;The&#160;&#160;simplex&#160;&#160;Physical&#160;&#160;State&#160;<br/>Machine&#160;gives&#160;preference&#160;to&#160;priority&#160;frames&#160;over&#160;normal&#160;frames,&#160;and&#160;will&#160;take&#160;advantage&#160;of&#160;the&#160;<br/>PRIACK&#160;&#160;window.&#160;&#160;&#160;&#160;Priority&#160;&#160;frames&#160;&#160;can&#160;&#160;be&#160;&#160;provided&#160;&#160;by&#160;&#160;the&#160;&#160;link&#160;&#160;multiplexer&#160;&#160;at&#160;&#160;any&#160;&#160;time;&#160;&#160;a&#160;&#160;PH-<br/>SEIZE Request and subsequent PH Release&#160;Request are&#160;not employed for priority frames.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:663px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:664px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:664px;left:134px;white-space:nowrap" class="ft05"><b>PH-DATA&#160;&#160;Indication</b></p>
+<p style="position:absolute;top:664px;left:301px;white-space:nowrap" class="ft03">.&#160;&#160;During&#160;&#160;reception,&#160;&#160;the&#160;&#160;simplex&#160;&#160;Physical&#160;&#160;State&#160;&#160;Machine&#160;&#160;provides&#160;&#160;each&#160;</p>
+<p style="position:absolute;top:683px;left:134px;white-space:nowrap" class="ft06">AX.25 frame to the link&#160;multiplexer&#160;in a Frame primitive&#160;(Section&#160;C2a.2). No analysis is done&#160;on&#160;<br/>the&#160;frame&#160;by&#160;the&#160;simplex&#160;Physical&#160;State&#160;Machine;&#160;it&#160;does&#160;not&#160;examine&#160;lengths,&#160;the&#160;frame&#160;check&#160;<br/>sequence,&#160;the&#160;need&#160;for&#160;digipeating,&#160;or&#160;any&#160;other&#160;content&#160;of&#160;the&#160;frame;&#160;these&#160;responsibilities&#160;are&#160;<br/>carried out by the higher level state&#160;machines.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:763px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:764px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:764px;left:134px;white-space:nowrap" class="ft05"><b>PH-BUSY&#160;Indication</b></p>
+<p style="position:absolute;top:764px;left:298px;white-space:nowrap" class="ft03">. The&#160;simplex&#160;Physical&#160;State&#160;Machine&#160;provides&#160;this&#160;primitive&#160;whenever&#160;the&#160;</p>
+<p style="position:absolute;top:784px;left:134px;white-space:nowrap" class="ft06">channel&#160;&#160;becomes&#160;&#160;busy.&#160;&#160;&#160;&#160;“Busy”&#160;&#160;here&#160;&#160;means&#160;&#160;the&#160;&#160;detection&#160;&#160;of&#160;&#160;a&#160;&#160;valid&#160;&#160;modem&#160;synchronization&#160;<br/>sequence,&#160;HDLC&#160;Flags&#160;or&#160;HDLC&#160;frames&#160;—&#160;not&#160;the&#160;detection&#160;of&#160;an&#160;FM&#160;carrier&#160;on&#160;a&#160;two-meter&#160;<br/>radio. An indication of busy is&#160;provided to the&#160;higher layer&#160;state machines so that various timers&#160;<br/>that&#160;supervise&#160;the&#160;AX.25&#160;connection&#160;can&#160;be&#160;suspended.&#160;This&#160;avoids&#160;the&#160;undesirable&#160;situation&#160;on&#160;<br/>a&#160;busy&#160;channel&#160;where&#160;AX.25,&#160;having&#160;sent&#160;data&#160;and&#160;expecting&#160;and&#160;acknowledgement,&#160;times&#160;out&#160;<br/>and&#160;attempts&#160;retransmissions&#160;—&#160;and&#160;the&#160;only&#160;reason&#160;an&#160;acknowledgement&#160;was&#160;not&#160;received&#160;was&#160;<br/>because&#160;the&#160;remote&#160;station&#160;did&#160;not&#160;yet&#160;have&#160;a&#160;chance&#160;to&#160;make&#160;a&#160;transmission.&#160;Since&#160;the&#160;channel&#160;<br/>is&#160;&#160;simplex,&#160;&#160;this&#160;&#160;primitive&#160;&#160;is&#160;&#160;also&#160;&#160;provided&#160;&#160;when&#160;&#160;the&#160;&#160;simplex&#160;&#160;Physical&#160;&#160;State&#160;&#160;Machine&#160;&#160;starts&#160;<br/>transmitting.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:963px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:963px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:963px;left:134px;white-space:nowrap" class="ft05"><b>PH-QUIET&#160;Indication</b></p>
+<p style="position:absolute;top:963px;left:302px;white-space:nowrap" class="ft03">.&#160;The&#160;simplex&#160;Physical&#160;State&#160;Machine&#160;provides&#160;this&#160;primitive&#160;whenever&#160;the&#160;</p>
+<p style="position:absolute;top:983px;left:134px;white-space:nowrap" class="ft06">channel&#160;becomes&#160;quiet.&#160;Since&#160;the&#160;channel&#160;is&#160;simplex,&#160;this&#160;primitive&#160;is&#160;also&#160;provided&#160;when&#160;the&#160;<br/>simplex&#160;Physical State Machine finishes transmitting.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1023px;left:80px;white-space:nowrap" class="ft03">&#160;</p>
+</div>
+</body>
+</html>

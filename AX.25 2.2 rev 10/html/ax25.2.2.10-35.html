@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 35</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft02{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft03{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft04{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft05{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft06{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page35-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10035.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">35&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:150px;left:80px;white-space:nowrap" class="ft01"><i>4.3.3.8 Test&#160;(TEST) Frame&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:167px;left:107px;white-space:nowrap" class="ft02">The&#160;Test&#160;command&#160;causes&#160;the&#160;addressed&#160;station&#160;to&#160;respond&#160;with&#160;the&#160;TEST&#160;response&#160;at&#160;the&#160;first&#160;</p>
+<p style="position:absolute;top:187px;left:80px;white-space:nowrap" class="ft06">respond&#160;opportunity;&#160;this&#160;performs&#160;a&#160;basic&#160;test&#160;of&#160;the&#160;data-link&#160;control.&#160;An&#160;information&#160;field&#160;is&#160;optional&#160;<br/>with&#160;&#160;the&#160;&#160;TEST&#160;&#160;command.&#160;&#160;If&#160;&#160;present,&#160;&#160;the&#160;&#160;received&#160;&#160;information&#160;&#160;field&#160;&#160;is&#160;&#160;returned,&#160;&#160;if&#160;&#160;possible,&#160;&#160;by&#160;&#160;the&#160;<br/>addressed&#160;&#160;station,&#160;&#160;with&#160;&#160;the&#160;&#160;TEST&#160;&#160;response.&#160;&#160;&#160;&#160;The&#160;&#160;TEST&#160;&#160;command&#160;&#160;has&#160;&#160;no&#160;&#160;effect&#160;&#160;on&#160;&#160;the&#160;&#160;mode&#160;&#160;or&#160;<br/>sequence variables maintained&#160;by&#160;the station.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:270px;left:107px;white-space:nowrap" class="ft02">A&#160;FRMR&#160;condition&#160;may&#160;be&#160;established&#160;if&#160;the&#160;received&#160;TEST&#160;command&#160;information&#160;field&#160;exceeds&#160;the&#160;</p>
+<p style="position:absolute;top:291px;left:80px;white-space:nowrap" class="ft06">maximum&#160;defined&#160;storage&#160;capability&#160;of&#160;the&#160;station.&#160;If&#160;a&#160;FRMR&#160;response&#160;is&#160;not&#160;returned&#160;for&#160;this&#160;condition,&#160;<br/>a TEST response without an information field is&#160;returned.&#160;</p>
+<p style="position:absolute;top:332px;left:107px;white-space:nowrap" class="ft02">The&#160;station&#160;considers&#160;the&#160;data-link&#160;layer&#160;test&#160;terminated&#160;on&#160;receipt&#160;of&#160;the&#160;TEST&#160;response,&#160;or&#160;when&#160;</p>
+<p style="position:absolute;top:353px;left:80px;white-space:nowrap" class="ft06">a&#160;&#160;time-out&#160;&#160;period&#160;&#160;has&#160;&#160;expired.&#160;&#160;The&#160;&#160;results&#160;&#160;of&#160;&#160;the&#160;&#160;TEST&#160;&#160;command/response&#160;&#160;exchange&#160;&#160;are&#160;&#160;made&#160;<br/>available for interrogation by a higher layer.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:417px;left:80px;white-space:nowrap" class="ft01"><i>4.3.3.9 Frame Reject (FRMR) Response Frame&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:434px;left:107px;white-space:nowrap" class="ft02">The FRMR&#160;response is&#160;removed from the standard for the&#160;following reasons:&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:454px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:455px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;UI frame transmission&#160;was not allowed&#160;during&#160;FRMR recovery&#160;&#160;&#160;</p>
+<p style="position:absolute;top:475px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:476px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;During FRMR recovery, the link could not be reestablished by the station that sent the FRMR&#160;&#160;&#160;</p>
+<p style="position:absolute;top:496px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:497px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;The above functions are&#160;better handled by simply resetting&#160;the&#160;link with a SABM(E) + UA&#160;</p>
+<p style="position:absolute;top:517px;left:134px;white-space:nowrap" class="ft02">exchange&#160;&#160;&#160;</p>
+<p style="position:absolute;top:537px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:538px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;An implementation&#160;that receives and process FRMRs but does not&#160;transmit them&#160;is&#160;compatible&#160;</p>
+<p style="position:absolute;top:558px;left:134px;white-space:nowrap" class="ft02">with older versions of the standard&#160;&#160;&#160;</p>
+<p style="position:absolute;top:578px;left:107px;white-space:nowrap" class="ft03">•</p>
+<p style="position:absolute;top:579px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;SDL is simplified and removes&#160;the&#160;need for one state in the data-link state machine.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:598px;left:80px;white-space:nowrap" class="ft02">&#160;</p>
+<p style="position:absolute;top:619px;left:107px;white-space:nowrap" class="ft02">This&#160;&#160;version&#160;&#160;of&#160;&#160;AX.25&#160;&#160;operates&#160;&#160;with&#160;&#160;previous&#160;&#160;versions&#160;&#160;of&#160;&#160;AX.25.&#160;&#160;&#160;&#160;It&#160;&#160;does&#160;&#160;not&#160;&#160;generate&#160;&#160;a&#160;&#160;FRMR&#160;</p>
+<p style="position:absolute;top:640px;left:80px;white-space:nowrap" class="ft02">Response frame, but handles error&#160;conditions by resetting&#160;the link.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:680px;left:80px;white-space:nowrap" class="ft04">4.4 Link Error Reporting and Recovery&#160;&#160;&#160;</p>
+<p style="position:absolute;top:704px;left:107px;white-space:nowrap" class="ft02">Several&#160;link-layer&#160;errors&#160;can&#160;be&#160;recovered&#160;without&#160;terminating&#160;the&#160;connection.&#160;These&#160;error&#160;situations&#160;</p>
+<p style="position:absolute;top:724px;left:80px;white-space:nowrap" class="ft02">may occur&#160;as a result&#160;of transmission&#160;errors or malfunctions within the TNC.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:765px;left:80px;white-space:nowrap" class="ft05">4.4.1 TNC Busy Condition&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:786px;left:107px;white-space:nowrap" class="ft02">When&#160;a&#160;TNC&#160;is&#160;temporarily&#160;unable&#160;to&#160;receive&#160;I&#160;frames&#160;(e.g.,&#160;when&#160;receive&#160;buffers&#160;are&#160;full),&#160;it&#160;sends&#160;</p>
+<p style="position:absolute;top:807px;left:80px;white-space:nowrap" class="ft06">a&#160;Receive&#160;Not&#160;Ready&#160;(RNR)&#160;frame.&#160;This&#160;informs&#160;the&#160;sending&#160;TNC&#160;that&#160;the&#160;receiving&#160;TNC&#160;cannot&#160;handle&#160;<br/>any&#160;more&#160;I&#160;frames&#160;at&#160;the&#160;moment.&#160;This&#160;receiving&#160;TNC&#160;clears&#160;this&#160;condition&#160;by&#160;the&#160;sending&#160;a&#160;UA,&#160;RR,&#160;<br/>REJ or SABM(E) command frame.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:889px;left:80px;white-space:nowrap" class="ft05">4.4.2 Send Sequence Number Error&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:910px;left:107px;white-space:nowrap" class="ft02">If&#160;the&#160;send&#160;sequence&#160;number,&#160;N(S),&#160;of&#160;an&#160;otherwise&#160;error-free&#160;received&#160;frame&#160;does&#160;not&#160;match&#160;the&#160;</p>
+<p style="position:absolute;top:931px;left:80px;white-space:nowrap" class="ft06">receive&#160;state&#160;variable,&#160;V(R),&#160;a&#160;send&#160;sequence&#160;error&#160;has&#160;occurred.&#160;&#160;&#160;&#160;If&#160;SREJ&#160;has&#160;been&#160;negotiated&#160;and&#160;<br/>the&#160;&#160;N(s)&#160;&#160;is&#160;&#160;in&#160;&#160;the&#160;&#160;range&#160;&#160;“greater-than&#160;&#160;V(r)”&#160;&#160;and&#160;&#160;“less-than&#160;&#160;V(r)+k,”&#160;&#160;the&#160;&#160;information&#160;&#160;field&#160;&#160;is&#160;&#160;saved;&#160;<br/>otherwise&#160;it&#160;is&#160;discarded.&#160;&#160;&#160;&#160;The&#160;receiver&#160;will&#160;not&#160;acknowledge&#160;this&#160;frame&#160;or&#160;any&#160;other&#160;I&#160;frames&#160;until&#160;N(S)&#160;<br/>matches V(R).&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1014px;left:107px;white-space:nowrap" class="ft02">The&#160;control&#160;field&#160;of&#160;the&#160;erroneous&#160;I&#160;frame(s)&#160;is&#160;accepted&#160;so&#160;that&#160;link&#160;supervisory&#160;functions&#160;such&#160;as&#160;</p>
+<p style="position:absolute;top:1035px;left:80px;white-space:nowrap" class="ft02">checking&#160;the&#160;P/F&#160;bit&#160;can&#160;be&#160;performed.&#160;Because&#160;of&#160;this&#160;update,&#160;the&#160;retransmitted&#160;I&#160;frame&#160;may&#160;have&#160;an&#160;</p>
+</div>
+</body>
+</html>

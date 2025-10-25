@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 29</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft03{font-size:16px;font-family:Arial,Italic;color:#ff0000;}
+	.ft04{font-size:17px;font-family:KEEOEO+Arial;color:#ff0000;}
+	.ft05{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft06{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft07{font-size:18px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft08{font-size:15px;font-family:KEFOHA+Courier;color:#000000;}
+	.ft09{font-size:15px;font-family:KEFOIB+Courier;color:#000000;}
+	.ft010{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page29-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10029.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">29&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:80px;white-space:nowrap" class="ft01">by the proper reception of I frames up to the I frame that caused the reject condition to be initiated.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:168px;left:107px;white-space:nowrap" class="ft01">The&#160;status&#160;of&#160;the&#160;TNC&#160;at&#160;the&#160;other&#160;end&#160;of&#160;the&#160;link&#160;is&#160;requested&#160;by&#160;sending&#160;a&#160;REJ&#160;command&#160;frame&#160;</p>
+<p style="position:absolute;top:189px;left:80px;white-space:nowrap" class="ft01">with the P&#160;bit set to one.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:233px;left:80px;white-space:nowrap" class="ft02"><i>4.3.2.4 Selective Reject&#160;(SREJ)&#160;</i></p>
+<p style="position:absolute;top:233px;left:315px;white-space:nowrap" class="ft03"><i>(remove Command and)&#160;</i></p>
+<p style="position:absolute;top:233px;left:499px;white-space:nowrap" class="ft02"><i>Response &#160;</i></p>
+<p style="position:absolute;top:249px;left:107px;white-space:nowrap" class="ft01">The&#160;selective&#160;reject&#160;frame&#160;is&#160;used&#160;by&#160;the&#160;receiving&#160;TNC&#160;to&#160;request&#160;retransmission&#160;of&#160;the&#160;single&#160;I&#160;</p>
+<p style="position:absolute;top:270px;left:80px;white-space:nowrap" class="ft010">frame&#160;numbered&#160;N(R).&#160;If&#160;the&#160;P/F&#160;bit&#160;in&#160;the&#160;SREJ&#160;frame&#160;is&#160;set&#160;to&#160;“1”,&#160;then&#160;I&#160;frames&#160;numbered&#160;up&#160;to&#160;N(R)-<br/>1&#160;inclusive&#160;are&#160;considered&#160;as&#160;acknowledged.&#160;However,&#160;if&#160;the&#160;P/F&#160;bit&#160;in&#160;the&#160;SREJ&#160;frame&#160;is&#160;set&#160;to&#160;“0”,&#160;then&#160;<br/>the&#160;&#160;N(R)&#160;&#160;of&#160;&#160;the&#160;&#160;SREJ&#160;&#160;frame&#160;&#160;does&#160;&#160;not&#160;&#160;indicate&#160;&#160;acknowledgement&#160;&#160;of&#160;&#160;I&#160;&#160;frames.&#160;&#160;Each&#160;&#160;SREJ&#160;&#160;exception&#160;<br/>condition&#160;is&#160;cleared&#160;(reset)&#160;upon&#160;receipt&#160;of&#160;the&#160;I&#160;frame&#160;with&#160;an&#160;N(S)&#160;equal&#160;to&#160;the&#160;N(R)&#160;of&#160;the&#160;SREJ&#160;frame.&#160;</p>
+<p style="position:absolute;top:353px;left:80px;white-space:nowrap" class="ft04">The SREJ&#160;frame&#160;is only sent as a&#160;response</p>
+<p style="position:absolute;top:353px;left:411px;white-space:nowrap" class="ft01">.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:374px;left:107px;white-space:nowrap" class="ft01">A&#160;receiving&#160;TNC&#160;may&#160;transmit&#160;one&#160;or&#160;more&#160;SREJ&#160;frames,&#160;each&#160;containing&#160;a&#160;different&#160;N(R)&#160;with&#160;the&#160;</p>
+<p style="position:absolute;top:394px;left:80px;white-space:nowrap" class="ft010">P&#160;bit&#160;set&#160;to&#160;“0”,&#160;before&#160;one&#160;or&#160;more&#160;earlier&#160;SREJ&#160;exception&#160;conditions&#160;have&#160;been&#160;cleared.&#160;However,&#160;a&#160;<br/>SREJ&#160;&#160;is&#160;&#160;not&#160;&#160;transmitted&#160;&#160;if&#160;&#160;an&#160;&#160;earlier&#160;&#160;REJ&#160;&#160;exception&#160;&#160;condition&#160;&#160;has&#160;&#160;not&#160;&#160;been&#160;&#160;cleared&#160;&#160;as&#160;&#160;indicated&#160;&#160;in&#160;<br/>Section&#160;4.5.4.&#160;(To&#160;do&#160;so&#160;would&#160;request&#160;retransmission&#160;of&#160;an&#160;I&#160;frame&#160;that&#160;would&#160;be&#160;retransmitted&#160;by&#160;the&#160;<br/>REJ&#160;operation).&#160;Likewise,&#160;a&#160;REJ&#160;frame&#160;is&#160;not&#160;transmitted&#160;if&#160;one&#160;or&#160;more&#160;SREJ&#160;exception&#160;conditions&#160;have&#160;<br/>not been cleared&#160;as indicated in Section 4.5.4.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:498px;left:107px;white-space:nowrap" class="ft01">I&#160;frames&#160;transmitted&#160;following&#160;the&#160;I&#160;frame&#160;indicated&#160;by&#160;the&#160;SREJ&#160;frame&#160;are&#160;not&#160;retransmitted&#160;as&#160;the&#160;</p>
+<p style="position:absolute;top:519px;left:80px;white-space:nowrap" class="ft010">result&#160;of&#160;receiving&#160;a&#160;SREJ&#160;frame.&#160;Additional&#160;I&#160;frames&#160;awaiting&#160;initial&#160;transmission&#160;may&#160;be&#160;transmitted&#160;<br/>following the retransmission of the specific I frame requested&#160;by the SREJ frame.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:580px;left:80px;white-space:nowrap" class="ft05">4.3.3 Unnumbered Frame&#160;Control Fields&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:601px;left:116px;white-space:nowrap" class="ft01">&#160;&#160;&#160;&#160;Unnumbered&#160;frame&#160;control&#160;fields&#160;are&#160;either&#160;commands&#160;or&#160;responses.&#160;Figure&#160;4.4&#160;shows&#160;the&#160;layout&#160;</p>
+<p style="position:absolute;top:622px;left:80px;white-space:nowrap" class="ft01">of U frames&#160;implemented within this protocol.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:924px;left:331px;white-space:nowrap" class="ft06"><b>Figure 4.4 U Frame Control Fields.&#160;</b></p>
+<p style="position:absolute;top:924px;left:620px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:961px;left:80px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:988px;left:80px;white-space:nowrap" class="ft02"><i>4.3.3.1 Set Asynchronous Balanced&#160;Mode (SABM) Command&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:1005px;left:107px;white-space:nowrap" class="ft01">The&#160;SABM&#160;command&#160;places&#160;two&#160;Terminal&#160;Node&#160;Controllers&#160;(TNC)&#160;in&#160;the&#160;asynchronous&#160;balanced&#160;</p>
+<p style="position:absolute;top:1025px;left:80px;white-space:nowrap" class="ft010">mode&#160;(modulo&#160;8).&#160;This&#160;is&#160;a&#160;balanced&#160;mode&#160;of&#160;operation&#160;in&#160;which&#160;both&#160;devices&#160;are&#160;treated&#160;as&#160;equals&#160;or&#160;<br/>peers.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:673px;left:224px;white-space:nowrap" class="ft08"><b>Control Field Type&#160;</b></p>
+<p style="position:absolute;top:673px;left:395px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:673px;left:482px;white-space:nowrap" class="ft08"><b>Type&#160;</b></p>
+<p style="position:absolute;top:673px;left:527px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:673px;left:583px;white-space:nowrap" class="ft08"><b>Control-Field Bits&#160;</b></p>
+<p style="position:absolute;top:673px;left:754px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:692px;left:564px;white-space:nowrap" class="ft08"><b>7 6 5&#160;</b></p>
+<p style="position:absolute;top:692px;left:640px;white-space:nowrap" class="ft08"><b>4&#160;</b></p>
+<p style="position:absolute;top:692px;left:658px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:692px;left:681px;white-space:nowrap" class="ft08"><b>3 2&#160;</b></p>
+<p style="position:absolute;top:692px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:692px;left:735px;white-space:nowrap" class="ft08"><b>1 0&#160;</b></p>
+<p style="position:absolute;top:711px;left:193px;white-space:nowrap" class="ft08"><b>Set Asynchronous Balanced&#160;</b></p>
+<p style="position:absolute;top:728px;left:211px;white-space:nowrap" class="ft08"><b>Mode Extended (SABME)&#160;</b></p>
+<p style="position:absolute;top:728px;left:409px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:711px;left:469px;white-space:nowrap" class="ft08"><b>Command&#160;</b></p>
+<p style="position:absolute;top:711px;left:541px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:711px;left:564px;white-space:nowrap" class="ft08"><b>0 1 1&#160;</b></p>
+<p style="position:absolute;top:711px;left:640px;white-space:nowrap" class="ft08"><b>P&#160;</b></p>
+<p style="position:absolute;top:711px;left:658px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:711px;left:681px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:711px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:711px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:748px;left:193px;white-space:nowrap" class="ft08"><b>Set Asynchronous Balanced&#160;</b></p>
+<p style="position:absolute;top:765px;left:260px;white-space:nowrap" class="ft08"><b>Mode(SABM)&#160;</b></p>
+<p style="position:absolute;top:765px;left:359px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:748px;left:469px;white-space:nowrap" class="ft08"><b>Command&#160;</b></p>
+<p style="position:absolute;top:748px;left:541px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:748px;left:564px;white-space:nowrap" class="ft08"><b>0 0 1&#160;</b></p>
+<p style="position:absolute;top:748px;left:640px;white-space:nowrap" class="ft08"><b>P&#160;</b></p>
+<p style="position:absolute;top:748px;left:658px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:748px;left:681px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:748px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:748px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:784px;left:229px;white-space:nowrap" class="ft08"><b>Disconnect (DISC)&#160;</b></p>
+<p style="position:absolute;top:784px;left:391px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:784px;left:469px;white-space:nowrap" class="ft08"><b>Command&#160;</b></p>
+<p style="position:absolute;top:784px;left:541px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:784px;left:564px;white-space:nowrap" class="ft08"><b>0 1 0&#160;</b></p>
+<p style="position:absolute;top:784px;left:640px;white-space:nowrap" class="ft08"><b>P&#160;</b></p>
+<p style="position:absolute;top:784px;left:658px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:784px;left:681px;white-space:nowrap" class="ft08"><b>0 0&#160;</b></p>
+<p style="position:absolute;top:784px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:784px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:803px;left:215px;white-space:nowrap" class="ft08"><b>Disconnect Mode (DM)&#160;</b></p>
+<p style="position:absolute;top:803px;left:404px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:803px;left:464px;white-space:nowrap" class="ft08"><b>Response&#160;</b></p>
+<p style="position:absolute;top:803px;left:564px;white-space:nowrap" class="ft08"><b>0 0 0&#160;</b></p>
+<p style="position:absolute;top:803px;left:640px;white-space:nowrap" class="ft08"><b>F&#160;</b></p>
+<p style="position:absolute;top:803px;left:658px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:803px;left:681px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:803px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:803px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:822px;left:184px;white-space:nowrap" class="ft08"><b>Unnumbered Acknowledge (UA)&#160;</b></p>
+<p style="position:absolute;top:822px;left:436px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:822px;left:464px;white-space:nowrap" class="ft08"><b>Response&#160;</b></p>
+<p style="position:absolute;top:822px;left:564px;white-space:nowrap" class="ft08"><b>0 1 1&#160;</b></p>
+<p style="position:absolute;top:822px;left:640px;white-space:nowrap" class="ft08"><b>F&#160;</b></p>
+<p style="position:absolute;top:822px;left:658px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:822px;left:681px;white-space:nowrap" class="ft08"><b>0 0&#160;</b></p>
+<p style="position:absolute;top:822px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:822px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:842px;left:220px;white-space:nowrap" class="ft08"><b>Frame Reject (FRMR)&#160;</b></p>
+<p style="position:absolute;top:841px;left:400px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:842px;left:464px;white-space:nowrap" class="ft08"><b>Response&#160;</b></p>
+<p style="position:absolute;top:842px;left:564px;white-space:nowrap" class="ft08"><b>1 0 0&#160;</b></p>
+<p style="position:absolute;top:842px;left:640px;white-space:nowrap" class="ft08"><b>F&#160;</b></p>
+<p style="position:absolute;top:841px;left:658px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:842px;left:681px;white-space:nowrap" class="ft08"><b>0 1&#160;</b></p>
+<p style="position:absolute;top:841px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:842px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:861px;left:184px;white-space:nowrap" class="ft08"><b>Unnumbered Information (UI)&#160;</b></p>
+<p style="position:absolute;top:861px;left:436px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:861px;left:473px;white-space:nowrap" class="ft08"><b>Either&#160;</b></p>
+<p style="position:absolute;top:861px;left:536px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:861px;left:564px;white-space:nowrap" class="ft08"><b>0 0 0&#160;</b></p>
+<p style="position:absolute;top:861px;left:631px;white-space:nowrap" class="ft08"><b>P/F 0&#160;</b></p>
+<p style="position:absolute;top:861px;left:699px;white-space:nowrap" class="ft08"><b>0&#160;</b></p>
+<p style="position:absolute;top:861px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:861px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:880px;left:175px;white-space:nowrap" class="ft08"><b>Exchange Identification (XID)&#160;</b></p>
+<p style="position:absolute;top:880px;left:473px;white-space:nowrap" class="ft08"><b>Either&#160;</b></p>
+<p style="position:absolute;top:880px;left:536px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:880px;left:564px;white-space:nowrap" class="ft08"><b>1 0 1&#160;</b></p>
+<p style="position:absolute;top:880px;left:631px;white-space:nowrap" class="ft08"><b>P/F 1&#160;</b></p>
+<p style="position:absolute;top:880px;left:699px;white-space:nowrap" class="ft08"><b>1&#160;</b></p>
+<p style="position:absolute;top:880px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:880px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+<p style="position:absolute;top:899px;left:256px;white-space:nowrap" class="ft08"><b>Test (TEST)&#160;</b></p>
+<p style="position:absolute;top:899px;left:364px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:899px;left:473px;white-space:nowrap" class="ft08"><b>Either&#160;</b></p>
+<p style="position:absolute;top:899px;left:536px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:899px;left:564px;white-space:nowrap" class="ft08"><b>1 1 1&#160;</b></p>
+<p style="position:absolute;top:899px;left:631px;white-space:nowrap" class="ft08"><b>P/F 0&#160;</b></p>
+<p style="position:absolute;top:899px;left:699px;white-space:nowrap" class="ft08"><b>0&#160;</b></p>
+<p style="position:absolute;top:899px;left:717px;white-space:nowrap" class="ft09">&#160;</p>
+<p style="position:absolute;top:899px;left:735px;white-space:nowrap" class="ft08"><b>1 1&#160;</b></p>
+</div>
+</body>
+</html>

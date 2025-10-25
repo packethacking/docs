@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 43</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft02{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft03{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft04{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft05{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft06{font-size:18px;line-height:23px;font-family:KEEOEO+Arial;color:#1f4d78;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page43-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10043.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">43&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:147px;left:107px;white-space:nowrap" class="ft01">•</p>
+<p style="position:absolute;top:148px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;Window Size&#160;Receive&#160;=&#160;32&#160;&#160;&#160;</p>
+<p style="position:absolute;top:168px;left:107px;white-space:nowrap" class="ft01">•</p>
+<p style="position:absolute;top:169px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;Acknowledge Timer = 3000 msec&#160;&#160;&#160;</p>
+<p style="position:absolute;top:189px;left:107px;white-space:nowrap" class="ft01">•</p>
+<p style="position:absolute;top:190px;left:115px;white-space:nowrap" class="ft02">&#160;&#160;Retries = 10&#160;&#160;&#160;</p>
+<p style="position:absolute;top:210px;left:80px;white-space:nowrap" class="ft02">&#160;</p>
+<p style="position:absolute;top:233px;left:80px;white-space:nowrap" class="ft03">6.3.3 Information-Transfer Phase&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:254px;left:107px;white-space:nowrap" class="ft02">After&#160;establishing&#160;a&#160;link&#160;connection,&#160;the&#160;TNC&#160;enters&#160;the&#160;information-transfer&#160;state.&#160;&#160;&#160;&#160;In&#160;this&#160;state,&#160;the&#160;</p>
+<p style="position:absolute;top:275px;left:80px;white-space:nowrap" class="ft05">TNC&#160;accepts&#160;and&#160;transmits&#160;I&#160;and&#160;S&#160;frames&#160;according&#160;to&#160;the&#160;procedure&#160;outlined&#160;in&#160;Section&#160;6.4.&#160;If&#160;the&#160;<br/>TNC&#160;&#160;receives&#160;&#160;a&#160;&#160;SABM(E)&#160;&#160;command&#160;&#160;while&#160;&#160;in&#160;&#160;the&#160;&#160;information-transfer&#160;&#160;state,&#160;&#160;it&#160;&#160;follows&#160;&#160;the&#160;&#160;resetting&#160;<br/>procedure outlined in Section&#160;6.5.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:357px;left:80px;white-space:nowrap" class="ft03">6.3.4 Link Disconnection&#160;&#160;&#160;</p>
+<p style="position:absolute;top:378px;left:107px;white-space:nowrap" class="ft02">While&#160;in&#160;the&#160;information-transfer&#160;state,&#160;either&#160;TNC&#160;may&#160;indicate&#160;a&#160;request&#160;to&#160;disconnect&#160;the&#160;link&#160;by&#160;</p>
+<p style="position:absolute;top:399px;left:80px;white-space:nowrap" class="ft02">transmitting a DISC command frame and starting timer T1.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:420px;left:107px;white-space:nowrap" class="ft02">After&#160;&#160;receiving&#160;&#160;a&#160;&#160;valid&#160;&#160;DISC&#160;&#160;command,&#160;&#160;the&#160;&#160;TNC&#160;&#160;sends&#160;&#160;a&#160;&#160;UA&#160;&#160;response&#160;&#160;frame&#160;&#160;and&#160;&#160;enters&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:440px;left:80px;white-space:nowrap" class="ft05">disconnected&#160;state.&#160;After&#160;receiving&#160;a&#160;UA&#160;or&#160;DM&#160;response&#160;to&#160;a&#160;sent&#160;DISC&#160;command,&#160;the&#160;TNC&#160;cancels&#160;<br/>timer T1 and&#160;enters the&#160;disconnected state.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:482px;left:107px;white-space:nowrap" class="ft02">If&#160;a&#160;UA&#160;or&#160;DM&#160;response&#160;is&#160;not&#160;correctly&#160;received&#160;before&#160;T1&#160;times&#160;out,&#160;the&#160;DISC&#160;frame&#160;is&#160;sent&#160;again&#160;</p>
+<p style="position:absolute;top:502px;left:80px;white-space:nowrap" class="ft02">and T1 is restarted. If this happens&#160;N2 times, the TNC enters the disconnected state.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:543px;left:80px;white-space:nowrap" class="ft03">6.3.5 Disconnected State&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:565px;left:107px;white-space:nowrap" class="ft02">In&#160;the&#160;disconnected&#160;state,&#160;a&#160;TNC&#160;monitors&#160;received&#160;commands,&#160;reacts&#160;to&#160;the&#160;receipt&#160;of&#160;a&#160;SABM(E)&#160;</p>
+<p style="position:absolute;top:585px;left:80px;white-space:nowrap" class="ft02">as described&#160;in Section&#160;6.3.1, and transmits a&#160;DM frame in response to a DISC command.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:606px;left:107px;white-space:nowrap" class="ft02">In&#160;the&#160;disconnected&#160;state,&#160;a&#160;TNC&#160;may&#160;initiate&#160;a&#160;link&#160;set&#160;up&#160;as&#160;outlined&#160;in&#160;connection&#160;establishment&#160;</p>
+<p style="position:absolute;top:627px;left:80px;white-space:nowrap" class="ft05">(Section&#160;6.3.1). It may also respond&#160;to the receipt of a SABM(E) command and establish a connection,&#160;<br/>or it may refuse the SABM(E) and&#160;send&#160;a DM instead.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:668px;left:107px;white-space:nowrap" class="ft02">Any&#160;TNC&#160;receiving&#160;a&#160;command&#160;frame&#160;other&#160;than&#160;a&#160;SABM(E)&#160;or&#160;UI&#160;frame&#160;with&#160;the&#160;P&#160;bit&#160;set&#160;to&#160;“1”&#160;</p>
+<p style="position:absolute;top:689px;left:80px;white-space:nowrap" class="ft02">responds with a DM frame with the F bit set to “1”. The offending frame is ignored.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:709px;left:107px;white-space:nowrap" class="ft02">When&#160;&#160;the&#160;&#160;TNC&#160;&#160;enters&#160;&#160;the&#160;&#160;disconnected&#160;&#160;state&#160;&#160;after&#160;&#160;an&#160;&#160;error&#160;&#160;condition,&#160;&#160;or&#160;&#160;if&#160;&#160;an&#160;&#160;internal&#160;&#160;error&#160;&#160;has&#160;</p>
+<p style="position:absolute;top:730px;left:80px;white-space:nowrap" class="ft05">resulted&#160;in&#160;the&#160;TNC&#160;being&#160;in&#160;the&#160;disconnected&#160;state,&#160;the&#160;TNC&#160;indicates&#160;this&#160;by&#160;sending&#160;a&#160;DM&#160;response&#160;<br/>rather&#160;than&#160;a&#160;DISC&#160;frame&#160;and&#160;follows&#160;the&#160;link&#160;disconnection&#160;procedure&#160;outlined&#160;in&#160;Section&#160;6.3.4.&#160;The&#160;<br/>TNC may then try to reestablish&#160;the&#160;link&#160;using the link set up&#160;procedure outlined in&#160;Section&#160;6.3.1.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:794px;left:80px;white-space:nowrap" class="ft06">&#160;<br/>6.3.6 Collision Recovery&#160;&#160;&#160;</p>
+<p style="position:absolute;top:845px;left:80px;white-space:nowrap" class="ft04"><i>6.3.6.1 Collisions in&#160;a Half-Duplex Environment&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:862px;left:107px;white-space:nowrap" class="ft02">Collisions&#160;of&#160;frames&#160;in&#160;a&#160;half-duplex&#160;environment&#160;are&#160;taken&#160;care&#160;of&#160;by&#160;the&#160;retry&#160;nature&#160;of&#160;the&#160;T1&#160;timer&#160;</p>
+<p style="position:absolute;top:882px;left:80px;white-space:nowrap" class="ft02">and retransmission count variable. No other special action&#160;is required.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:926px;left:80px;white-space:nowrap" class="ft04"><i>6.3.6.2 Collisions of Unnumbered Commands.&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:943px;left:107px;white-space:nowrap" class="ft02">If&#160;&#160;sent&#160;&#160;and&#160;&#160;received&#160;&#160;SABM(E)&#160;&#160;or&#160;&#160;DISC&#160;&#160;command&#160;&#160;frames&#160;&#160;are&#160;&#160;the&#160;&#160;same,&#160;&#160;both&#160;&#160;TNCs&#160;&#160;send&#160;&#160;a&#160;&#160;UA&#160;</p>
+<p style="position:absolute;top:963px;left:80px;white-space:nowrap" class="ft02">response at the earliest&#160;opportunity, and both&#160;devices enter&#160;the indicated state.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:984px;left:107px;white-space:nowrap" class="ft02">If&#160;sent&#160;and&#160;received&#160;SABM(E)&#160;or&#160;DISC&#160;commands&#160;are&#160;different,&#160;both&#160;TNCs&#160;enter&#160;the&#160;disconnected&#160;</p>
+<p style="position:absolute;top:1005px;left:80px;white-space:nowrap" class="ft02">state and transmit a DM frame at the earliest opportunity.&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

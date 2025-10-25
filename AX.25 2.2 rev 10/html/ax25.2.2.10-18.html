@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 18</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft03{font-size:20px;font-family:KEEOEO+Arial;color:#ff0000;}
+	.ft04{font-size:17px;font-family:KEEOEO+Arial;color:#ff0000;}
+	.ft05{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft06{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft07{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#ff0000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page18-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10018.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">18&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:107px;white-space:nowrap" class="ft01">The&#160;&#160;I&#160;&#160;field&#160;&#160;defaults&#160;&#160;to&#160;&#160;a&#160;&#160;length&#160;&#160;of&#160;&#160;256&#160;&#160;octets&#160;&#160;and&#160;&#160;contains&#160;&#160;an&#160;&#160;integral&#160;&#160;number&#160;&#160;of&#160;&#160;octets.&#160;&#160;These&#160;</p>
+<p style="position:absolute;top:168px;left:80px;white-space:nowrap" class="ft06">constraints&#160;apply&#160;prior&#160;to&#160;the&#160;insertion&#160;of&#160;zero&#160;bits&#160;as&#160;specified&#160;in&#160;Section&#160;3.6.&#160;Any&#160;information&#160;in&#160;the&#160;I&#160;<br/>field&#160;is&#160;passed&#160;along&#160;the&#160;link&#160;transparently,&#160;except&#160;for&#160;the&#160;zero-bit&#160;insertion&#160;(see&#160;Section&#160;3.6)&#160;necessary&#160;<br/>to prevent flags from&#160;accidentally appearing in the I field.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:250px;left:80px;white-space:nowrap" class="ft02">3.6 Bit Stuffing&#160;&#160;&#160;</p>
+<p style="position:absolute;top:274px;left:107px;white-space:nowrap" class="ft01">In&#160;&#160;order&#160;&#160;to&#160;&#160;ensure&#160;&#160;that&#160;&#160;the&#160;&#160;flag&#160;&#160;bit&#160;&#160;sequence&#160;&#160;mentioned&#160;&#160;above&#160;&#160;does&#160;&#160;not&#160;&#160;appear&#160;&#160;accidentally&#160;</p>
+<p style="position:absolute;top:294px;left:80px;white-space:nowrap" class="ft06">anywhere&#160;else&#160;in&#160;a&#160;frame,&#160;the&#160;sending&#160;station&#160;monitors&#160;the&#160;bit&#160;sequence&#160;for&#160;a&#160;group&#160;of&#160;five&#160;or&#160;more&#160;<br/>contiguous&#160;“1”&#160;bits.&#160;Any&#160;time&#160;five&#160;contiguous&#160;“1”&#160;bits&#160;are&#160;sent,&#160;the&#160;sending&#160;station&#160;inserts&#160;a&#160;“0”&#160;bit&#160;after&#160;<br/>the&#160;&#160;fifth&#160;&#160;“1”&#160;&#160;bit.&#160;&#160;During&#160;&#160;frame&#160;&#160;reception,&#160;&#160;any&#160;&#160;time&#160;&#160;five&#160;&#160;contiguous&#160;&#160;“1”&#160;&#160;bits&#160;&#160;are&#160;&#160;received,&#160;&#160;a&#160;&#160;“0”&#160;&#160;bit&#160;<br/>immediately&#160;following five&#160;“1” bits is discarded.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:397px;left:80px;white-space:nowrap" class="ft02">3.7 Frame-Check Sequence&#160;&#160;&#160;</p>
+<p style="position:absolute;top:420px;left:107px;white-space:nowrap" class="ft01">The&#160;Frame-Check&#160;Sequence&#160;(FCS)&#160;is&#160;a&#160;sixteen-bit&#160;number&#160;calculated&#160;by&#160;both&#160;the&#160;sender&#160;and&#160;the&#160;</p>
+<p style="position:absolute;top:441px;left:80px;white-space:nowrap" class="ft06">receiver&#160;of&#160;a&#160;frame.&#160;It&#160;ensures&#160;that&#160;the&#160;frame&#160;was&#160;not&#160;corrupted&#160;by&#160;the&#160;transmission&#160;medium.&#160;The&#160;Frame-<br/>Check Sequence is calculated in&#160;accordance with recommendations&#160;in the HDLC reference&#160;document,&#160;<br/>ISO 3309.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:523px;left:80px;white-space:nowrap" class="ft02">3.8 Order&#160;of&#160;</p>
+<p style="position:absolute;top:523px;left:189px;white-space:nowrap" class="ft03">Octet and&#160;</p>
+<p style="position:absolute;top:523px;left:279px;white-space:nowrap" class="ft02">Bit Transmission&#160;&#160;&#160;</p>
+<p style="position:absolute;top:546px;left:107px;white-space:nowrap" class="ft01">The&#160;FCS&#160;field&#160;of&#160;an&#160;AX.25&#160;frame&#160;is&#160;sent&#160;most-significant&#160;bit&#160;first</p>
+<p style="position:absolute;top:546px;left:579px;white-space:nowrap" class="ft04">.&#160;That&#160;is&#160;bit&#160;15&#160;to&#160;bit&#160;0,&#160;most&#160;significant&#160;</p>
+<p style="position:absolute;top:567px;left:80px;white-space:nowrap" class="ft04">octet first</p>
+<p style="position:absolute;top:567px;left:150px;white-space:nowrap" class="ft01">.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:605px;left:107px;white-space:nowrap" class="ft01">All&#160;other&#160;fields&#160;are&#160;sent&#160;with&#160;each&#160;octet’s&#160;least-significant&#160;bit&#160;first.&#160;</p>
+<p style="position:absolute;top:605px;left:598px;white-space:nowrap" class="ft04">That&#160;is&#160;bit&#160;0&#160;to&#160;bit&#160;7</p>
+<p style="position:absolute;top:605px;left:741px;white-space:nowrap" class="ft01">.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:605px;left:761px;white-space:nowrap" class="ft04">Multiple&#160;octet&#160;</p>
+<p style="position:absolute;top:626px;left:80px;white-space:nowrap" class="ft07">fields&#160;are&#160;sent&#160;in&#160;ascending&#160;order.&#160;That&#160;is&#160;the&#160;high-order&#160;octet&#160;first,&#160;the&#160;next&#160;lower&#160;octet&#160;next,&#160;etc.&#160;(little&#160;<br/>endian).</p>
+<p style="position:absolute;top:646px;left:142px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:687px;left:80px;white-space:nowrap" class="ft02">3.9 Invalid Frames&#160;&#160;&#160;</p>
+<p style="position:absolute;top:710px;left:107px;white-space:nowrap" class="ft01">A frame is considered by&#160;the link layer to be an&#160;invalid frame&#160;if it:&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:730px;left:107px;white-space:nowrap" class="ft05">•</p>
+<p style="position:absolute;top:731px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Consists of&#160;less than&#160;136 bits (including the&#160;opening&#160;and&#160;closing flags)&#160;&#160;&#160;</p>
+<p style="position:absolute;top:751px;left:107px;white-space:nowrap" class="ft05">•</p>
+<p style="position:absolute;top:752px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Is not bounded by&#160;opening and closing flags&#160;&#160;&#160;</p>
+<p style="position:absolute;top:772px;left:107px;white-space:nowrap" class="ft05">•</p>
+<p style="position:absolute;top:773px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;Is not octet aligned (an integral&#160;number of octets)&#160;&#160;&#160;</p>
+<p style="position:absolute;top:793px;left:80px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:816px;left:80px;white-space:nowrap" class="ft02">3.10&#160;Frame Abort&#160;&#160;&#160;</p>
+<p style="position:absolute;top:839px;left:107px;white-space:nowrap" class="ft01">If&#160;a&#160;frame&#160;must&#160;be&#160;prematurely&#160;aborted,&#160;at&#160;least&#160;fifteen&#160;contiguous&#160;“1”s&#160;are&#160;sent&#160;without&#160;bit&#160;stuffing&#160;</p>
+<p style="position:absolute;top:860px;left:80px;white-space:nowrap" class="ft01">added.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:900px;left:80px;white-space:nowrap" class="ft02">3.11 Inter-Frame Time Fill&#160;&#160;&#160;</p>
+<p style="position:absolute;top:924px;left:107px;white-space:nowrap" class="ft01">Whenever&#160;it&#160;is&#160;necessary&#160;for&#160;a&#160;TNC&#160;to&#160;keep&#160;its&#160;transmitter&#160;on&#160;while&#160;not&#160;actually&#160;sending&#160;frames,&#160;the&#160;</p>
+<p style="position:absolute;top:944px;left:80px;white-space:nowrap" class="ft01">time between frames should be filled with contiguous flags.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:985px;left:80px;white-space:nowrap" class="ft02">3.12&#160;Address-Field&#160;Encoding&#160;&#160;&#160;</p>
+<p style="position:absolute;top:1008px;left:107px;white-space:nowrap" class="ft01">The&#160;&#160;address&#160;&#160;field&#160;&#160;of&#160;&#160;all&#160;&#160;frames&#160;&#160;consists&#160;&#160;of&#160;&#160;a&#160;&#160;destination,&#160;&#160;source&#160;&#160;and&#160;&#160;(optionally)&#160;</p>
+<p style="position:absolute;top:1008px;left:756px;white-space:nowrap" class="ft04">eight&#160;</p>
+<p style="position:absolute;top:1008px;left:802px;white-space:nowrap" class="ft01">Layer&#160;&#160;2&#160;</p>
+<p style="position:absolute;top:1029px;left:80px;white-space:nowrap" class="ft06">repeater&#160;subfields.&#160;Each&#160;subfield&#160;consists&#160;of&#160;an&#160;amateur&#160;call&#160;sign&#160;and&#160;a&#160;Secondary&#160;Station&#160;Identifier&#160;<br/>(SSID).&#160;The&#160;call&#160;sign&#160;is&#160;made&#160;up&#160;of&#160;upper-case&#160;alpha&#160;and&#160;numeric&#160;ASCII&#160;characters&#160;only.&#160;The&#160;SSID&#160;is&#160;</p>
+</div>
+</body>
+</html>

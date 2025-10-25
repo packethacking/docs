@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 46</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft02{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft03{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page46-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10046.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">46&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:147px;left:80px;white-space:nowrap" class="ft01">6.4.6 Receiving Acknowledgement&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:168px;left:107px;white-space:nowrap" class="ft02">Whenever&#160;an&#160;I&#160;or&#160;S&#160;frame&#160;is&#160;correctly&#160;received,&#160;even&#160;in&#160;a&#160;busy&#160;condition,&#160;the&#160;N(R)&#160;of&#160;the&#160;received&#160;</p>
+<p style="position:absolute;top:189px;left:80px;white-space:nowrap" class="ft03">frame&#160;is&#160;checked&#160;to&#160;see&#160;if&#160;it&#160;includes&#160;an&#160;acknowledgement&#160;of&#160;outstanding&#160;sent&#160;I&#160;frames.&#160;The&#160;T1&#160;timer&#160;is&#160;<br/>canceled&#160;if&#160;the&#160;received&#160;frame&#160;actually&#160;acknowledges&#160;previously&#160;unacknowledged&#160;frames.&#160;If&#160;the&#160;T1&#160;timer&#160;<br/>is&#160;canceled&#160;and&#160;there&#160;are&#160;still&#160;some&#160;frames&#160;that&#160;have&#160;been&#160;sent&#160;that&#160;are&#160;not&#160;acknowledged,&#160;T1&#160;is&#160;started&#160;<br/>again.&#160;&#160;&#160;&#160;If&#160;&#160;the&#160;&#160;T1&#160;&#160;timer&#160;&#160;expires&#160;&#160;before&#160;&#160;an&#160;&#160;acknowledgement&#160;&#160;is&#160;&#160;received,&#160;&#160;the&#160;&#160;TNC&#160;&#160;proceeds&#160;&#160;with&#160;&#160;the&#160;<br/>retransmission procedure outlined in Section&#160;6.4.11.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:312px;left:80px;white-space:nowrap" class="ft01">6.4.7 Receiving REJ&#160;&#160;&#160;</p>
+<p style="position:absolute;top:334px;left:107px;white-space:nowrap" class="ft02">After receiving a REJ frame, the transmitting TNC sets it’s send state variable to the same value as&#160;</p>
+<p style="position:absolute;top:355px;left:80px;white-space:nowrap" class="ft03">the&#160;&#160;REJ&#160;&#160;frame’s&#160;&#160;received&#160;&#160;sequence&#160;&#160;number&#160;&#160;in&#160;&#160;the&#160;&#160;control&#160;&#160;field.&#160;&#160;&#160;&#160;The&#160;&#160;TNC&#160;&#160;then&#160;&#160;retransmits&#160;&#160;any&#160;&#160;I&#160;<br/>frame(s)&#160;outstanding at&#160;the next available opportunity in accordance with the following:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:396px;left:107px;white-space:nowrap" class="ft02">a)&#160;&#160;If&#160;&#160;the&#160;&#160;TNC&#160;&#160;is&#160;&#160;not&#160;&#160;transmitting&#160;&#160;at&#160;&#160;the&#160;&#160;time&#160;&#160;and&#160;&#160;the&#160;&#160;channel&#160;&#160;is&#160;&#160;open,&#160;&#160;the&#160;&#160;TNC&#160;&#160;may&#160;&#160;begin&#160;</p>
+<p style="position:absolute;top:417px;left:80px;white-space:nowrap" class="ft02">retransmission of the I frame(s) immediately.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:437px;left:107px;white-space:nowrap" class="ft02">b)&#160;If&#160;the&#160;TNC&#160;is&#160;operating&#160;on&#160;a&#160;full-duplex&#160;channel&#160;transmitting&#160;a&#160;UI&#160;or&#160;S&#160;frame&#160;when&#160;it&#160;receives&#160;a&#160;</p>
+<p style="position:absolute;top:458px;left:80px;white-space:nowrap" class="ft02">REJ frame, it may finish sending&#160;the UI or S frame and then retransmit the I frame(s).&#160;&#160;&#160;</p>
+<p style="position:absolute;top:479px;left:107px;white-space:nowrap" class="ft02">c)&#160;If&#160;the&#160;TNC&#160;is&#160;operating&#160;in&#160;a&#160;full-duplex&#160;channel&#160;transmitting&#160;another&#160;I&#160;frame&#160;when&#160;it&#160;receives&#160;a&#160;</p>
+<p style="position:absolute;top:500px;left:80px;white-space:nowrap" class="ft03">REJ&#160;frame,&#160;it&#160;may&#160;abort&#160;the&#160;I&#160;frame&#160;it&#160;was&#160;sending&#160;and&#160;start&#160;retransmission&#160;of&#160;the&#160;requested&#160;I&#160;frames&#160;<br/>immediately.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:541px;left:107px;white-space:nowrap" class="ft02">d)&#160;The&#160;TNC&#160;may&#160;send just&#160;the&#160;one I&#160;frame&#160;outstanding,&#160;or it&#160;may&#160;send more&#160;than&#160;the&#160;one&#160;indicated&#160;</p>
+<p style="position:absolute;top:562px;left:80px;white-space:nowrap" class="ft03">if&#160;more&#160;I&#160;frames&#160;followed&#160;the&#160;first&#160;unacknowledged&#160;frame,&#160;provided&#160;that&#160;the&#160;total&#160;to&#160;be&#160;sent&#160;does&#160;not&#160;<br/>exceed the&#160;flow-control window (k frames).&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:603px;left:107px;white-space:nowrap" class="ft02">If&#160;the&#160;TNC&#160;receives&#160;a&#160;REJ&#160;frame&#160;with&#160;the&#160;poll&#160;bit&#160;set,&#160;it&#160;responds&#160;with&#160;either&#160;an&#160;RR&#160;or&#160;RNR&#160;frame&#160;</p>
+<p style="position:absolute;top:624px;left:80px;white-space:nowrap" class="ft02">with the final bit set before&#160;retransmitting&#160;the&#160;outstanding&#160;I&#160;frame(s).&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:664px;left:80px;white-space:nowrap" class="ft01">6.4.8 Receiving an SREJ&#160;&#160;&#160;</p>
+<p style="position:absolute;top:686px;left:107px;white-space:nowrap" class="ft02">After&#160;receiving&#160;a&#160;SREJ&#160;frame,&#160;the&#160;transmitting&#160;TNC&#160;retransmits&#160;the&#160;individual&#160;I&#160;frame&#160;indicated&#160;by&#160;</p>
+<p style="position:absolute;top:706px;left:80px;white-space:nowrap" class="ft03">the&#160;N(R)&#160;contained&#160;in&#160;the&#160;SREJ&#160;at&#160;the&#160;next&#160;available&#160;opportunity.&#160;&#160;&#160;&#160;After&#160;retransmitting&#160;the&#160;frame&#160;above,&#160;<br/>new&#160;I&#160;frames&#160;may&#160;be&#160;retransmitted&#160;subsequently&#160;if&#160;they&#160;become&#160;available.&#160;If&#160;the&#160;P&#160;bit&#160;was&#160;set,&#160;then&#160;all&#160;<br/>frames up to N(R)-1 are&#160;acknowledged.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:788px;left:80px;white-space:nowrap" class="ft01">6.4.9 Receiving an RNR Frame&#160;&#160;&#160;</p>
+<p style="position:absolute;top:810px;left:107px;white-space:nowrap" class="ft02">Whenever&#160;a&#160;TNC&#160;receives&#160;an&#160;RNR&#160;frame,&#160;it&#160;stops&#160;transmitting&#160;I&#160;frames&#160;until&#160;the&#160;busy&#160;condition&#160;is&#160;</p>
+<p style="position:absolute;top:831px;left:80px;white-space:nowrap" class="ft03">cleared.&#160;If&#160;timer&#160;T3&#160;expires&#160;after&#160;the&#160;RNR&#160;was&#160;received,&#160;an&#160;RR&#160;or&#160;RNR&#160;command&#160;with&#160;the&#160;P&#160;bit&#160;set&#160;is&#160;<br/>sent&#160;to&#160;poll&#160;the&#160;distant&#160;TNC&#160;of&#160;its&#160;status;&#160;then&#160;timer&#160;T1&#160;is&#160;started.&#160;If&#160;an&#160;RNR&#160;frame&#160;is&#160;received&#160;in&#160;response&#160;<br/>to&#160;this&#160;poll,&#160;T1&#160;is&#160;stopped&#160;and&#160;T3&#160;is&#160;started&#160;again.&#160;If&#160;no&#160;response&#160;is&#160;received&#160;before&#160;T1&#160;expires,&#160;the&#160;<br/>waiting&#160;&#160;acknowledgment&#160;&#160;procedure&#160;&#160;(Section&#160;&#160;6.4.11)&#160;&#160;is&#160;&#160;performed.&#160;&#160;&#160;&#160;If&#160;&#160;an&#160;&#160;RR&#160;&#160;frame&#160;&#160;is&#160;&#160;received&#160;&#160;in&#160;<br/>response to the poll, then T1 is stopped and the busy condition&#160;cleared.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:954px;left:80px;white-space:nowrap" class="ft01">6.4.10 Sending a Busy&#160;Indication&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:975px;left:107px;white-space:nowrap" class="ft02">Whenever a TNC enters a busy condition, it indicates this by sending&#160;an RNR response at the next&#160;</p>
+<p style="position:absolute;top:996px;left:80px;white-space:nowrap" class="ft03">opportunity.&#160;While&#160;the&#160;TNC&#160;is&#160;in&#160;the&#160;busy&#160;condition,&#160;it&#160;may&#160;receive&#160;and&#160;process&#160;S&#160;frames.&#160;&#160;&#160;&#160;If&#160;a&#160;received&#160;<br/>S&#160;frame&#160;has&#160;the&#160;P&#160;bit&#160;set&#160;to&#160;“1”,&#160;the&#160;TNC&#160;sends&#160;an&#160;RNR&#160;frame&#160;with&#160;the&#160;F&#160;bit&#160;set&#160;to&#160;“1”&#160;at&#160;the&#160;next&#160;possible&#160;<br/>opportunity.&#160;&#160;&#160;&#160;To&#160;clear&#160;the&#160;busy&#160;condition,&#160;the&#160;TNC&#160;sends&#160;either&#160;an&#160;RR&#160;or&#160;REJ&#160;frame&#160;with&#160;the&#160;received&#160;</p>
+</div>
+</body>
+</html>

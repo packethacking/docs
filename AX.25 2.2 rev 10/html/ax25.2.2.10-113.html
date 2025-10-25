@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 113</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:24px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft02{font-size:20px;font-family:KEEOEO+Arial;color:#2e74b5;}
+	.ft03{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft04{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft05{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft06{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page113-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10113.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:459px;white-space:nowrap" class="ft00">113&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:165px;left:259px;white-space:nowrap" class="ft01">Appendix C6 - Segmenter/Reassembler&#160;</p>
+<p style="position:absolute;top:195px;left:80px;white-space:nowrap" class="ft02">C6.1&#160;Segmenter State Machine&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:219px;left:107px;white-space:nowrap" class="ft03">Only&#160;the&#160;following&#160;DL&#160;primitives&#160;will&#160;be&#160;candidates&#160;for&#160;modification&#160;by&#160;the&#160;segmented&#160;state&#160;machine:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:239px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:240px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:240px;left:134px;white-space:nowrap" class="ft05"><b>DL-DATA&#160;&#160;Request</b></p>
+<p style="position:absolute;top:240px;left:286px;white-space:nowrap" class="ft03">.&#160;&#160;The&#160;&#160;user&#160;&#160;employs&#160;&#160;this&#160;&#160;primitive&#160;&#160;to&#160;&#160;provide&#160;&#160;information&#160;&#160;to&#160;&#160;be&#160;&#160;transmitted&#160;</p>
+<p style="position:absolute;top:259px;left:134px;white-space:nowrap" class="ft06">using&#160;&#160;connection-oriented&#160;&#160;procedures;&#160;&#160;i.e.,&#160;&#160;using&#160;&#160;I&#160;&#160;frames.&#160;&#160;The&#160;&#160;segmenter&#160;&#160;state&#160;&#160;machine&#160;<br/>examines&#160;the&#160;quantity&#160;of&#160;data&#160;to&#160;be&#160;transmitted.&#160;If&#160;the&#160;quantity&#160;of&#160;data&#160;to&#160;be&#160;transmitted&#160;is&#160;less&#160;<br/>than&#160;or&#160;equal&#160;to&#160;the&#160;data&#160;link&#160;parameter&#160;N1,&#160;the&#160;segmenter&#160;state&#160;machine&#160;passes&#160;the&#160;primitive&#160;<br/>through transparently.&#160;&#160;&#160;&#160;If&#160;the quantity of data to be transmitted exceeds the data link parameter&#160;<br/>N1,&#160;&#160;the&#160;&#160;segmenter&#160;&#160;chops&#160;&#160;up&#160;&#160;the&#160;&#160;data&#160;&#160;into&#160;&#160;segments&#160;&#160;of&#160;&#160;length&#160;&#160;N1-2&#160;&#160;octets.&#160;&#160;Each&#160;&#160;segment&#160;&#160;is&#160;<br/>prepended&#160;with&#160;a&#160;two&#160;octet&#160;header.&#160;(See&#160;Figures&#160;3.1&#160;and&#160;3.2.)&#160;The&#160;segments&#160;are&#160;then&#160;turned&#160;<br/>over&#160;to&#160;the&#160;Data-link&#160;State&#160;Machine&#160;for&#160;transmission,&#160;using&#160;multiple&#160;DL&#160;Data&#160;Request&#160;primitives.&#160;<br/>All&#160;segments&#160;are&#160;turned&#160;over&#160;immediately;&#160;therefore&#160;the&#160;Data-link&#160;State&#160;Machine&#160;will&#160;transmit&#160;<br/>them consecutively on the data link.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:438px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:439px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:439px;left:134px;white-space:nowrap" class="ft05"><b>DL-UNIT-DATA&#160;&#160;Request</b></p>
+<p style="position:absolute;top:439px;left:336px;white-space:nowrap" class="ft03">.&#160;&#160;The&#160;&#160;user&#160;&#160;employs&#160;&#160;this&#160;&#160;primitive&#160;&#160;to&#160;&#160;provide&#160;&#160;information&#160;&#160;to&#160;&#160;be&#160;</p>
+<p style="position:absolute;top:459px;left:134px;white-space:nowrap" class="ft06">transmitted&#160;using&#160;connectionless&#160;procedures;&#160;i.e.&#160;using&#160;UI&#160;frames.&#160;The&#160;segmenter&#160;state&#160;machine&#160;<br/>examines&#160;the&#160;quantity&#160;of&#160;data&#160;to&#160;be&#160;transmitted.&#160;If&#160;the&#160;quantity&#160;of&#160;data&#160;to&#160;be&#160;transmitted&#160;is&#160;less&#160;<br/>than&#160;or&#160;equal&#160;to&#160;the&#160;data&#160;link&#160;parameter&#160;N1,&#160;the&#160;segmenter&#160;state&#160;machine&#160;passes&#160;the&#160;primitive&#160;<br/>through transparently.&#160;&#160;&#160;&#160;If&#160;the quantity of data to be transmitted exceeds the data link parameter&#160;<br/>N1,&#160;&#160;the&#160;&#160;segmenter&#160;&#160;chops&#160;&#160;up&#160;&#160;the&#160;&#160;data&#160;&#160;into&#160;&#160;segments&#160;&#160;of&#160;&#160;length&#160;&#160;N1-2&#160;&#160;octets.&#160;&#160;Each&#160;&#160;segment&#160;&#160;is&#160;<br/>prepended&#160;with&#160;a&#160;two&#160;octet&#160;header.&#160;(See&#160;Figures&#160;3.1&#160;and&#160;3.2.)&#160;The&#160;segments&#160;are&#160;then&#160;turned&#160;<br/>over&#160;to&#160;the&#160;Data-link&#160;State&#160;Machine&#160;for&#160;transmission,&#160;using&#160;multiple&#160;DL&#160;Data&#160;Request&#160;primitives.&#160;<br/>All&#160;segments&#160;are&#160;turned&#160;over&#160;immediately;&#160;therefore&#160;the&#160;Data-link&#160;State&#160;Machine&#160;will&#160;transmit&#160;<br/>them consecutively on the data link.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:638px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:639px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:639px;left:134px;white-space:nowrap" class="ft05"><b>All&#160;&#160;Other&#160;&#160;DL&#160;&#160;Primitives</b></p>
+<p style="position:absolute;top:639px;left:334px;white-space:nowrap" class="ft03">.&#160;&#160;All&#160;&#160;other&#160;&#160;DL&#160;&#160;primitives&#160;&#160;are&#160;&#160;passed&#160;&#160;through&#160;&#160;the&#160;&#160;segmenter&#160;&#160;state&#160;</p>
+<p style="position:absolute;top:659px;left:134px;white-space:nowrap" class="ft03">machine unchanged.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:678px;left:80px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:701px;left:80px;white-space:nowrap" class="ft02">C6.2&#160;Reassembler&#160;State Machine&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:725px;left:107px;white-space:nowrap" class="ft03">All primitives from the&#160;Data-link&#160;State Machine are delivered transparently, except the following:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:745px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:745px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:745px;left:134px;white-space:nowrap" class="ft05"><b>DL-DATA&#160;&#160;Indication</b></p>
+<p style="position:absolute;top:745px;left:301px;white-space:nowrap" class="ft03">.&#160;&#160;This&#160;&#160;primitive&#160;&#160;is&#160;&#160;examined&#160;&#160;by&#160;&#160;the&#160;&#160;reassembler&#160;&#160;state&#160;&#160;machine.&#160;&#160;If&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:765px;left:134px;white-space:nowrap" class="ft06">accompanying&#160;received&#160;data&#160;begins&#160;with&#160;an&#160;octet&#160;other&#160;than&#160;0x08,&#160;it&#160;is assumed&#160;it&#160;has&#160;not&#160;been&#160;<br/>segmented,&#160;and&#160;is&#160;passed&#160;up&#160;transparently.&#160;&#160;&#160;&#160;If&#160;the&#160;data&#160;begins&#160;with&#160;0x08,&#160;the&#160;reassembler&#160;state&#160;<br/>machine&#160;allocates&#160;buffers&#160;and&#160;switches&#160;to&#160;state&#160;1.&#160;After&#160;various&#160;checks&#160;for&#160;errors,&#160;this&#160;segment&#160;<br/>and&#160;all&#160;remaining&#160;segments&#160;received&#160;in&#160;subsequent&#160;DL&#160;Data&#160;Indication&#160;primitives&#160;are&#160;assembled&#160;<br/>together&#160;to&#160;recreate&#160;the&#160;original&#160;larger&#160;data&#160;unit.&#160;&#160;&#160;&#160;If&#160;a&#160;segment&#160;is&#160;received&#160;without&#160;the&#160;proper&#160;PID&#160;<br/>or&#160;&#160;out&#160;&#160;of&#160;&#160;sequence,&#160;&#160;the&#160;&#160;accumulated&#160;&#160;packets&#160;&#160;are&#160;&#160;discarded,&#160;&#160;buffers&#160;&#160;are&#160;&#160;freed,&#160;&#160;a&#160;&#160;DL&#160;&#160;Error&#160;<br/>Indication&#160;is&#160;delivered&#160;and&#160;the&#160;state&#160;machine&#160;returns&#160;to&#160;state&#160;0.&#160;The&#160;larger&#160;data&#160;unit&#160;is&#160;delivered&#160;<br/>with one DL&#160;Data Indication primitive.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:924px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:925px;left:115px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:925px;left:134px;white-space:nowrap" class="ft05"><b>DL-UNIT-DATA Indication</b></p>
+<p style="position:absolute;top:925px;left:343px;white-space:nowrap" class="ft03">. This primitive is examined by&#160;the reassembler state machine.&#160;If&#160;the&#160;</p>
+<p style="position:absolute;top:945px;left:134px;white-space:nowrap" class="ft06">accompanying&#160;received&#160;data&#160;begins&#160;with&#160;an&#160;octet&#160;other&#160;than&#160;0x08,&#160;it&#160;is assumed&#160;it&#160;has&#160;not&#160;been&#160;<br/>segmented,&#160;and&#160;is&#160;passed&#160;up&#160;transparently.&#160;&#160;&#160;&#160;If&#160;the&#160;data&#160;begins&#160;with&#160;0x08,&#160;the&#160;reassembler&#160;state&#160;<br/>machine&#160;allocates&#160;buffers&#160;and&#160;switches&#160;to&#160;state&#160;2.&#160;After&#160;various&#160;checks&#160;for&#160;errors,&#160;this&#160;segment&#160;<br/>and&#160;&#160;all&#160;&#160;remaining&#160;&#160;segments&#160;&#160;received&#160;&#160;in&#160;&#160;subsequent&#160;&#160;DL&#160;&#160;Unit&#160;&#160;Data&#160;&#160;Indication&#160;&#160;primitives&#160;&#160;are&#160;<br/>assembled together to recreate the original larger data unit. If a segment is received without the&#160;<br/>proper&#160;PID&#160;or&#160;out&#160;of&#160;sequence,&#160;the&#160;accumulated&#160;packets&#160;are&#160;discarded,&#160;buffers&#160;are&#160;freed,&#160;a&#160;DL&#160;</p>
+</div>
+</body>
+</html>

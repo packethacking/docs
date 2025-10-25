@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 31</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:16px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft03{font-size:17px;line-height:20px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft04{font-size:16px;line-height:21px;font-family:Arial,Italic;color:#2e74b5;}
+	.ft05{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page31-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10031.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">31&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:80px;white-space:nowrap" class="ft03">frame&#160;when&#160;in&#160;the&#160;disconnected&#160;state,&#160;or&#160;an&#160;RR&#160;(or&#160;RNR,&#160;if&#160;appropriate)&#160;frame&#160;in&#160;the&#160;information&#160;transfer&#160;<br/>state.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:194px;left:80px;white-space:nowrap" class="ft04"><i>&#160;<br/>4.3.3.7 Exchange Identification (XID) Frame&#160;&#160;&#160;&#160;&#160;</i></p>
+<p style="position:absolute;top:232px;left:107px;white-space:nowrap" class="ft01">The Exchange Identification frame&#160;causes the&#160;addressed&#160;station&#160;to identify itself, and to provide its&#160;</p>
+<p style="position:absolute;top:252px;left:80px;white-space:nowrap" class="ft05">characteristics to the sending station. An information field&#160;is&#160;optional within the XID frame. A&#160;station&#160;<br/>receiving an&#160;XID command&#160;returns an XID response&#160;unless a&#160;UA response to&#160;a&#160;mode setting&#160;<br/>command&#160;is awaiting transmission,&#160;or a FRMR&#160;condition exists.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:312px;left:107px;white-space:nowrap" class="ft01">ISO&#160;8885&#160;allows&#160;for&#160;an&#160;XID&#160;exchange&#160;at&#160;any&#160;time&#160;before,&#160;during,&#160;or&#160;after&#160;a&#160;data&#160;link&#160;is&#160;established.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:331px;left:80px;white-space:nowrap" class="ft01">This AX.25 standard only provides for an XID exchange&#160;before the data link is established.&#160;</p>
+<p style="position:absolute;top:352px;left:107px;white-space:nowrap" class="ft01">The&#160;XID&#160;frame&#160;complies&#160;with&#160;ISO&#160;8885.&#160;Only&#160;those&#160;fields&#160;applicable&#160;to&#160;AX.25&#160;are&#160;described.&#160;&#160;&#160;&#160;All&#160;</p>
+<p style="position:absolute;top:373px;left:80px;white-space:nowrap" class="ft03">other fields&#160;are set to an appropriate&#160;value. This implementation is compatible with any implementation&#160;<br/>which&#160;&#160;follows&#160;&#160;ISO&#160;&#160;8885.&#160;&#160;Only&#160;&#160;the&#160;&#160;general-purpose&#160;&#160;XID&#160;&#160;information&#160;&#160;field&#160;&#160;identifier&#160;&#160;is&#160;&#160;required&#160;&#160;in&#160;&#160;this&#160;<br/>version of AX.25.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:435px;left:107px;white-space:nowrap" class="ft01">The&#160;information&#160;field&#160;consists&#160;of&#160;zero&#160;or&#160;more&#160;information&#160;elements.&#160;The&#160;information&#160;elements&#160;start&#160;</p>
+<p style="position:absolute;top:456px;left:80px;white-space:nowrap" class="ft03">with&#160;a&#160;Format&#160;Identifier&#160;(FI)&#160;octet.&#160;The&#160;second&#160;octet&#160;is&#160;the&#160;Group&#160;Identifier&#160;(GI).&#160;The&#160;third&#160;and&#160;fourth&#160;<br/>octets form&#160;the Group Length (GL). The rest of the information&#160;field contains parameter fields.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:497px;left:107px;white-space:nowrap" class="ft01">The&#160;FI&#160;takes&#160;the&#160;value&#160;82&#160;hex&#160;for&#160;the&#160;general-purpose&#160;XID&#160;information.&#160;The&#160;GI&#160;takes&#160;the&#160;value&#160;80&#160;</p>
+<p style="position:absolute;top:518px;left:80px;white-space:nowrap" class="ft03">hex&#160;for&#160;the&#160;parameter-negotiation&#160;identifier.&#160;&#160;&#160;&#160;The&#160;GL&#160;indicates&#160;the&#160;length&#160;of&#160;the&#160;associated&#160;parameter&#160;<br/>field.&#160;This&#160;length&#160;is&#160;expressed&#160;as&#160;a&#160;two-octet&#160;binary&#160;number&#160;representing&#160;the&#160;length&#160;of&#160;the&#160;associated&#160;<br/>parameter&#160;field&#160;in&#160;octets.&#160;The&#160;high-order&#160;bits&#160;of&#160;length&#160;value&#160;are&#160;in&#160;the&#160;first&#160;of&#160;the&#160;two&#160;octets.&#160;A&#160;group&#160;<br/>length&#160;of&#160;zero&#160;indicates&#160;the&#160;lack&#160;of&#160;an&#160;associated&#160;parameter&#160;field&#160;and&#160;that&#160;all&#160;parameters&#160;assume&#160;their&#160;<br/>default values. The GL&#160;does&#160;not include&#160;its own length or the length&#160;of the GI.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:621px;left:107px;white-space:nowrap" class="ft01">The&#160;&#160;parameter&#160;&#160;field&#160;&#160;contains&#160;&#160;a&#160;&#160;series&#160;&#160;of&#160;&#160;Parameter&#160;&#160;Identifier&#160;&#160;(PI),&#160;&#160;Parameter&#160;&#160;Length&#160;&#160;(PL),&#160;&#160;and&#160;</p>
+<p style="position:absolute;top:642px;left:80px;white-space:nowrap" class="ft03">Parameter&#160;Value&#160;(PV)&#160;set&#160;structures,&#160;in&#160;that&#160;order.&#160;&#160;&#160;&#160;Each&#160;PI&#160;identifies&#160;a&#160;parameter&#160;and&#160;is&#160;one&#160;octet&#160;in&#160;<br/>length.&#160;Each&#160;PL&#160;indicates&#160;the&#160;length&#160;of&#160;the&#160;associated&#160;PV&#160;in&#160;octets,&#160;and&#160;is&#160;one&#160;octet&#160;in&#160;length.&#160;Each&#160;PV&#160;<br/>contains&#160;the&#160;parameter&#160;value&#160;and&#160;is&#160;PL&#160;octets&#160;in&#160;length.&#160;The&#160;PL&#160;does&#160;not&#160;include&#160;its&#160;own&#160;length&#160;or&#160;the&#160;<br/>length&#160;of&#160;its&#160;associated&#160;PI.&#160;&#160;&#160;&#160;A&#160;PL&#160;value&#160;of&#160;zero&#160;indicates&#160;that&#160;the&#160;associated&#160;PV&#160;is&#160;absent;&#160;the&#160;parameter&#160;<br/>assumes the default value. A PI/PL/PV&#160;set&#160;may&#160;be&#160;omitted&#160;if&#160;it&#160;is not required&#160;to convey information, or&#160;<br/>if&#160;present&#160;values&#160;for&#160;the&#160;parameter&#160;are&#160;to&#160;be&#160;used.&#160;The&#160;PI/PL/PV&#160;fields&#160;are&#160;placed&#160;into&#160;the&#160;information&#160;<br/>field&#160;&#160;of&#160;&#160;the&#160;&#160;XID&#160;&#160;frame&#160;&#160;in&#160;&#160;ascending&#160;&#160;order.&#160;&#160;&#160;&#160;There&#160;&#160;is&#160;&#160;only&#160;&#160;one&#160;&#160;entry&#160;&#160;for&#160;&#160;each&#160;&#160;PI/PL/PV&#160;&#160;field&#160;&#160;used.&#160;&#160;A&#160;<br/>parameter&#160;&#160;field&#160;&#160;containing&#160;&#160;an&#160;&#160;unrecognized&#160;&#160;PI&#160;&#160;is&#160;&#160;ignored.&#160;&#160;&#160;&#160;An&#160;&#160;omitted&#160;&#160;parameter&#160;&#160;field&#160;&#160;assumes&#160;&#160;the&#160;<br/>currently negotiated value.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:828px;left:107px;white-space:nowrap" class="ft01">The&#160;parameter&#160;fields&#160;described&#160;below&#160;represent&#160;the&#160;minimum&#160;implementation&#160;and&#160;do&#160;not&#160;preclude&#160;</p>
+<p style="position:absolute;top:849px;left:80px;white-space:nowrap" class="ft01">the negotiation of other&#160;parameters between consenting stations.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:870px;left:107px;white-space:nowrap" class="ft01">The&#160;encoding&#160;of&#160;each&#160;PI/PL/PV&#160;applicable&#160;to&#160;AX.25&#160;is&#160;detailed&#160;in&#160;Figure&#160;4.5.&#160;&#160;&#160;&#160;Some&#160;of&#160;the&#160;fields&#160;are&#160;</p>
+<p style="position:absolute;top:890px;left:80px;white-space:nowrap" class="ft03">defined&#160;in&#160;this&#160;standard.&#160;Only&#160;the&#160;fields&#160;discussed&#160;below&#160;are&#160;required&#160;in&#160;an&#160;implementation&#160;that&#160;complies&#160;<br/>with this version&#160;of AX.25.&#160;&#160;&#160;&#160;&#160;</p>
+</div>
+</body>
+</html>

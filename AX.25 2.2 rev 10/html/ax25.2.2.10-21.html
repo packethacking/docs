@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 21</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:16px;font-family:KEEOBO+Calibri;color:#000000;}
+	.ft01{font-size:17px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft02{font-size:17px;font-family:KEEOFP+Arial,Bold;color:#000000;}
+	.ft03{font-size:18px;font-family:KEEOEO+Arial;color:#000000;}
+	.ft04{font-size:17px;font-family:KEFMMJ+Symbol;color:#000000;}
+	.ft05{font-size:18px;font-family:KEEOEO+Arial;color:#1f4d78;}
+	.ft06{font-size:15px;font-family:KEFOHA+Courier;color:#000000;}
+	.ft07{font-size:15px;font-family:KEFOIB+Courier;color:#000000;}
+	.ft08{font-size:17px;line-height:19px;font-family:KEEOEO+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page21-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="ax25.2.2.10021.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:1073px;left:463px;white-space:nowrap" class="ft00">21&#160;</p>
+<p style="position:absolute;top:1105px;left:80px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:148px;left:107px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:439px;left:314px;white-space:nowrap" class="ft02"><b>Figure 3.5 Destination Field Encoding.</b></p>
+<p style="position:absolute;top:438px;left:628px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:484px;left:80px;white-space:nowrap" class="ft01">Where:&#160;&#160;&#160;</p>
+<p style="position:absolute;top:504px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:504px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;The&#160;top&#160;octet&#160;(A1)&#160;is&#160;the&#160;first&#160;octet&#160;sent,&#160;with&#160;bit&#160;0&#160;of&#160;each&#160;octet&#160;being&#160;the&#160;first&#160;bit&#160;sent,&#160;and&#160;bit&#160;7&#160;</p>
+<p style="position:absolute;top:524px;left:134px;white-space:nowrap" class="ft01">being the&#160;last bit sent.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:545px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:545px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;The&#160;first&#160;(low-order&#160;or&#160;bit&#160;0)&#160;bit&#160;of&#160;each&#160;octet&#160;is&#160;the&#160;HDLC&#160;address&#160;extension&#160;bit,&#160;set&#160;to&#160;zero&#160;on&#160;all&#160;</p>
+<p style="position:absolute;top:565px;left:134px;white-space:nowrap" class="ft01">but the last octet in the&#160;address field, where it is set to one.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:585px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:586px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;The&#160;&#160;bits&#160;&#160;marked&#160;&#160;“R”&#160;&#160;are&#160;&#160;reserved&#160;&#160;bits.&#160;&#160;&#160;&#160;They&#160;&#160;may&#160;&#160;be&#160;&#160;used&#160;&#160;in&#160;&#160;an&#160;&#160;agreed-upon&#160;&#160;manner&#160;&#160;in&#160;</p>
+<p style="position:absolute;top:606px;left:134px;white-space:nowrap" class="ft01">individual networks. When not implemented, they are set&#160;to one.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:626px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:627px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;The&#160;bit&#160;marked&#160;“C”&#160;is&#160;the&#160;command/response&#160;bit&#160;of&#160;an&#160;AX.25&#160;frame,&#160;as&#160;outlined&#160;in&#160;Section&#160;6.1.2.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:647px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:648px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;The&#160;characters&#160;of&#160;the&#160;call&#160;sign&#160;are&#160;standard&#160;seven-bit&#160;ASCII&#160;(upper&#160;case&#160;only)&#160;placed&#160;in&#160;the&#160;left-</p>
+<p style="position:absolute;top:668px;left:134px;white-space:nowrap" class="ft08">most&#160;seven&#160;bits&#160;of&#160;the octet&#160;to&#160;make&#160;room&#160;for&#160;the&#160;address&#160;extension&#160;bit.&#160;If&#160;the&#160;call&#160;sign&#160;contains&#160;<br/>fewer&#160;than&#160;six&#160;characters,&#160;it&#160;is&#160;padded&#160;with&#160;ASCII&#160;spaces&#160;between&#160;the&#160;last&#160;call&#160;sign&#160;character&#160;<br/>and the SSID octet.&#160;&#160;&#160;</p>
+<p style="position:absolute;top:728px;left:107px;white-space:nowrap" class="ft04">•</p>
+<p style="position:absolute;top:728px;left:115px;white-space:nowrap" class="ft01">&#160;&#160;The&#160;0000&#160;SSID&#160;is&#160;reserved&#160;for&#160;the&#160;first&#160;personal&#160;AX.25&#160;station.&#160;This&#160;provision&#160;establishes&#160;one&#160;</p>
+<p style="position:absolute;top:748px;left:134px;white-space:nowrap" class="ft01">standard SSID for “normal” stations to use for&#160;the first station.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:768px;left:80px;white-space:nowrap" class="ft01">&#160;</p>
+<p style="position:absolute;top:791px;left:80px;white-space:nowrap" class="ft05">3.12.3 Source Subfield Encoding&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:813px;left:107px;white-space:nowrap" class="ft01">Figure&#160;3.6&#160;shows&#160;how&#160;an&#160;amateur&#160;call&#160;sign&#160;is&#160;placed&#160;in&#160;the&#160;destination&#160;address&#160;subfield,&#160;occupying&#160;</p>
+<p style="position:absolute;top:833px;left:80px;white-space:nowrap" class="ft01">octets A8 through A14.&#160;&#160;&#160;&#160;&#160;</p>
+<p style="position:absolute;top:218px;left:287px;white-space:nowrap" class="ft06"><b>Octet&#160;</b></p>
+<p style="position:absolute;top:218px;left:341px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:218px;left:391px;white-space:nowrap" class="ft06"><b>ASCII</b></p>
+<p style="position:absolute;top:218px;left:436px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:218px;left:499px;white-space:nowrap" class="ft06"><b>Binary&#160;</b></p>
+<p style="position:absolute;top:218px;left:562px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:218px;left:610px;white-space:nowrap" class="ft06"><b>Hex&#160;</b></p>
+<p style="position:absolute;top:218px;left:646px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:237px;left:301px;white-space:nowrap" class="ft06"><b>A1&#160;</b></p>
+<p style="position:absolute;top:237px;left:328px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:237px;left:409px;white-space:nowrap" class="ft06"><b>N&#160;</b></p>
+<p style="position:absolute;top:237px;left:427px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:237px;left:490px;white-space:nowrap" class="ft06"><b>10011000&#160;</b></p>
+<p style="position:absolute;top:237px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:237px;left:606px;white-space:nowrap" class="ft06"><b>0x98&#160;</b></p>
+<p style="position:absolute;top:237px;left:651px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:256px;left:301px;white-space:nowrap" class="ft06"><b>A2&#160;</b></p>
+<p style="position:absolute;top:256px;left:328px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:256px;left:409px;white-space:nowrap" class="ft06"><b>J&#160;</b></p>
+<p style="position:absolute;top:256px;left:427px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:256px;left:490px;white-space:nowrap" class="ft06"><b>10010100&#160;</b></p>
+<p style="position:absolute;top:256px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:256px;left:606px;white-space:nowrap" class="ft06"><b>0x94&#160;</b></p>
+<p style="position:absolute;top:256px;left:651px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:275px;left:301px;white-space:nowrap" class="ft06"><b>A3&#160;</b></p>
+<p style="position:absolute;top:275px;left:328px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:275px;left:409px;white-space:nowrap" class="ft06"><b>7&#160;</b></p>
+<p style="position:absolute;top:275px;left:427px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:275px;left:490px;white-space:nowrap" class="ft06"><b>01101110&#160;</b></p>
+<p style="position:absolute;top:275px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:275px;left:606px;white-space:nowrap" class="ft06"><b>0x6E&#160;</b></p>
+<p style="position:absolute;top:275px;left:651px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:295px;left:301px;white-space:nowrap" class="ft06"><b>A4&#160;</b></p>
+<p style="position:absolute;top:294px;left:328px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:295px;left:409px;white-space:nowrap" class="ft06"><b>P&#160;</b></p>
+<p style="position:absolute;top:294px;left:427px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:295px;left:490px;white-space:nowrap" class="ft06"><b>10100000&#160;</b></p>
+<p style="position:absolute;top:294px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:295px;left:606px;white-space:nowrap" class="ft06"><b>0xA0&#160;</b></p>
+<p style="position:absolute;top:294px;left:651px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:314px;left:301px;white-space:nowrap" class="ft06"><b>A5&#160;</b></p>
+<p style="position:absolute;top:314px;left:328px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:314px;left:391px;white-space:nowrap" class="ft06"><b>space&#160;</b></p>
+<p style="position:absolute;top:314px;left:445px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:314px;left:490px;white-space:nowrap" class="ft06"><b>01000000&#160;</b></p>
+<p style="position:absolute;top:314px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:314px;left:606px;white-space:nowrap" class="ft06"><b>0x40&#160;</b></p>
+<p style="position:absolute;top:314px;left:651px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:333px;left:301px;white-space:nowrap" class="ft06"><b>A6&#160;</b></p>
+<p style="position:absolute;top:333px;left:328px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:333px;left:391px;white-space:nowrap" class="ft06"><b>space&#160;</b></p>
+<p style="position:absolute;top:333px;left:445px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:333px;left:490px;white-space:nowrap" class="ft06"><b>01000000&#160;</b></p>
+<p style="position:absolute;top:333px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:333px;left:606px;white-space:nowrap" class="ft06"><b>0x40&#160;</b></p>
+<p style="position:absolute;top:333px;left:651px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:352px;left:269px;white-space:nowrap" class="ft06"><b>A7 (SSID)&#160;</b></p>
+<p style="position:absolute;top:352px;left:359px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:352px;left:396px;white-space:nowrap" class="ft06"><b>none&#160;</b></p>
+<p style="position:absolute;top:352px;left:441px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:352px;left:490px;white-space:nowrap" class="ft06"><b>11100000&#160;</b></p>
+<p style="position:absolute;top:352px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:352px;left:606px;white-space:nowrap" class="ft06"><b>0xE0&#160;</b></p>
+<p style="position:absolute;top:352px;left:651px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:372px;left:303px;white-space:nowrap" class="ft06"><b>SSID Encoding&#160;</b></p>
+<p style="position:absolute;top:372px;left:429px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:372px;left:490px;white-space:nowrap" class="ft06"><b>CRRSSSS0&#160;</b></p>
+<p style="position:absolute;top:372px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:372px;left:606px;white-space:nowrap" class="ft06"><b>0x98&#160;</b></p>
+<p style="position:absolute;top:372px;left:651px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:391px;left:307px;white-space:nowrap" class="ft06"><b>Bit Position&#160;</b></p>
+<p style="position:absolute;top:391px;left:424px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:391px;left:490px;white-space:nowrap" class="ft06"><b>76543210&#160;</b></p>
+<p style="position:absolute;top:391px;left:571px;white-space:nowrap" class="ft07">&#160;</p>
+<p style="position:absolute;top:388px;left:624px;white-space:nowrap" class="ft03">&#160;</p>
+<p style="position:absolute;top:411px;left:252px;white-space:nowrap" class="ft03">&#160;</p>
+</div>
+</body>
+</html>
